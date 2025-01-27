@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florence Stone Concepts</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="istyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#333">
+                        <rect width="24" height="24" rx="6" />
+                    </svg>
+                    <span>Florence Stone Concepts</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Designer stone</a>
+                <a href="#">Finishes</a>
+                <a href="#">Flutings/Moulding</a>
+                <a href="#">Contact us</a>
+            </div>
+            <div class="nav-right">
+                <button class="consultation-btn">Get in touch</button>
+                <button class="hamburger" aria-label="Menu">
+                    <span class="hamburger-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <a href="#">Home</a>
+            <a href="#">Designer stone</a>
+            <a href="#">Finishes</a>
+            <a href="#">Flutings/Moulding</a>
+            <a href="#">Contact us</a>
+        </div>
+    </nav>
+    
+    
+    
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="handcrafted-tag">
+               
+                    <img src="./img/crafting.png" width="24"  height="24" alt="Designer Stone" style="color: white;">
+               
+                Handcrafted Walls
+            </div>
+            <h1 class="hero-title">Exploring the art of Wall Design</h1>
+          
+        </div>
+    </section>
+
+
+    <div class="services-container">
+        <div class="header-section">
+            <h1 class="title">What we can do for you</h1>
+            <div class="header-content">
+                <p class="description">From design to installation, we provide quality fence solutions tailored to your needs.</p>
+                <a href="#" class="services-button">
+                    See our services
+                    <span class="arrow-circle">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="./img/1.jpg" alt="Designer Stone">
+                <div class="card-overlay">
+                    <h3 class="card-title">Designer Stone</h3>
+                </div>
+                <div class="card-arrow">↗</div>
+            </div>
+            <div class="service-card">
+                <img src="./img/2.jpg" alt="Custom fence design">
+                <div class="card-overlay">
+                    <h3 class="card-title">Fine Finishes</h3>
+                </div>
+                <div class="card-arrow">↗</div>
+            </div>
+            <div class="service-card">
+                <img src="./img/bg-3.JPG" alt="Custom fence design">
+                <div class="card-overlay">
+                    <h3 class="card-title">Flutings and Mouldings</h3>
+                </div>
+                <div class="card-arrow">↗</div>
+            </div>
+           
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-top">
+            <!-- Logo and Brand Section -->
+            <div class="brand-section">
+                <div class="logo">
+                    <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" fill="none"/>
+                    </svg>
+                    <span>Florence Stone Concepts</span>
+                </div>
+                <p class="brand-desc">Expertly crafted walls that bring life your home. Built with care, designed to last.</p>
+            </div>
+    
+            <!-- Navigation Sections -->
+            <div class="nav-section">
+                <div class="nav-column">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <div class="nav-column">
+                    <h3>Our services</h3>
+                    <ul>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Request a quote</a></li>
+                    </ul>
+                </div>
+    
+                <div class="nav-column">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="#"><span class="social-icon">👤</span>Facebook</a></li>
+                        <li><a href="#"><span class="social-icon">𝕏</span>X (Twitter)</a></li>
+                        <li><a href="#"><span class="social-icon">📸</span>Instagram</a></li>
+                        <li><a href="#"><span class="social-icon">📌</span>Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Large Brand Text -->
+        <div class="brand-large">Florence Stone Concepts</div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Florence Stone Concepts. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Cookie Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+
+    <script>
+       const hamburger = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.mobile-menu');
+const hamburgerIcon = document.querySelector('.hamburger-icon');
+const navContainer = document.querySelector('.nav-container');
+
+// Initial setup
+gsap.set(mobileMenu, { 
+    autoAlpha: 0,
+    yPercent: -5
+});
+
+// Hamburger animation
+function animateHamburger(isOpen) {
+    if (isOpen) {
+        gsap.to(hamburgerIcon, {
+            backgroundColor: 'transparent',
+            duration: 0.2
+        });
+        gsap.to(hamburgerIcon.querySelectorAll('::before, ::after'), {
+            top: 0,
+            rotation: isOpen ? 45 : 0,
+            duration: 0.3
+        });
+    } else {
+        gsap.to(hamburgerIcon, {
+            backgroundColor: '#333',
+            duration: 0.2
+        });
+        gsap.to(hamburgerIcon.querySelectorAll('::before'), {
+            top: '-6px',
+            rotation: 0,
+            duration: 0.3
+        });
+        gsap.to(hamburgerIcon.querySelectorAll('::after'), {
+            top: '6px',
+            rotation: 0,
+            duration: 0.3
+        });
+    }
+}
+
+// Mobile menu animation
+function toggleMenu() {
+    const isOpen = mobileMenu.classList.contains('active');
+    
+    if (!isOpen) {
+        mobileMenu.classList.add('active');
+        gsap.to(mobileMenu, {
+            autoAlpha: 1,
+            yPercent: 0,
+            duration: 0.4,
+            ease: "power2.out"
+        });
+        
+        // Animate menu items
+        gsap.from('.mobile-menu a', {
+            y: 20,
+            opacity: 0,
+            stagger: 0.1,
+            duration: 0.3,
+            ease: "power2.out"
+        });
+    } else {
+        gsap.to(mobileMenu, {
+            autoAlpha: 0,
+            yPercent: -5,
+            duration: 0.3,
+            ease: "power2.in",
+            onComplete: () => mobileMenu.classList.remove('active')
+        });
+    }
+    
+    animateHamburger(!isOpen);
+}
+
+    
+
+// Event Listeners
+hamburger.addEventListener('click', toggleMenu);
+
+// Page load animations
+window.addEventListener('load', () => {
+    gsap.from(navContainer, {
+        y: -20,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out"
+    });
+    
+    gsap.from('.hero-content > *', {
+        y: 30,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power2.out"
+    });
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && 
+        !mobileMenu.contains(e.target) && 
+        mobileMenu.classList.contains('active')) {
+        toggleMenu();
+    }
+});
+        </script>
+</body>
+</html>
