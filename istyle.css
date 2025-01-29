@@ -697,6 +697,7 @@ visibility: visible;
     gap: 20px;
     overflow-x: auto;
     margin: auto;
+    overflow-y: hidden;
    
 }
 
