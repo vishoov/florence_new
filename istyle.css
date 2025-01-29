@@ -707,6 +707,15 @@ visibility: visible;
     padding: 2rem 4rem;
 }
 
+@media screen and (max-width: 768px){
+    .content{
+        padding: 2rem 0;
+        padding-right:15px ;
+        flex-direction: column;
+    }
+    
+}
+
 
 .vision{
     padding: 20px;
