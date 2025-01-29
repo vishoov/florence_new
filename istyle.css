@@ -804,4 +804,5 @@ visibility: visible;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 12px;
+    overflow: hidden;
 }
