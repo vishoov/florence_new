@@ -5,6 +5,13 @@
     padding: 0;
 }
 
+:root {
+    --text-dark: rgb(81, 41, 41);
+    --text-light: #f3e9e2;
+    --text-secondary: #e6d5c9;
+}
+
+
 @font-face {
     font-family: "Cruell";
     src: url("./img/Glitten-Regular.otf");
@@ -271,11 +278,12 @@ font-size: 0.9rem;
 
 .hero-title {
     color: white;
-    font-size: 4.5rem;
+    font-size: 4rem;
+
     font-family: "Cruell";
     line-height: 1.2;
     margin-bottom: 2rem;
-    max-width: 800px;
+    /* max-width: 100px; */
 }
 
 
@@ -729,6 +737,7 @@ visibility: visible;
     align-items: center;
     justify-content: space-between;
     padding: 2rem 4rem;
+    width: 100%;
 }
 
 
