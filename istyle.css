@@ -806,6 +806,7 @@ visibility: visible;
     
     .slider{
         padding-right: 20px;
+        height: 100%;
     }
     
 }
