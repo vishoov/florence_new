@@ -707,14 +707,6 @@ visibility: visible;
     padding: 2rem 4rem;
 }
 
-@media screen and (max-width: 768px){
-    .content{
-        padding: 2rem 0;
-        padding-right:15px ;
-        flex-direction: column;
-    }
-    
-}
 
 
 .vision{
@@ -795,4 +787,13 @@ visibility: visible;
     border: 1px solid #ffffff;
     border-radius: 12px;
     box-shadow: 0 5 px 20px rgba(0,0,0,0.6);
+}
+
+@media screen and (max-width: 768px){
+    .content{
+        padding: 2rem 0;
+        padding-right:15px ;
+        flex-direction: column;
+    }
+    
 }
