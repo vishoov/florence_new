@@ -720,8 +720,8 @@ visibility: visible;
     border-radius: 2px;
     margin-bottom: 20px;
     box-shadow: 0 5 px 20px rgba(0,0,0,0.3);
-    border: 1px solid #f3e9e2 !important;
-    border-radius: 12px !important;
+    border: 1px solid #f3e9e2 ;
+    border-radius: 12px ;
     display: flex;
     padding: 1%;
     color: white;
@@ -797,4 +797,10 @@ visibility: visible;
     }
     
     
+}
+
+.slide {
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
 }
