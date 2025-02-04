@@ -853,7 +853,7 @@ visibility: visible;
 .slide p{
     font-size: 19px;
     margin-top: 5px;
-   
+    color: white;
     margin-bottom: 20px;
     font-family: "Oswald";
 }
@@ -887,3 +887,86 @@ visibility: visible;
     
 }
 
+
+
+
+
+
+.years-section {
+    width: 100%;
+    background: #F3E9E2;
+    padding: 0;
+    overflow: hidden;
+}
+
+.years-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr auto 1fr;
+    min-height: 500px;
+}
+
+.decorative-bg {
+    background-image: url('./img/about/years.jpg');
+   
+    background-size: cover;
+    background-position: center;
+    background-color: #F3E9E2;
+    min-height: 400px;
+}
+
+.content {
+    padding: 60px 80px;
+    text-align: center;
+    background: #F3E9E2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.subtitle {
+    font-family: 'Cruell';
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #512929;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.number {
+    font-size: 140px;
+    font-weight: 900;
+    line-height: 1;
+    color: #512929;
+    margin: 20px 0 30px;
+    font-family: 'Cruell';
+}
+
+.description {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+    color: #512929;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+    .years-container {
+        grid-template-columns: 1fr;
+        padding-top: 70px;
+    }
+    
+    .left{
+        display: none;
+    }
+    
+    .content {
+        padding: 40px 20px;
+    }
+    
+    .number {
+        font-size: 100px;
+    }
+}
