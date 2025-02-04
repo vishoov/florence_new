@@ -141,3 +141,14 @@ mobileMenu.classList.contains('active')) {
 toggleMenu();
 }
 });
+
+
+const swiper = new Swiper('.heroSwiper', {
+    effect: 'fade',
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    speed: 2000,
+});
