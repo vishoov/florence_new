@@ -1028,8 +1028,8 @@ visibility: visible;
         rgba(0, 0, 0, 0.4) 0%,
         rgba(0, 0, 0, 0.2) 30%,
         rgba(0, 0, 0, 0) 100%);
-    backdrop-filter: blur(4px);
-    opacity: 0;
+    /* backdrop-filter: blur(4px); */
+   
     transition: opacity 0.4s ease;
 }
 
@@ -1098,7 +1098,7 @@ visibility: visible;
 }
 
 .fsc-portfolio-item:hover .fsc-portfolio-content {
-    opacity: 1;
+   
     transform: translateY(0);
 }
 
