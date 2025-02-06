@@ -152,3 +152,37 @@ const swiper = new Swiper('.heroSwiper', {
     },
     speed: 2000,
 });
+
+
+
+let lastScrollPosition = 0;
+const navbar = document.querySelector('.navbar');
+const scrollThreshold = 50; // Minimum scroll amount before showing/hiding
+
+window.addEventListener('scroll', () => {
+    const currentScrollPosition = window.pageYOffset;
+    
+    // Check if scrolled more than threshold
+    if (Math.abs(currentScrollPosition - lastScrollPosition) < scrollThreshold) {
+        return;
+    }
+    
+    // Hide navbar on scroll down, show on scroll up
+    if (currentScrollPosition > lastScrollPosition) {
+        navbar.classList.add('hidden');
+    } else {
+        navbar.classList.remove('hidden');
+    }
+    
+    lastScrollPosition = currentScrollPosition;
+});
+
+
+
+document.querySelector('.form-trigger').addEventListener('click', () => {
+    document.querySelector('.form-popup').classList.add('active');
+});
+
+document.querySelector('.close-btn').addEventListener('click', () => {
+    document.querySelector('.form-popup').classList.remove('active');
+});
