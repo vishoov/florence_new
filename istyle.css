@@ -393,7 +393,7 @@ visibility: visible;
 }
 
 .title {
-    font-size: 3.5rem;
+    font-size:4.5rem;
     width: 50%;
     font-family: "Cruell";
     color: var(--text-dark);
@@ -1495,4 +1495,22 @@ textarea {
     color: #fff;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 4rem;
+    }
+
+    .contact-email {
+        font-size: 1.2rem;
+    }
+
+    .form-container {
+        padding: 2rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
 }
