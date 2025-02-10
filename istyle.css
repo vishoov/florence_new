@@ -1383,7 +1383,7 @@ visibility: visible;
 
 
 .contact-section {
-    height: 80vh;
+    height: 100%;
     padding: 100px 2rem;
     background: #C4B1A4;
     text-align: center;
@@ -1748,10 +1748,6 @@ textarea {
     margin: 0;
     padding: 4rem 4.5rem;
     background-color:#f3e9e2;
-   
-   
-  
- 
   }
   
   
