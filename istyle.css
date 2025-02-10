@@ -378,7 +378,7 @@ visibility: visible;
 .services-container {
     max-width: 100vw;
     margin: 0 auto;
-    padding: 4rem 5rem;
+    padding: 4rem 2rem;
     /* padding-top: 8rem; */
     background-color: #f3e9e2;
 }
@@ -719,7 +719,7 @@ visibility: visible;
 
 .vision{
     background: white;
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
     
 }
 
@@ -772,7 +772,7 @@ visibility: visible;
     align-items: center;
     justify-content: space-around;
     padding: 3rem 0;
-    margin:0 2rem;
+    /* margin:0 2rem; */
     /* width: 100%; */
 }
 
@@ -1394,14 +1394,15 @@ visibility: visible;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    /* flex-direction: column; */
+    gap: 4rem;
     align-items: center;
+    justify-content: space-between;
 
 }
 
 .contact-title {
-    font-size: clamp(3rem, 8vw, 6rem);
+    font-size: clamp(2rem, 6vw, 4rem);
 
     line-height: 1.2;
     margin-bottom: 2rem;
@@ -1410,6 +1411,7 @@ visibility: visible;
     /* -webkit-background-clip: text; */
     color: #241C1C;
     font-family: 'Cruell';
+    text-align: left;
 }
 
 .contact-email {
@@ -1421,11 +1423,11 @@ visibility: visible;
 
 .form-trigger {
     padding: 0.8rem 2rem;
-    width: 200px;
+    width: 400px;
     border: 1px solid #000;
     border-radius: 50px;
     font-family: 'Oswald';
-    
+    font-size: 2.2rem;
     background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -1518,85 +1520,6 @@ textarea {
     }
 }
 
-
-/* instagram section */
-/* Instagram Section */
-.instagram-section {
-    margin: 0;
-    padding: 4rem 4.5rem;
-    background-color:#f3e9e2;
-  }
-  
-  .container {
-    max-width: 1300px;
-    margin: 0 auto;
-  }
-  
-  .section-title {
-    text-align: center;
-    font-size: 4.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  /* Instagram Grid */
-  .instagram-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .instagram-item {
-    overflow: hidden;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .instagram-item img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1/1;
-    display: block;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .instagram-item:hover img {
-    transform: scale(1.05);
-  }
-  
-  /* Horizontal Scrolling for Small Screens */
-  @media (max-width: 768px) {
-    .instagram-section {
-       padding: 2rem 2.5rem;
-      
-      }
-
-
-    .instagram-grid {
-      margin:0;
-      display: flex; /* Change to flexbox for horizontal scrolling */
-      overflow-x: auto; /* Enable horizontal scrolling */
-      gap: 15px; /* Adjust gap for smaller screens */
-      scroll-snap-type: x mandatory; /* Snap scrolling for better UX */
-      padding-bottom: 10px; /* Add space for better visibility */
-      -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
-    }
-  
-    .instagram-item {
-      flex-shrink: 0; /* Prevent items from shrinking */
-      width: calc(80% - 15px); /* Set a fixed width for each card */
-      scroll-snap-align: start; /* Align items to the start when scrolling */
-      aspect-ratio: 1/1; /* Remove aspect ratio restriction for flexibility */
-      display: flex; /* Ensure consistent layout in horizontal scrolling */
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background-color:#fff
-  }
-}
   /* Reels Section */
   .reels-section {
     background-color: #fff;
@@ -1746,7 +1669,7 @@ textarea {
 
   .video-section {
     margin: 0;
-    padding: 4rem 4.5rem;
+    padding: 4rem 2rem;
     background-color:#f3e9e2;
   }
   
@@ -1861,5 +1784,12 @@ textarea {
     .video-details h3 {
       font-size: 1.5rem;
     }
+  }
+  
+
+  .instagram-section {
+    margin: 0;
+    padding: 4rem 2rem;
+    background-color:#f3e9e2;
   }
   

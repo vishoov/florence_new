@@ -124,3 +124,114 @@
                 </div>
                 
             </div>
+
+
+
+             <section class="instagram-section">
+        <div class="content">
+            <h1 class="title" > Instagram</h1>
+        
+           
+        
+            <p class="description">Create, snap, post!</p>
+  
+    </div>
+        <div class="container">
+           
+          <div class="instagram-grid">
+            <div class="instagram-item">
+              <img src="./img/instagram posts/1.jpg" alt="Instagram Post 1" />
+            </div>
+            <div class="instagram-item">
+              <img src="./img/instagram posts/2.jpg" alt="Instagram Post 2" />
+            </div>
+            <div class="instagram-item">
+              <img src="./img/instagram posts/3.jpg" alt="Instagram Post 3" />
+            </div>
+            <div class="instagram-item">
+              <img src="./img/instagram posts/4.jpg" alt="Instagram Post 4" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+/* instagram section */
+/* Instagram Section */
+.instagram-section {
+    margin: 0;
+    padding: 4rem 4.5rem;
+    background-color:#f3e9e2;
+  }
+  
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Instagram Grid */
+  .instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .instagram-item {
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .instagram-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .instagram-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Horizontal Scrolling for Small Screens */
+  @media (max-width: 768px) {
+    .instagram-section {
+       padding: 2rem 2.5rem;
+      
+      }
+
+
+    .instagram-grid {
+      margin:0;
+      display: flex; /* Change to flexbox for horizontal scrolling */
+      overflow-x: auto; /* Enable horizontal scrolling */
+      gap: 15px; /* Adjust gap for smaller screens */
+      scroll-snap-type: x mandatory; /* Snap scrolling for better UX */
+      padding-bottom: 10px; /* Add space for better visibility */
+      -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+    }
+  
+    .instagram-item {
+      flex-shrink: 0; /* Prevent items from shrinking */
+      width: calc(80% - 15px); /* Set a fixed width for each card */
+      scroll-snap-align: start; /* Align items to the start when scrolling */
+      aspect-ratio: 1/1; /* Remove aspect ratio restriction for flexibility */
+      display: flex; /* Ensure consistent layout in horizontal scrolling */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color:#fff
+  }
+}
