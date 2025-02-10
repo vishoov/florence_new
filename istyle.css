@@ -405,6 +405,8 @@ visibility: visible;
 
 
 
+
+
 .description {
     font-family: "Oswald";
     width: 35%;
@@ -1793,3 +1795,136 @@ textarea {
     background-color:#f3e9e2;
   }
   
+
+
+  /* Contact Page */
+
+  .contact-page {
+    padding: 4rem;
+    margin-top: 5rem;
+    background-color: #f3e9e2;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  .contact-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2rem 4rem;
+  }
+  
+  .contact-title {
+    font-family: "Cruell";
+    font-size: 4.5rem;
+    color: #241C1C;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-subtitle {
+    font-family: "Oswald";
+    font-size: 1.25rem;
+    color: #6E503C;
+  }
+  
+  .contact-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+  }
+  
+  .contact-info {
+    padding: 2rem;
+  }
+  
+  .info-item {
+    margin-bottom: 2.5rem;
+  }
+  
+  .info-item h3 {
+    font-family: "Cruell";
+    font-size: 2rem;
+    color: #241C1C;
+    margin-bottom: 1rem;
+  }
+  
+  .info-item p {
+    font-family: "Oswald";
+    color: #6E503C;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-form-wrapper {
+    background: #fff;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 0rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #e6d5c9;
+    border-radius: 8px;
+    color: #241C1C;
+    font-family: "Oswald";
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #6E503C;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 1rem;
+    background: #241C1C;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: "Oswald";
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    opacity: 0.9;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-page {
+      padding: 2rem;
+    }
+  
+    .contact-title {
+      font-size: 3rem;
+    }
+  
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  
+    .contact-info {
+      padding: 0;
+    }
+  
+    .contact-form-wrapper {
+      padding: 2rem;
+    }
+  }
+  
+      
