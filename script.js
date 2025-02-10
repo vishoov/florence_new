@@ -130,3 +130,30 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+function playVideo() {
+    const video = document.getElementById('craftVideo');
+    const overlay = document.getElementById('videoOverlay');
+    
+    if (video.paused) {
+      video.play();
+      overlay.style.opacity = '0';
+      // Hide overlay after fade out
+      setTimeout(() => {
+        overlay.style.display = 'none';
+      }, 300);
+    } else {
+      video.pause();
+      overlay.style.display = 'flex';
+      overlay.style.opacity = '1';
+    }
+  }
+  
+  // Add click handler to video for pause functionality
+  document.getElementById('craftVideo').addEventListener('click', function() {
+    if (!this.paused) {
+      playVideo();
+    }
+  });
+  
