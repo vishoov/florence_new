@@ -1530,6 +1530,18 @@ textarea {
     }
 }
 
+    @media (max-width: 480px) {
+        .contact-container {
+            margin: 0;
+            padding: 0;
+        }
+        .contact-title {
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+
+
   /* Reels Section */
   .reels-section {
     background-color: #fff;
