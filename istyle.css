@@ -377,8 +377,8 @@ visibility: visible;
 
 .services-container {
     max-width: 100vw;
-    margin: 0 auto;
-    padding: 4rem 2rem;
+    margin: 0;
+    padding: 0;
     /* padding-top: 8rem; */
     background-color: #f3e9e2;
 }
@@ -448,14 +448,14 @@ visibility: visible;
 
 .services-grid {
     display: grid;
+    
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin:0 4rem;
+    gap: 0;
+    margin:0;
 }
 
 .service-card {
     position: relative;
-    border-radius: 1rem;
     overflow: hidden;
     aspect-ratio: 14/15;
     cursor: pointer;
@@ -484,7 +484,7 @@ visibility: visible;
 
 .card-title {
     font-family: "Cruell";
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
@@ -1394,7 +1394,7 @@ visibility: visible;
 
 .contact-container {
     max-width: 1450px;
-    margin: 0 auto;
+    margin: 0 4rem;
     display: flex;
     /* flex-direction: column; */
     gap: 4rem;
@@ -1505,12 +1505,20 @@ textarea {
 }
 
 @media (max-width: 768px) {
+    .contact-container{
+        flex-direction: column;
+    }
     .contact-title {
-        font-size: 4rem;
+        font-size: 2rem;
+        text-align: center;
     }
 
     .contact-email {
         font-size: 1.2rem;
+    }
+    .form-trigger{
+        width: 80%;
+        font-size: 1.5rem;
     }
 
     .form-container {
@@ -1886,6 +1894,26 @@ textarea {
     outline: none;
     border-color: #6E503C;
   }
+
+  .strategy-building-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.strategy-person-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.strategy-image-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+
   
   .submit-button {
     width: 100%;
@@ -1928,3 +1956,247 @@ textarea {
   }
   
       
+
+ /* New About Us */
+ .strategy-about-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.strategy-container {
+    max-width: 100vw;
+    margin: 0 4rem;
+    padding: 0 20px;
+}
+
+.strategy-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.strategy-subtitle {
+    color: #ff4d4d;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.strategy-main-title {
+    font-size: 4rem;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: "Cruell";
+    color: #6E503C;
+    margin: 0;
+    grid-column: 1/2;
+}
+
+.strategy-description {
+    font-size: 1.25rem;
+    max-width: 40%;
+    line-height: 1.6;
+    font-family: "Oswald";
+    text-align: right;
+    color: #6E503C;
+    grid-column: 2/3;
+    margin: 0;
+}
+
+.strategy-cta-btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: 500;
+    grid-column: 2/3;
+    width: fit-content;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.strategy-cta-btn:hover {
+    background: #333;
+}
+
+.strategy-content-wrapper {
+    display: grid;
+    grid-template: repeat(2, 2fr) / 5fr 1fr;
+    gap: 40px;
+}
+
+.strategy-image-grid {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.strategy-part2{
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    gap: 20px;
+}
+.some-content{
+    max-width: 80% ;
+    display: flex;
+    padding: 10% 10% 10% 0;
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.some-content h1{
+    font-size: 3rem;
+    color: #6E503C;
+    font-family: "Cruell";
+}
+
+.some-content p{
+    color: #6E503C;
+    font-size: 1.2rem;
+    font-family: "Oswald";
+}
+
+
+.strategy-image-left {
+    overflow: hidden;
+}
+
+.strategy-building-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.strategy-image-right {
+    height: 400px;
+}
+
+.strategy-pattern {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #f5f5f5 25%, transparent 25%),
+                      linear-gradient(-45deg, #f5f5f5 25%, transparent 25%);
+    background-size: 20px 20px;
+}
+
+.strategy-solutions {
+    padding: 40px 0;
+}
+
+.strategy-solutions-title {
+    font-size: 32px;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.strategy-solutions-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.strategy-readmore {
+    display: inline-flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.strategy-arrow {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.strategy-readmore:hover .strategy-arrow {
+    transform: translateX(5px);
+}
+
+@media (max-width: 992px) {
+    .strategy-container {
+    margin: 0 2rem;
+}
+
+    .strategy-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .strategy-description {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .strategy-content-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .strategy-image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .strategy-part2{
+        grid-template-columns: 1fr;
+    }
+    .some-content{
+    padding: 10% 0% 10% 0;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.some-content h1{
+    font-size: 2rem;
+}
+    
+    .strategy-image-right {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .strategy-about-section {
+        padding: 40px 0;
+    }
+    
+    .strategy-main-title {
+        font-size: 36px;
+    }
+    
+    .strategy-description {
+        font-size: 16px;
+    }
+    
+    .strategy-solutions-title {
+        font-size: 28px;
+    }
+    .strategy-container {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .strategy-main-title {
+        font-size: 2rem;
+    }
+    
+    .strategy-description {
+        font-size: 1rem;
+    }
+    .some-content h1{
+    font-size: 1.4rem;
+}
+.some-content p{
+    font-size: 1rem;
+}
+}

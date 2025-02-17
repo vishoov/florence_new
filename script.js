@@ -157,3 +157,76 @@ function playVideo() {
     }
   });
   
+
+
+  // Smooth scroll for "Who we are" button
+document.querySelector('.who-we-are').addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetSection = document.querySelector(this.getAttribute('href'));
+    if (targetSection) {
+        targetSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+});
+
+// Intersection Observer for fade-in animations
+const observerConfig = {
+    threshold: 0.2,
+    rootMargin: '50px'
+};
+
+const fadeInObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in-visible');
+            fadeInObserver.unobserve(entry.target);
+        }
+    });
+}, observerConfig);
+// Fix class names in selectors
+const fadeElements = [
+    '.strategy-main-title',
+    '.strategy-description',
+    '.strategy-building-img',
+    '.strategy-solutions'
+].forEach(selector => {
+    const elements = document.querySelectorAll(selector);
+    elements.forEach(element => fadeInObserver.observe(element));
+});
+
+// Fix read more animation
+const readMoreLink = document.querySelector('.strategy-readmore');
+if (readMoreLink) {
+    readMoreLink.addEventListener('mouseenter', function() {
+        const arrow = this.querySelector('.strategy-arrow');
+        if (arrow) {
+            arrow.style.transform = 'translateX(10px)';
+        }
+    });
+
+    readMoreLink.addEventListener('mouseleave', function() {
+        const arrow = this.querySelector('.strategy-arrow');
+        if (arrow) {
+            arrow.style.transform = 'translateX(0)';
+        }
+    });
+}
+
+// Fix image loading animation
+document.querySelector('.strategy-building-img').addEventListener('load', function() {
+    this.classList.add('image-loaded');
+});
+
+// Optional: Simplified parallax effect
+window.addEventListener('scroll', function() {
+    const buildingImage = document.querySelector('.strategy-building-img');
+    if (buildingImage) {
+        const scrolled = window.pageYOffset;
+        const rate = scrolled * 0.3;
+        requestAnimationFrame(() => {
+            buildingImage.style.transform = `translateY(${rate}px)`;
+        });
+    }
+});
