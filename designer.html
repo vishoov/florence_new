@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Stone</title>
+    <link rel="stylesheet" href="istyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .swiper-slide {
+            position: relative;
+            margin: 8rem 0 0;
+            
+        }
+
+        @media (max-width: 768px) {
+            .swiper-slide {
+                margin: 4rem 0 0;
+            }
+         
+            
+        }
+
+
+        .hero{
+            position: relative;
+            overflow: hidden;
+            height: 70vh;
+            width: 100vw;
+            padding: 0;
+        }
+
+     
+        .craft-section {
+            padding: 100px 0;
+            background-color: #f9f9f9;
+            margin: 0;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slide-banner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            z-index: 2;
+            text-align: center;
+            width: 80%;
+        }
+
+        .banner-title {
+            font-size: 6rem;
+            font-family: 'Cruell';
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .banner-title {
+                font-size: 32px;
+            }
+        }
+
+        .exotica-section {
+    padding: 5rem 0;
+}
+
+.exotica-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.exotica-text {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    color: #241C1C;
+}
+
+.exotica-text h2 {
+    font-family: 'Cruell';
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #241C1C;
+}
+
+.exotica-text p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #6E503C;
+}
+
+.exotica-images {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 2rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.exotica-image {
+
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.exotica-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.exotica-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .exotica-text {
+        margin-bottom: 2rem;
+    }
+
+    .exotica-text h2 {
+        font-size: 2rem;
+    }
+
+    .exotica-images {
+        flex-direction: column;
+    }
+}
+
+  
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#6E503C">
+                        <rect width="24" height="24" rx="6" />
+                    </svg>
+                    <span style="color: #241C1C;">Florence Stone Concepts</span>
+                </div>
+            </div>
+            <div class="nav-right">
+                <!-- <button class="consultation-btn">Get in touch</button> -->
+                <button class="hamburger" aria-label="Menu">
+                    <span class="hamburger-icon"></span>
+                </button>
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="./designer.html">Designer stone</a>
+                <a href="#">Finishes</a>
+                <a href="#">Flutings/Moulding</a>
+                <a href="./contact.html">Contact us</a>
+            </div>
+           
+        </div>
+        <div class="mobile-menu">
+            <a href="#">Home</a>
+            <a href="#">Designer stone</a>
+            <a href="#">Finishes</a>
+            <a href="#">Flutings/Moulding</a>
+            <a href="./contact.html">Contact us</a>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/bg-1.JPG" alt="Hero Image 1">
+                    <div class="slide-banner">
+                        <h2 class="banner-title">Think.</h2>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <img src="./img/bg-2.JPG" alt="Hero Image 2">
+                    <div class="slide-banner">
+                        <h2 class="banner-title">Customize.</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/bg-3.JPG" alt="Hero Image 3">
+                    <div class="slide-banner">
+                        <h2 class="banner-title">Craft.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+    <section class="exotica-section">
+        <div class="exotica-container">
+            <div class="exotica-text">
+                <h2>Designer Stone</h2>
+                <p><i>If walls could speak, what tales would they tell?</i></p>
+                <p>From opulent façade to intricately engraved puja rooms, we have carved a niche by offering bespoke designs that seamlessly blends functionality with luxury. We obsess over the little things, ensuring every seam, polish, and edge is flawless. This meticulous attention to detail sets us apart and elevates every project to a masterpiece.</p>
+            </div>
+    
+            <div class="exotica-images">
+                <div class="exotica-image">
+                    <img src="./img/slide_1.jpg" alt="Regalia Design">
+                </div>
+                <div class="exotica-image">
+                    <img src="./img/slide_1.jpg" alt="Regalia Design">
+                </div>
+                <div class="exotica-image">
+                    <img src="./img/slide_1.jpg" alt="Regalia Design">
+                </div>
+             
+               
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+    <!-- Contact Us Form -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <h1 class="contact-title">Let's bring<br>Life to your space!</h1>
+            <button class="form-trigger">Get in touch!</button>
+        </div>
+    
+        <!-- Popup Form -->
+        <div class="form-popup">
+            <div class="form-container">
+                <button class="close-btn">×</button>
+                <h2>GET IN TOUCH</h2>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit" class="submit-btn">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <footer class="footer">
+        <div class="footer-top">
+            <!-- Logo and Brand Section -->
+            <div class="brand-section">
+                <div class="logo">
+                    <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" fill="none"/>
+                    </svg>
+                    <span >Florence Stone Concepts</span>
+                </div>
+                <p class="brand-desc">Expertly crafted walls that bring life your home. Built with care, designed to last.</p>
+            </div>
+    
+            <!-- Navigation Sections -->
+            <div class="nav-section">
+                <div class="nav-column">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Recycling</a></li>
+                        <li><a href="#">EPR Partnership</a></li>
+                        <li><a href="#">Our Products</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="nav-column">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="#"><span class="social-icon">👤</span>Facebook</a></li>
+                        <li><a href="#"><span class="social-icon">𝕏</span>X (Twitter)</a></li>
+                        <li><a href="#"><span class="social-icon">📸</span>Instagram</a></li>
+                        <li><a href="#"><span class="social-icon">📌</span>Pinterest</a></li>
+                    </ul>
+                </div>
+                <div class="nav-column">
+                    <h3>Get in Touch</h3>
+                    <ul>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                     
+                        <li>Adarsh Infinity Imports Pvt. Ltd.<br>
+                            E-14, Mansarover Garden<br>
+                            Delhi-110015</li>                    </ul>
+                </div>
+    
+               
+            </div>
+        </div>
+    
+        <!-- Large Brand Text -->
+        <div class="brand-large">Florence Stone Concepts</div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Florence Stone Concepts. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Cookie Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+ 
+ <script>
+        var swiper = new Swiper('.heroSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            speed: 4000,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+  <script src="./designer.js"></script>
+</body>
+</html>
