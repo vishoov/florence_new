@@ -230,3 +230,36 @@ window.addEventListener('scroll', function() {
         });
     }
 });
+
+function setupParallaxEffects() {
+    const buildingImage = document.querySelector('.strategy-building-img');
+    const parallaxContainer = document.querySelector('.parallax-container');
+    const parallaxElement = parallaxContainer?.querySelector('.strategy-pattern');
+
+    function updateParallax() {
+        const scrolled = window.pageYOffset;
+
+        if (buildingImage) {
+            const rate = scrolled * 0.3;
+            buildingImage.style.transform = `translateY(${rate}px)`;
+        }
+
+        if (parallaxContainer && parallaxElement) {
+            const containerRect = parallaxContainer.getBoundingClientRect();
+            const containerTop = containerRect.top + scrolled;
+            const containerBottom = containerTop + containerRect.height;
+
+            if (scrolled > containerTop && scrolled < containerBottom) {
+                const parallaxSpeed = 0.5;
+                const yOffset = (scrolled - containerTop) * parallaxSpeed;
+                parallaxElement.style.transform = `translateY(${yOffset}px)`;
+            }
+        }
+
+        requestAnimationFrame(updateParallax);
+    }
+
+    updateParallax();
+}
+
+document.addEventListener('DOMContentLoaded', setupParallaxEffects);
