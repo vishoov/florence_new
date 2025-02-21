@@ -1,4 +1,40 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+    const brandingSwiper = document.querySelector('.brandingSwiper'); // Correct selector
+    if (brandingSwiper) {
+        const swiperWrapper = brandingSwiper.querySelector('.swiper-wrapper');
+        const slides = brandingSwiper.querySelectorAll('.swiper-slide');
+        const slideCount = slides.length;
+        let slideIndex = 0;
+
+        const nextButton = brandingSwiper.querySelector('#nextButton'); // Correct selector
+        const prevButton = brandingSwiper.querySelector('#prevButton'); // Correct selector
+
+        function updateSwiper() {
+            swiperWrapper.style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+
+        function swiperNext() {
+            slideIndex = (slideIndex + 1) % slideCount;
+            updateSwiper();
+        }
+
+        function swiperPrev() {
+            slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+            updateSwiper();
+        }
+
+        nextButton.addEventListener('click', swiperNext);
+        prevButton.addEventListener('click', swiperPrev);
+
+        //Initial call to set up the first image
+        updateSwiper();
+
+    } else {
+        console.warn("Swiper container not found!");
+    }
+
+
     // Navbar Scroll Hide/Show
     let lastScrollPosition = 0;
     const navbar = document.querySelector('.navbar');
@@ -111,25 +147,3 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
-
-// popup-gallery
-jQuery(document).ready(function ($) {
-    $(".popup-gallery").magnificPopup({
-      delegate: "a",
-      type: "image",
-      tLoading: "Loading image #%curr%...",
-      mainClass: "mfp-img-mobile",
-      gallery: {
-        enabled: true,
-        navigateByImgClick: true,
-        preload: [0, 1] // Preload previous and next images
-      },
-      image: {
-        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-        titleSrc: function (item) {
-          return item.el.attr("title") || "";
-        }
-      }
-    });
-  });
-  
