@@ -3,12 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Florence Stone Concepts</title>
-    <link rel="stylesheet" href="istyle.css">
-    
+    <title>Finishes | Florence Stone Concepts</title>
+    <link rel="stylesheet" href="./istyle.css">
+    <style>
+        .finishes-section {
+            margin: 4rem 0 0 0 ;
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 3rem;
+    color: #241C1C;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: #6E503C;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.finishes-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.finish-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.finish-item:hover {
+    transform: translateY(-5px);
+}
+
+.finish-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.finish-item h3 {
+    font-size: 1.2rem;
+    color: #241C1C;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+
+    .finishes-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+    </style>
 </head>
 <body>
-
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-left">
@@ -42,65 +116,70 @@
             <a href="./contact.html">Contact us</a>
         </div>
     </nav>
+
+
+
+
+
     
 
+    
 
-    <section class="contact-page">
-        <div class="content" >
-            <h1 class="title" style="color: #241C1C;" >Get in touch</h1>
-        
-           
-        
-            <p class="description">Let's add life to your space</p>
-  
-        </div>
-      
-        <div class="contact-grid">
-          <!-- Contact Information -->
-          <div class="contact-info">
-            <div class="info-item">
-              <h3>Visit Us</h3>
-              <p>Adarsh Infinity Imports Pvt. Ltd.</p>
-              <p>E-14, Mansarover Garden</p>
-              <p>Delhi-110015</p>
-            </div>
+    <section class="finishes-section">
+        <div class="container">
+            <h1 class="section-title">Finishes</h1>
+            <p class="section-description">Discover our exquisite range of stone finishes that elevate any space with timeless elegance and sophistication. From polished marble to textured granite, our finishes are crafted to perfection, ensuring durability and beauty that lasts for generations.</p>
             
-            <div class="info-item">
-              <h3>Contact</h3>
-              <p>Phone: +91 - 8595011410</p>
-              <p>Email: info@florencestoneconcepts.com</p>
+            <div class="finishes-gallery">
+                <div class="finish-item">
+                    <img src="./img/bg-1.JPG" alt="Polished Marble Finish">
+                    <h3>Polished Marble</h3>
+                </div>
+                <div class="finish-item">
+                    <img src="./img/bg-2.JPG" alt="Honed Granite Finish">
+                    <h3>Honed Granite</h3>
+                </div>
+                <div class="finish-item">
+                    <img src="./img/bg-3.JPG" alt="Brushed Limestone Finish">
+                    <h3>Brushed Limestone</h3>
+                </div>
+                <div class="finish-item">
+                    <img src="./img/bg-1.JPG" alt="Leather Quartzite Finish">
+                    <h3>Leather Quartzite</h3>
+                </div>
             </div>
-      
-            <div class="info-item">
-              <h3>Hours</h3>
-              <p>Monday - Friday: 9am - 6pm</p>
-              <!-- <p>Saturday: 10am - 4pm</p> -->
-            </div>
-          </div>
-      
-          <!-- Contact Form -->
-          <div class="contact-form-wrapper">
-            <form class="contact-form">
-              <div class="form-group">
-                <input type="text" placeholder="Your Name" required>
-              </div>
-              <div class="form-group">
-                <input type="email" placeholder="Your Email" required>
-              </div>
-              <div class="form-group">
-                <input type="tel" placeholder="Phone Number">
-              </div>
-              <div class="form-group">
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-              </div>
-              <button type="submit" class="submit-button">Send Message</button>
-            </form>
-          </div>
         </div>
-      </section>
+    </section>
+    
+
+    <!-- Contact Us Form -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <h1 class="contact-title">Let's bring<br>Life to your space!</h1>
+            <button class="form-trigger">Get in touch!</button>
+        </div>
+    
+        <!-- Popup Form -->
+        <div class="form-popup">
+            <div class="form-container">
+                <button class="close-btn">×</button>
+                <h2>GET IN TOUCH</h2>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit" class="submit-btn">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
 
-      <footer class="footer">
+
+    <footer class="footer">
         <div class="footer-top">
             <!-- Logo and Brand Section -->
             <div class="brand-section">
@@ -137,12 +216,11 @@
                 <div class="nav-column">
                     <h3>Get in Touch</h3>
                     <ul>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
                      
                         <li>Adarsh Infinity Imports Pvt. Ltd.<br>
                             E-14, Mansarover Garden<br>
-                            Delhi-110015</li>
-                    </ul>
+                            Delhi-110015</li>                    </ul>
                 </div>
     
                
@@ -161,8 +239,5 @@
             </div>
         </div>
     </footer>
-
-
-      <script src="script.js"></script>
 </body>
 </html>
