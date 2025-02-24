@@ -127,6 +127,22 @@ body {
     transform: scale(1.05);
 }
 
+@media screen and (max-width: 768px) {
+    .exotica-text{
+        margin: 0.5rem;
+        padding:0;
+    }
+    .exotica-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .exotica-text p {
+        font-size: 2rem;
+        line-height: 1.4;
+    }
+    
+}
+
 /* Branding section */
 
 /* Floating Text Styles (Branding Section) */
@@ -207,11 +223,24 @@ body {
 }
 
 .branding-image {
-    width: 60%;
+    width: 55%;
     }
 
 .branding-content {
     width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+    gap: 1rem;
+    
+}
+
+@media (max-width: 768px) {
+    .branding-content{
+        padding: 0;
+        gap: 0rem;
+    }
 }
 
 .branding-category {
