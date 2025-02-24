@@ -12,161 +12,46 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     });
 
-    // Swiper 1 - Duplex Wall
-    const brandingSwiper1 = document.querySelector('.brandingSwiper1');
-    if (brandingSwiper1) {
-        const swiperWrapper1 = brandingSwiper1.querySelector('.swiper-wrapper');
-        const slides1 = brandingSwiper1.querySelectorAll('.swiper-slide');
-        const slideCount1 = slides1.length;
-        let slideIndex1 = 0;
+    // Function to initialize and control a Swiper
+    function initializeSwiper(swiperContainerClass, prevButtonId, nextButtonId) {
+        const swiperContainer = document.querySelector(swiperContainerClass);
 
-        const nextButton1 = brandingSwiper1.querySelector('#nextButtonDuplex');
-        const prevButton1 = brandingSwiper1.querySelector('#prevButtonDuplex');
+        if (swiperContainer) {
+            const swiperWrapper = swiperContainer.querySelector('.swiper-wrapper');
+            const slides = swiperContainer.querySelectorAll('.swiper-slide');
+            const slideCount = slides.length;
+            let slideIndex = 0;
 
-        function updateSwiper1() {
-            swiperWrapper1.style.transform = `translateX(-${slideIndex1 * 100}%)`;
+            const nextButton = document.getElementById(nextButtonId); // Get button by ID
+            const prevButton = document.getElementById(prevButtonId); // Get button by ID
+
+            function updateSwiper() {
+                swiperWrapper.style.transform = `translateX(-${slideIndex * 100}%)`;
+            }
+
+            function swiperNext() {
+                slideIndex = (slideIndex + 1) % slideCount;
+                updateSwiper();
+            }
+
+            function swiperPrev() {
+                slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+                updateSwiper();
+            }
+
+            nextButton.addEventListener('click', swiperNext);
+            prevButton.addEventListener('click', swiperPrev);
+
+            updateSwiper();
         }
-
-        function swiperNext1() {
-            slideIndex1 = (slideIndex1 + 1) % slideCount1;
-            updateSwiper1();
-        }
-
-        function swiperPrev1() {
-            slideIndex1 = (slideIndex1 - 1 + slideCount1) % slideCount1;
-            updateSwiper1();
-        }
-
-        nextButton1.addEventListener('click', swiperNext1);
-        prevButton1.addEventListener('click', swiperPrev1);
-
-        updateSwiper1();
     }
 
-    // Swiper 2 - Living Room
-    const brandingSwiper2 = document.querySelector('.brandingSwiper2');
-    if (brandingSwiper2) {
-        const swiperWrapper2 = brandingSwiper2.querySelector('.swiper-wrapper');
-        const slides2 = brandingSwiper2.querySelectorAll('.swiper-slide');
-        const slideCount2 = slides2.length;
-        let slideIndex2 = 0;
-
-        const nextButton2 = brandingSwiper2.querySelector('#nextButtonLiving');
-        const prevButton2 = brandingSwiper2.querySelector('#prevButtonLiving');
-
-        function updateSwiper2() {
-            swiperWrapper2.style.transform = `translateX(-${slideIndex2 * 100}%)`;
-        }
-
-        function swiperNext2() {
-            slideIndex2 = (slideIndex2 + 1) % slideCount2;
-            updateSwiper2();
-        }
-
-        function swiperPrev2() {
-            slideIndex2 = (slideIndex2 - 1 + slideCount2) % slideCount2;
-            updateSwiper2();
-        }
-
-        nextButton2.addEventListener('click', swiperNext2);
-        prevButton2.addEventListener('click', swiperPrev2);
-
-        updateSwiper2();
-    }
-
-    // Swiper 3 - Mandir
-    const brandingSwiper3 = document.querySelector('.brandingSwiper3');
-    if (brandingSwiper3) {
-        const swiperWrapper3 = brandingSwiper3.querySelector('.swiper-wrapper');
-        const slides3 = brandingSwiper3.querySelectorAll('.swiper-slide');
-        const slideCount3 = slides3.length;
-        let slideIndex3 = 0;
-
-        const nextButton3 = brandingSwiper3.querySelector('#nextButtonMandir');
-        const prevButton3 = brandingSwiper3.querySelector('#prevButtonMandir');
-
-        function updateSwiper3() {
-            swiperWrapper3.style.transform = `translateX(-${slideIndex3 * 100}%)`;
-        }
-
-        function swiperNext3() {
-            slideIndex3 = (slideIndex3 + 1) % slideCount3;
-            updateSwiper3();
-        }
-
-        function swiperPrev3() {
-            slideIndex3 = (slideIndex3 - 1 + slideCount3) % slideCount3;
-            updateSwiper3();
-        }
-
-        nextButton3.addEventListener('click', swiperNext3);
-        prevButton3.addEventListener('click', swiperPrev3);
-
-        updateSwiper3();
-    }
-
-    // Swiper 4 - Terrace
-    const brandingSwiper4 = document.querySelector('.brandingSwiper4');
-    if (brandingSwiper4) {
-        const swiperWrapper4 = brandingSwiper4.querySelector('.swiper-wrapper');
-        const slides4 = brandingSwiper4.querySelectorAll('.swiper-slide');
-        const slideCount4 = slides4.length;
-        let slideIndex4 = 0;
-
-        const nextButton4 = brandingSwiper4.querySelector('#nextButtonTerrace');
-        const prevButton4 = brandingSwiper4.querySelector('#prevButtonTerrace');
-
-        function updateSwiper4() {
-            swiperWrapper4.style.transform = `translateX(-${slideIndex4 * 100}%)`;
-        }
-
-        function swiperNext4() {
-            slideIndex4 = (slideIndex4 + 1) % slideCount4;
-            updateSwiper4();
-        }
-
-        function swiperPrev4() {
-            slideIndex4 = (slideIndex4 - 1 + slideCount4) % slideCount4;
-            updateSwiper4();
-        }
-
-        nextButton4.addEventListener('click', swiperNext4);
-        prevButton4.addEventListener('click', swiperPrev4);
-
-        updateSwiper4();
-    }
-
-     // Swiper 3 - Mandir
-     const brandingSwiper5 = document.querySelector('.brandingSwiper5');
-     if (brandingSwiper5) {
-         const swiperWrapper5 = brandingSwiper5.querySelector('.swiper-wrapper');
-         const slides5 = brandingSwiper5.querySelectorAll('.swiper-slide');
-         const slideCount5 = slides5.length;
-         let slideIndex5 = 0;
- 
-         const nextButton5 = brandingSwiper5.querySelector('#nextButtonFoyer');
-         const prevButton5 = brandingSwiper5.querySelector('#prevButtonFoyer');
- 
-         function updateSwiper5() {
-             swiperWrapper5.style.transform = `translateX(-${slideIndex5 * 100}%)`;
-         }
- 
-         function swiperNext5() {
-             slideIndex5 = (slideIndex5 + 1) % slideCount5;
-             updateSwiper5();
-         }
- 
-         function swiperPrev5() {
-             slideIndex5 = (slideIndex5 - 1 + slideCount5) % slideCount5;
-             updateSwiper5();
-         }
- 
-         nextButton5.addEventListener('click', swiperNext5);
-         prevButton5.addEventListener('click', swiperPrev5);
- 
-         updateSwiper5();
-     }
-
+    // Initialize each swiper using the function
+    initializeSwiper('.brandingSwiper1', 'prevButtonDuplex', 'nextButtonDuplex');
+    initializeSwiper('.brandingSwiper2', 'prevButtonLiving', 'nextButtonLiving');
+    initializeSwiper('.brandingSwiper3', 'prevButtonMandir', 'nextButtonMandir');
+    initializeSwiper('.brandingSwiper4', 'prevButtonTerrace', 'nextButtonTerrace');
+    initializeSwiper('.brandingSwiper5', 'prevButtonFoyer', 'nextButtonFoyer');
 
     // Navbar Scroll Hide/Show (No changes needed)
     let lastScrollPosition = 0;

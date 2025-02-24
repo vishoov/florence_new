@@ -5,7 +5,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Hero section */
+/* --- Hero section --- */
 .hero {
     position: relative;
     overflow: hidden;
@@ -14,6 +14,7 @@ body {
     padding: 0;
 }
 
+/* --- Floating Text Styles --- */
 .floating-text{
     position: absolute;
     top: 50%;
@@ -25,21 +26,45 @@ body {
     width: 80%;
 }
 
+/* --- Swiper Styles (applied to hero and general swipers) --- */
+.swiper-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 90vh;
+    margin: 3rem auto;
+}
+
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.swiper-slide::before{
+    background: rgba(0, 0, 0, 0);
+}
+
 
 .swiper-slide {
-    position: relative;
-    margin: 0;  /* Removed top margin */
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative; /* Required for absolute positioning of .slide-banner */
+    margin: 0; /* Removed top margin */
+    
 }
 
 .swiper-slide img {
     width: 100%;
-    height: 90vh; 
+    height: 100%; /* Adjusted to 100% to fill the slide */
     object-fit: cover;
+    
 }
 
+/* --- Slide Banner (Specific to Hero Slider) --- */
 .slide-banner {
     position: absolute;
-    top: 50%;
+   top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
@@ -56,14 +81,14 @@ body {
     margin-bottom: 20px;
 }
 
-/* Craft section */
+/* --- Craft section --- */
 .craft-section {
     padding: 100px 0;
     background-color: #f9f9f9;
     margin: 0;
 }
 
-/* Exotica section */
+/* --- Exotica section --- */
 .exotica-section {
     padding: 2rem 0;
 }
@@ -127,77 +152,35 @@ body {
     transform: scale(1.05);
 }
 
-@media screen and (max-width: 768px) {
-    .exotica-text{
-        margin: 0.5rem;
-        padding:0;
-    }
-    .exotica-text h2 {
-        font-size: 1.5rem;
-    }
-
-    .exotica-text p {
-        font-size: 2rem;
-        line-height: 1.4;
-    }
-    
-}
-
-/* Branding section */
-
-/* Floating Text Styles (Branding Section) */
+/* --- Branding section --- */
 .branding-section {
     width: 100%;
-    position: relative; /* Required for absolute positioning of the pseudo-element */
-    overflow: hidden; /* Ensure text doesn't overflow the section */
+    position: relative;
+    overflow: hidden;
 }
 
+/* --- Floating Text Styles (Branding Section) --- */
 .branding-section::before {
-    content: "Florence"; /* Set the desired text here */
+    content: "Florence";
     position: absolute;
     bottom: 0;
-    text-wrap: none; /* Adjust vertical position */
-    left:45%; /* Adjust horizontal position */
-    font-size: 25em; /* Adjust text size */
+    text-wrap: none;
+    left: 45%;
+    font-size: 25em;
     font-weight: bold;
-    color: rgba(200, 200, 200, 0.17); /* Semi-transparent gray */
-    pointer-events: none; /* Allow interaction with content behind the text */
-    z-index: -1; /* Place behind other content */
+    color: rgba(200, 200, 200, 0.17);
+    pointer-events: none;
+    z-index: -1;
     font-family: "Cruell";
 }
 
 .branding-section-reverse::before{
-    content: "Designer"; /* Set the desired text here */
+    content: "Designer";
     left:0;
     overflow: hidden;
     white-space: nowrap;
-    bottom: 0px; /* Adjust vertical position */
-    
-
-   
+    bottom: 0px;
 }
-
-@media (max-width: 1200px) {
-    .branding-section::before {
-       color: #fff;
-    }
-}
-
-@media (max-width: 992px) {
-    .branding-section::before {
-        font-size: 4em; /* Smaller text for smaller screens */
-    }
-}
-
-@media (max-width: 768px) {
-    .branding-section::before {
-        font-size: 3em; /* Smaller text on mobile */
-        bottom: 5px;
-        right: 5px;
-    }
-}
-
-
 
 .divider{
     display:none;
@@ -205,12 +188,6 @@ body {
     height: auto;
     opacity: 0.5;
     margin: 1rem auto;
-
-}
-@media (max-width: 576px) {
-    .divider{
-        display:block;
-    }
 }
 
 .branding-container {
@@ -224,7 +201,7 @@ body {
 
 .branding-image {
     width: 55%;
-    }
+}
 
 .branding-content {
     width: 35%;
@@ -233,14 +210,6 @@ body {
     justify-content: center;
     padding: 0 2rem;
     gap: 1rem;
-    
-}
-
-@media (max-width: 768px) {
-    .branding-content{
-        padding: 0;
-        gap: 0rem;
-    }
 }
 
 .branding-category {
@@ -284,32 +253,26 @@ body {
     transform: translateX(5px);
 }
 
-/* Swiper styles */
-.swiper-container {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
+.branding-top{
+    margin: 5px;
+    margin-left: 0;
+    color: #9e9e9e;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.swiper-wrapper {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-}
-
-.swiper-slide {
-    flex-shrink: 0;
-    width: 100%;
-    height: 80%;
-    
-}
-
+/* --- Swiper Navigation Buttons --- */
 .swiper-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.224);
     color: white;
     border: none;
     cursor: pointer;
@@ -323,19 +286,26 @@ body {
 .swiper-button.next {
     right: 10px;
 }
-.branding-top{
-    margin: 5px;
-    margin-left: 0;
-    color: #9e9e9e;
-    font-size: 12px;
-    font-weight: 500;
-    text-align: left;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    
+
+/* --- Responsive styles --- */
+@media (max-width: 1200px) {
+    .branding-section::before {
+       color: #fff;
+    }
 }
-/* Responsive styles */
+
+@media (max-width: 1024px) {
+    .swiper-container {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 992px) {
+    .branding-section::before {
+        font-size: 4em;
+    }
+}
+
 @media (max-width: 768px) {
     .hero {
         height: 70vh;
@@ -349,12 +319,26 @@ body {
         padding: 2rem 0;
     }
 
+    .exotica-text{
+        margin: 0.5rem;
+        padding:0;
+    }
     .exotica-text h2 {
         font-size: 1.5rem;
     }
 
     .exotica-text p {
-        font-size: 1rem;
+        font-size: 2rem;
+        line-height: 1.4;
+    }
+
+    .swiper-container {
+        height: 30vh;
+    }
+
+    .swiper-button {
+        width: 30px;
+        height: 30px;
     }
 
     .branding-container {
@@ -378,90 +362,15 @@ body {
     .branding-description {
         font-size: 1rem;
     }
-    .branding-top{
+     .branding-top{
         display: none;
     }
 }
 
-
-/* ... (previous CSS remains unchanged) ... */
-
-/* Swiper styles */
-.swiper-container {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    height: 90vh;
-    margin: 3rem auto;
-}
-
-
-.swiper-wrapper {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-}
-
-
-
-.swiper-slide {
-    flex-shrink: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.swiper-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.224);
-    color: white;
-    border: none;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.swiper-button.prev {
-    left: 10px;
-}
-
-.swiper-button.next {
-    right: 10px;
-}
-
-/* Responsive styles */
-@media (max-width: 1024px) {
-    .swiper-container {
-        height: 40vh;
+@media (max-width: 576px) {
+    .divider{
+        display:block;
     }
-}
-
-@media (max-width: 768px) {
-    .hero {
-        height: 70vh;
-    }
-
-    .banner-title {
-        font-size: 32px;
-    }
-
-    .swiper-container {
-        height: 30vh;
-    }
-
-    .swiper-button {
-        width: 30px;
-        height: 30px;
-    }
-
-    /* ... (other existing responsive styles) ... */
 }
 
 @media (max-width: 480px) {
