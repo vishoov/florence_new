@@ -159,17 +159,17 @@ function playVideo() {
   
 
 
-  // Smooth scroll for "Who we are" button
-document.querySelector('.who-we-are').addEventListener('click', function(e) {
-    e.preventDefault();
-    const targetSection = document.querySelector(this.getAttribute('href'));
-    if (targetSection) {
-        targetSection.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    }
-});
+//   // Smooth scroll for "Who we are" button
+// document.querySelector('.who-we-are').addEventListener('click', function(e) {
+//     e.preventDefault();
+//     const targetSection = document.querySelector(this.getAttribute('href'));
+//     if (targetSection) {
+//         targetSection.scrollIntoView({
+//             behavior: 'smooth',
+//             block: 'start'
+//         });
+//     }
+// });
 
 // Intersection Observer for fade-in animations
 const observerConfig = {
@@ -219,17 +219,17 @@ document.querySelector('.strategy-building-img').addEventListener('load', functi
     this.classList.add('image-loaded');
 });
 
-// Optional: Simplified parallax effect
-window.addEventListener('scroll', function() {
-    const buildingImage = document.querySelector('.strategy-building-img');
-    if (buildingImage) {
-        const scrolled = window.pageYOffset;
-        const rate = scrolled * 0.3;
-        requestAnimationFrame(() => {
-            buildingImage.style.transform = `translateY(${rate}px)`;
-        });
-    }
-});
+// // Optional: Simplified parallax effect
+// window.addEventListener('scroll', function() {
+//     const buildingImage = document.querySelector('.strategy-pattern');
+//     if (buildingImage) {
+//         const scrolled = window.pageYOffset;
+//         const rate = scrolled * 0.3;
+//         requestAnimationFrame(() => {
+//             buildingImage.style.transform = `translateY(${rate}px)`;
+//         });
+//     }
+// });
 
 function setupParallaxEffects() {
     const buildingImage = document.querySelector('.strategy-building-img');
@@ -239,9 +239,9 @@ function setupParallaxEffects() {
     function updateParallax() {
         const scrolled = window.pageYOffset;
 
-        if (buildingImage) {
+        if (parallaxElement) {
             const rate = scrolled * 0.3;
-            buildingImage.style.transform = `translateY(${rate}px)`;
+            parallaxElement.style.transform = `translateY(${rate}px)`;
         }
 
         if (parallaxContainer && parallaxElement) {
@@ -263,3 +263,4 @@ function setupParallaxEffects() {
 }
 
 document.addEventListener('DOMContentLoaded', setupParallaxEffects);
+

@@ -9,6 +9,8 @@
     --text-dark: #6E503C;
     --text-light: #f3e9e2;
     --text-secondary: #e6d5c9;
+    --color-accent:#e6e0d8
+     
 }
 
 
@@ -117,7 +119,7 @@
     transform: translateX(-50%);
     padding: 1%;
     width: 100vw;
-    z-index: 1000;
+    z-index: 100;
     background: rgba(255, 255, 255, 1);
     height: auto;
     transition: transform 0.3s ease;
@@ -1923,7 +1925,9 @@ textarea {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
+    overflow: visible;
 }
+
 
 
   
@@ -2117,14 +2121,6 @@ textarea {
     margin-bottom: 30px;
 }
 
-.strategy-readmore {
-    display: inline-flex;
-    align-items: center;
-    color: #000;
-    text-decoration: none;
-    font-weight: 500;
-}
-
 .strategy-arrow {
     margin-left: 8px;
     transition: transform 0.3s ease;
@@ -2160,6 +2156,8 @@ textarea {
 
     .strategy-part2{
         grid-template-columns: 1fr;
+        background-color: transparent
+        
     }
     .some-content{
     padding: 10% 0% 10% 0;
