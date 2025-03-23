@@ -90,7 +90,7 @@ body {
 
 /* --- Exotica section --- */
 .exotica-section {
-    padding: 2rem 0;
+    padding: 0;
 }
 
 .exotica-container {
@@ -101,7 +101,7 @@ body {
 
 .exotica-text {
     text-align: center;
-    margin: 3rem;
+    margin: 0 auto;
     color: #241C1C;
 }
 
@@ -109,13 +109,13 @@ body {
     font-family: 'Cruell', sans-serif;
     font-size: 2rem;
     font-weight: 300;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     color: #241C1C;
 }
 
 .exotica-text p {
     font-size: 1.2rem;
-    line-height: 1.6;
+    line-height: 1.5;
     margin-bottom: 1rem;
     color: #6E503C;
 }

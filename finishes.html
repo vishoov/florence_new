@@ -6,177 +6,18 @@
     <title>Finishes | Florence Stone Concepts</title>
     <link rel="stylesheet" href="./istyle.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel ='stylesheet' href="./finishes.css" />
 
-    <style>.finishes-section {
-        /* margin: 4rem 0 0 0; */
-        padding: 80px 0;
-        background-color: #f3e8e2; /* Light beige background */
-    }
-    
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
-    
-    .section-title {
-        font-size: 3rem;
-        color: #3c2415; /* Dark brown */
-        text-align: center;
-        margin-bottom: 20px;
-        font-family: 'Playfair Display', serif; /* Elegant serif font */
-    }
-    
-    .section-description {
-        font-size: 1.1rem;
-        color: #6E503C;
-        text-align: center;
-        max-width: 800px;
-        margin: 0 auto 40px;
-        line-height: 1.6;
-    }
-    
-    .finishes-gallery {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 products per line */
-        gap: 30px;
-    }
-    
-    .finish-item {
-        background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        transition: all 0.3s ease;
-        position: relative; /* For positioning the title */
-    }
-    
-    .finish-item:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 12px 40px rgba(31, 38, 135, 0.25);
-    }
-    
-    .finish-item img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-    }
-    
-    .finish-item h3 {
-        font-size: 1.3rem;
-        color: #fff; /* White text for better contrast */
-        text-align: center;
-        padding: 15px;
-        margin: 0;
-        font-family: 'Cruell'; /* Elegant serif font */
-        font-weight: 300;
-        letter-spacing: 0.5px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(60, 36, 21, 0.111); /* Semi-transparent dark brown */
-        backdrop-filter: blur(2px);
-        -webkit-backdrop-filter: blur(5px);
-    }
-    
-    @media (max-width: 992px) {
-        .finishes-gallery {
-            grid-template-columns: repeat(2, 1fr); /* 2 products per line on smaller screens */
-        }
-    }
-    
-    @media (max-width: 768px) {
-        .section-title {
-            font-size: 2.5rem;
-        }
-    
-        .section-description {
-            font-size: 1rem;
-        }
-    
-        .finishes-gallery {
-            grid-template-columns: 1fr; /* 1 product per line on mobile */
-        }
-    }
-
-
-     /* Hero Section Styles */
-     .hero-section {
-            background-image: url('./img/bg-1.JPG'); /* Replace with your image */
-            background-size: cover;
-            height: 70vh;
-            background-position: center;
-            color: #f3e8e2; /* Light beige text */
-            text-align: center;
-            padding: 4rem 0 0 0;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(60, 36, 21, 0.5); /* Dark brown overlay */
-            z-index: 1;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            padding: 20px;
-        }
-
-        .hero-title {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .hero-subtitle {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        /* Media Query for smaller screens */
-        @media (max-width: 768px) {
-            .hero-section {
-                padding: 80px 0;
-            }
-
-            .hero-title {
-                font-size: 2.5rem;
-            }
-
-            .hero-subtitle {
-                font-size: 1rem;
-            }
-        }
-    
-
-    </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-left">
                 <div class="logo">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#6E503C">
-                        <rect width="24" height="24" rx="6" />
-                    </svg>
-                    <span style="color: #241C1C;">Florence Stone Concepts</span>
-                </div>
+                   
+                    <img src="./img/FLORENCE NEW LOGO 2025.png" alt="Florence Stone Concepts" height="50" width="210">
+                 </div>
             </div>
             <div class="nav-right">
                 <!-- <button class="consultation-btn">Get in touch</button> -->
@@ -206,19 +47,76 @@
 
 
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <!-- <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Discover Exquisite Stone Finishes</h1>
-            <p class="hero-subtitle">Transform your space with our premium selection of stone finishes. From classic marble to modern quartzite, find the perfect touch for your design.</p>
-        </div> -->
+
+    <!-- Hero Section with Swiper Slideshow -->
+<section class="hero-swiper-section" >
+    <div class="swiper hero-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide-inner" data-text="Polished Marble">
+                    <div class="slide-content">
+                        <h2>Fine Finishes</h2>
+                        <!-- <p>Elegant and timeless surfaces that elevate any space</p> -->
+                    </div>
+                    <div class="slide-bg" style="background-image: url('./img/finishes/01.JPG');"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide-inner" data-text="Honed Granite">
+                    <div class="slide-content">
+                        <!-- <h2>Honed Granite</h2>
+                        <p>Durable and sophisticated with a matte finish</p> -->
+                    </div>
+                    <div class="slide-bg" style="background-image: url('./img/finishes/02.JPG');"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide-inner" data-text="Brushed Limestone">
+                    <div class="slide-content">
+                        <!-- <h2>Brushed Limestone</h2>
+                        <p>Natural texture with a warm, inviting appearance</p> -->
+                    </div>
+                    <div class="slide-bg" style="background-image: url('./img/finishes/03.jpg');"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide-inner" data-text="Brushed Limestone">
+                    <div class="slide-content">
+                        <!-- <h2>Brushed Limestone</h2>
+                        <p>Natural texture with a warm, inviting appearance</p> -->
+                    </div>
+                    <div class="slide-bg" style="background-image: url('./img/finishes/04.jpg');"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide-inner" data-text="Brushed Limestone">
+                    <div class="slide-content">
+                        <!-- <h2>Brushed Limestone</h2>
+                        <p>Natural texture with a warm, inviting appearance</p> -->
+                    </div>
+                    <div class="slide-bg" style="background-image: url('./img/finishes/05.jpg');"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation buttons -->
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        Pagination -->
+        <!-- <div class="swiper-pagination"></div>  -->
+    </div>
+</section>
+
+    <section class="intro" >
+        <div class="intro-container">
+            <h1 class="section-title">Finishes</h1>
+            <p class="section-description">At Florence Stone Concepts, we specialize in exquisite stone finishes that bring out the natural beauty, texture, and depth of stone. Whether you seek a sleek polished surface, a rustic textured look, or a sculptural fluted design, our expert craftsmanship ensures each finish is tailored to enhance both aesthetics and functionality.</p>
+        </div>
     </section>
 
     
 
-    <section class="finishes-section">
-        <div class="container">
+    <!-- <section class="finishes-section">
+        <div class="containerr">
             
             <div class="finishes-gallery">
                 <div class="finish-item">
@@ -248,7 +146,33 @@
                 
             </div>
         </div>
-    </section>
+    </section> -->
+
+
+    <div class="container">
+        
+        
+        <div class="gallery-container" id="gallery">
+            <!-- Images will be dynamically inserted here -->
+        </div>
+        
+        <div class="modal" id="imageModal">
+            <span class="close-btn">&times;</span>
+            <div class="modal-content">
+                <div class="modal-navigation">
+                    <button class="nav-btn prev-btn">&lt;</button>
+                    <div class="modal-image-container">
+                        <img class="modal-image" id="modalImage">
+                        <div class="modal-caption">
+                            <h3 id="modalTitle"></h3>
+                            <p id="modalDescription"></p>
+                        </div>
+                    </div>
+                    <button class="nav-btn next-btn">&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
 
     <!-- Contact Us Form -->
@@ -344,6 +268,32 @@
             </div>
         </div>
     </footer>
-    <script src="./script.js"></script>
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    // Initialize Hero Swiper
+    const heroSwiper = new Swiper('.hero-swiper', {
+        loop: true,
+        speed: 1000,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        }
+    });
+</script>
+<script src="./script.js"></script>
+<script src="./finishes.js"></script>
 </body>
 </html>

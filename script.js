@@ -230,37 +230,40 @@ document.querySelector('.strategy-building-img').addEventListener('load', functi
 //         });
 //     }
 // });
-
 function setupParallaxEffects() {
-    const buildingImage = document.querySelector('.strategy-building-img');
     const parallaxContainer = document.querySelector('.parallax-container');
     const parallaxElement = parallaxContainer?.querySelector('.strategy-pattern');
 
+    // Function to update the parallax effect
     function updateParallax() {
-        const scrolled = window.pageYOffset;
-
-        if (parallaxElement) {
-            const rate = scrolled * 0.3;
-            parallaxElement.style.transform = `translateY(${rate}px)`;
-        }
-
-        if (parallaxContainer && parallaxElement) {
+        if (parallaxElement && parallaxContainer) {
             const containerRect = parallaxContainer.getBoundingClientRect();
-            const containerTop = containerRect.top + scrolled;
-            const containerBottom = containerTop + containerRect.height;
+            const containerHeight = containerRect.height;
+            const windowHeight = window.innerHeight;
 
-            if (scrolled > containerTop && scrolled < containerBottom) {
-                const parallaxSpeed = 0.5;
-                const yOffset = (scrolled - containerTop) * parallaxSpeed;
-                parallaxElement.style.transform = `translateY(${yOffset}px)`;
+            // Check if the container is in the viewport
+            if (containerRect.top < windowHeight && containerRect.bottom > 0) {
+                const scrollPosition = window.scrollY;
+                const elementOffsetTop = parallaxContainer.offsetTop;
+                const distanceScrolled = scrollPosition - elementOffsetTop;
+
+                // Apply a smooth parallax effect
+                const parallaxSpeed = 0.3; // Adjust speed as needed
+                const translateYValue = distanceScrolled * parallaxSpeed;
+
+                // Apply transform only once and smoothly
+                parallaxElement.style.transform = `translateY(${translateYValue}px)`;
             }
         }
-
-        requestAnimationFrame(updateParallax);
     }
 
-    updateParallax();
+    // Add scroll event listener
+    window.addEventListener('scroll', updateParallax);
 }
 
+
+
 document.addEventListener('DOMContentLoaded', setupParallaxEffects);
+
+
 
