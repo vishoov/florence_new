@@ -2209,6 +2209,7 @@ textarea {
 
 .strategy-pattern img{
     width: 50%;
+    opacity: 0.4;
     height: 80%;
     position: absolute;
     bottom: -25%;
