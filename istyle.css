@@ -392,8 +392,8 @@ visibility: visible;
 
 .services-container {
     max-width: 100vw;
-    margin: 0;
-    padding: 0;
+    margin:  0;
+    padding:4rem 0;
     /* padding-top: 8rem; */
     background-color: #f3e9e2;
 }
@@ -1949,6 +1949,7 @@ textarea {
     grid-template-columns: 2fr 1fr;
     gap: 20px;
     overflow: visible;
+    background-color: transparent;
 }
 
 
@@ -1998,7 +1999,9 @@ textarea {
 
  /* New About Us */
  .strategy-about-section {
+    
     padding: 6rem 0;
+    padding-bottom: 200px;
     background-color: #fff;
     overflow: hidden;
 }
@@ -2006,7 +2009,7 @@ textarea {
 .strategy-container {
     max-width: 80vw;
     margin: 0 8rem;
-
+    
     padding: 0 20px;
 }
 
@@ -2049,6 +2052,7 @@ textarea {
     color: #000000ca;
     grid-column: 2/3;
     margin: 0;
+    z-index: 10;
 }
 
 .strategy-cta-btn {
@@ -2075,7 +2079,7 @@ textarea {
 }
 
 .para{
-    overflow: hidden;
+    overflow: visible;
     padding: 0 2rem;
     max-width: 100%;
 }
@@ -2151,18 +2155,62 @@ textarea {
 
 
 .strategy-image-right {
-    height: 400px;
-    position: absolute;
-    overflow: visible;
+    position:absolute;
+    top: 0;
+    left:0;
+    z-index:0;
+    height: 300px;
+  
 }
 
 .strategy-pattern {
-   background-image: url('./img/about/parallax.jpg');
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 800px;
+    position: absolute;
+ 
+    width: 100vw;
+    /* background-image: url('./img/overlayy.png');
+    background-size:auto;
+    background-position: right;
+    pointer-events: none; Ensure it doesn't interfere with interactions */
+    z-index: 100; /* Ensure it overlaps other layers */
+}  
+
+.parallax-container{
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transform: translateY(0);
+    will-change: transform;
 }
+
+.strategy-pattern {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 800px;
+  height: 800px;
+  overflow:visible;
+  z-index: -10;
+  transform: translateY(0);
+  will-change: transform;
+}
+
+
+
+.strategy-pattern img{
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    bottom: -25%;
+    right: 0;
+    object-fit:cover;
+    z-index: -10;
+    transform: translateY(0);
+    will-change: transform;
+    overflow: visible;
+}
+
 
 .strategy-solutions {
     padding: 40px 0;
@@ -2190,6 +2238,9 @@ textarea {
 .strategy-readmore:hover .strategy-arrow {
     transform: translateX(5px);
 }
+
+
+
 
 @media (max-width: 992px) {
     .strategy-container {
@@ -2330,20 +2381,3 @@ textarea {
     font-size: 1rem;
 }
 }
-
-.parallax-container {
-    
-    position: relative;
-  }
-  
-  .strategy-pattern {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    transform: translateY(0);
-    will-change: transform;
-  }
-  
