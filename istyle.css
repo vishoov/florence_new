@@ -1580,7 +1580,8 @@ textarea {
     padding: 2rem 1rem; /* Reduced padding for mobile */
 }
 
-  
+
+
   .reels-header {
     text-align: center;
     margin-bottom: 20px;
@@ -1600,6 +1601,8 @@ textarea {
     padding: 0 5rem; /* Padding for container edges */
     
   }
+
+  
 
   /* Fix smooth scrolling on iOS */
 .reels-container {
@@ -1681,7 +1684,7 @@ textarea {
   @media (max-width:768px) {
     
     .reel-card {
-        width: calc(80% - 20px); /* Adjust width for smaller screens */
+        width: calc(80% - 10px); /* Adjust width for smaller screens */
         aspect-ratio: 9 / 16; /* Change aspect ratio for landscape style */
         
         }
@@ -1839,6 +1842,12 @@ textarea {
     background-color:#FFF;
   }
   
+  @media (max-width: 768px) {
+    .instagram-section {
+      padding: 4rem 1rem;
+    }
+  }
+
 
 
   /* Contact Page */
