@@ -192,8 +192,8 @@ transition: opacity 0.2s ease;
 }
 
 .nav-links a:hover {
-opacity: 0.7;
-color: #333333;
+color: #ed6e4a;
+transition: color 0.3s ease;
 }
 
 .consultation-btn {
@@ -794,7 +794,7 @@ visibility: visible;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 4rem 0;
+    padding: 4rem 4rem;
     /* margin:0 2rem; */
     /* width: 100%; */
 }
@@ -1330,7 +1330,7 @@ visibility: visible;
     aspect-ratio: 4/3;
     overflow: hidden;
     cursor: pointer;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.117);
 }
 
@@ -1366,6 +1366,7 @@ visibility: visible;
 
 .process-item:hover .process-overlay {
     background-image: none /* Change background on hover */
+
 }
 
 .step-number {
@@ -1456,7 +1457,8 @@ visibility: visible;
 .form-trigger {
     padding: 0.8rem 2rem;
     width: 400px;
-    border: 1px solid #000;
+    color: #000;
+    border: 1px solid #ed6e4a;
     border-radius: 50px;
     font-family: 'Oswald';
     font-size: 2.2rem;
@@ -1464,6 +1466,13 @@ visibility: visible;
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+.form-trigger:hover{
+    background: #ed6e4a;
+    color: #fff;
+    transform: scale(1.05);
+}
+
 
 /* Popup Form Styles */
 .form-popup {
