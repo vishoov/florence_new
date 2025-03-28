@@ -13,6 +13,7 @@
      
 }
 
+
 .second_about_image{
     z-index: 1;
     width: 32.7rem;
@@ -33,6 +34,11 @@
     font-style: bold;
 }
 
+@font-face {
+    font-family: "Renatha";
+    src: url("./img/Font/Renatha.otf");
+    
+}
 
 
 .hamburger {
@@ -1331,6 +1337,7 @@ visibility: visible;
 .process-item:hover{
     transform: scale(1.02);
     transition: 0.3s ease;
+
 }
 
 .process-item img {
@@ -1358,7 +1365,7 @@ visibility: visible;
 }
 
 .process-item:hover .process-overlay {
-    background-image: url('./img/hover-overlay.avif'); /* Change background on hover */
+    background-image: none /* Change background on hover */
 }
 
 .step-number {
@@ -2390,4 +2397,17 @@ textarea {
 .some-content p{
     font-size: 1rem;
 }
+}
+
+.title{
+    font-weight: 200;
+}
+
+.italic{
+    
+    font-family: "Renatha";
+    font-weight: 500;
+    color: #ED6E4A;
+    font-size: 5.5rem;
+
 }
