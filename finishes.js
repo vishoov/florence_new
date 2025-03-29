@@ -106,7 +106,7 @@ const galleryData = [
     },
     {
         id: 5,
-        title: "Ocean Grey",
+        title: "Oceanic Grey",
         description: "Oceanic Grey is a striking designer granite inspired by the untamed movement of ocean waves. With its fluid veining, dramatic swirls, and bold contrast of deep charcoal and white accents, this stone creates a powerful and dynamic visual statement. The organic patterns resemble water currents frozen in time, making it an ideal choice for spaces seeking depth, energy, and elegance",
         imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/06-OCEAN GREY/01.jpg",
         alt: "Ocean Grey",
@@ -128,6 +128,27 @@ const galleryData = [
     },
     {
         id: 6,
+        title: "Black Adam",
+        description: "Black Adam is a bold and sophisticated textured stone, crafted for luxury architectural applications. Featuring a deep charcoal-black hue with finely grooved linear texture, this stone exudes strength, mystery, and timeless appeal. The rich, dark tone enhances depth and drama, while the textured surface interacts with light to create dynamic shadows and highlights",
+        imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/07-BLACK ADAM/01.jpg",
+        alt: "Black Adam",
+        features:[
+            "Linear Textured Finish – Creates a refined yet raw industrial appeal.",
+"Deep Black Aesthetic – A bold statement for contemporary and minimalist designs.",
+"Durable & Weather-Resistant – Suitable for high-traffic and exterior applications",
+"Custom Thickness – Available in 1cm to 2cm, allowing flexibility in design"
+
+        ],
+        applications:[
+           " ⚫ Architectural Facades & Claddings – A modern masterpiece for high-rise buildings and statement walls",
+"🏡 Luxury Interiors – Adds depth and sophistication to feature walls, fireplace surrounds, and furniture",
+"🚶 Pavements & High-Traffic Flooring – A robust yet elegant choice for urban landscapes",
+"🏢 Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
+"🏢 Retail & Hospitality Spaces – Elevates commercial environments with a bold, high-end look."
+        ]
+    },
+    {
+        id: 7,
         title: "Walter White",
         description: "Bright and clean white finish ideal for modern spaces.",
         imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/08-WALTER WHITE/01.jpg",
@@ -148,67 +169,67 @@ const galleryData = [
         ]
     },
     {
-        id: 7,
+        id: 8,
         title: "Striped Steel",
-        description: "Industrial-inspired striped finish with a metallic sheen.",
+        description: "Striped Steel is a premium in-house processed granite, designed for modern architectural spaces. Characterized by deep, precisely grooved linear textures, this granite embodies an industrial yet sophisticated appeal. Its distinct striped pattern adds a unique dimensionality, making it a statement surface for contemporary design",
         imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/09-STRIPED STEEL/01.jpg",
         alt: "Striped Steel",
-        features:[
-            "Natural Textured / Leathered Finish – A refined, weathered look with a matte, anti-glare surface",
-"High Durability – Scratch, stain, and weather-resistant, perfect for high-traffic areas",
-"Slip-Resistant Surface – Ideal for pavements, outdoor flooring, and facades",
-"Customizable Thickness – Available in 1cm to 2cm as per project requirements"
-
-        ],
-        applications:[
-           " 🏛 Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
-"🚶 Pavements & Flooring – Slip-resistant and built for endurance",
-"🏡 Luxury Interiors – A bold statement stone for modern spaces",
-"🏢 Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
-"Rock Morphic combines the beauty of natural stone with modern durability, creating a timeless statement for any space"
-        ]
-    },
-    {
-        id: 8,
-        title: "Bamboo Black",
-        description: "Dark bamboo-inspired texture for a bold statement.",
-        imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/10-BAMBOO BLACK/01.jpg",
-        alt: "Bamboo Black",
-        features:[
-            "Natural Textured / Leathered Finish – A refined, weathered look with a matte, anti-glare surface",
-"High Durability – Scratch, stain, and weather-resistant, perfect for high-traffic areas",
-"Slip-Resistant Surface – Ideal for pavements, outdoor flooring, and facades",
-"Customizable Thickness – Available in 1cm to 2cm as per project requirements"
-
-        ],
-        applications:[
-           " 🏛 Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
-"🚶 Pavements & Flooring – Slip-resistant and built for endurance",
-"🏡 Luxury Interiors – A bold statement stone for modern spaces",
-"🏢 Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
-"Rock Morphic combines the beauty of natural stone with modern durability, creating a timeless statement for any space"
-        ]
+        "features": [
+"Grooved & Brushed Finish – Enhances texture, creating a refined, high-end look",
+"Slip-Resistant Surface – Ideal for high-traffic areas and wet conditions",
+"Durable & Weather-Resistant – Engineered for longevity in both indoor and outdoor environments",
+"Custom Thickness (1-2 cm) & Sizing – Adaptable for bespoke architectural needs",
+"Natural Variation – Each slab carries unique patterns, adding exclusivity to every installation"
+],
+        "applications": [
+"Wall Cladding – Adds depth and a structured aesthetic to both interior and exterior spaces",
+"Flooring & Walkways – Combines durability with slip-resistant properties for high-traffic areas",
+"Feature Walls & Accent Panels – Creates dynamic, textured surfaces in commercial and residential spaces",
+"Exterior Facades – Withstands harsh weather conditions while maintaining an elegant appeal",
+"Luxury Furniture & Countertops – Ideal for statement pieces that require both functionality and design impact"
+]
     },
     {
         id: 9,
+        title: "Bamboo Black",
+        description: "Bamboo Black is a meticulously crafted granite, inspired by the sleek, rhythmic pattern of bamboo stalks. With a deep, linear groove design, this surface brings a sophisticated natural aesthetic to modern architectural spaces. Its dark, textured appeal adds depth and contrast, making it a striking choice for contemporary interiors and exteriors",
+        imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/10-BAMBOO BLACK/01.jpg",
+        alt: "Bamboo Black",
+        "features": [
+"Grooved & Textured Finish – Enhances depth while adding a tactile experience",
+"High Durability & Weather Resistance – Ideal for both indoor and outdoor applications",
+"Anti-Slip Properties – Perfect for high-traffic areas, ensuring safety",
+"Custom Thickness (1-2 cm) & Sizing Available – Tailored for diverse design applications",
+"Natural Dark Tones – Provides a bold yet timeless look, complementing various color palettes"
+],
+"applications": [
+"Wall Cladding – Adds texture and a bold statement to feature walls and facades",
+"Flooring & Pavements – Ideal for areas requiring slip resistance and durability",
+"Exterior Facades – Provides a structured, contemporary appeal to buildings",
+"Luxury Interiors & Accent Panels – Enhances modern spaces with its bold, refined texture",
+"Custom Furniture & Countertops – Transforms spaces with unique, high-end finishes"
+]
+    },
+    {
+        id: 10,
         title: "White Waterfall",
-        description: "Smooth white surface with subtle flowing patterns.",
+        description: "White Royale is a refined natural marble with a soft, textured surface that embodies understated luxury. Its subtle grain and natural matte finish create a sophisticated aesthetic, making it a versatile choice for modern and classic design themes. The muted, neutral tones enhance its adaptability, ensuring seamless integration into any architectural or interior space.",
         imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/11-WHITE WATERFALL/01.jpg",
         alt: "White Waterfall",
-        features:[
-            "Natural Textured / Leathered Finish – A refined, weathered look with a matte, anti-glare surface",
-"High Durability – Scratch, stain, and weather-resistant, perfect for high-traffic areas",
-"Slip-Resistant Surface – Ideal for pavements, outdoor flooring, and facades",
-"Customizable Thickness – Available in 1cm to 2cm as per project requirements"
-
-        ],
-        applications:[
-           " 🏛 Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
-"🚶 Pavements & Flooring – Slip-resistant and built for endurance",
-"🏡 Luxury Interiors – A bold statement stone for modern spaces",
-"🏢 Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
-"Rock Morphic combines the beauty of natural stone with modern durability, creating a timeless statement for any space"
-        ]
+        "features": [
+"Fine Sandblasted Finish – Achieves a soft, velvety texture with enhanced slip resistance",
+"Durable & Weather-Resistant – Ideal for both indoor and outdoor applications",
+"Low Maintenance & Easy to Clean – Ensures lasting beauty with minimal effort",
+"Custom Thickness & Sizing Available – Tailored to fit various design needs",
+"Natural Light Reflection – Creates an airy and spacious ambiance"
+],
+"applications": [
+"Exterior & Interior Wall Cladding – Enhances façades with a timeless, elegant look",
+"Luxury Flooring – Provides a non-slip yet smooth underfoot experience",
+"High-End Countertops & Tabletops – Adds sophistication to premium spaces",
+"Feature Walls & Architectural Accents – Ideal for statement designs",
+"Spa & Wellness Spaces – Elevates serene environments with its organic texture"
+]
     },
     {
         id: 10,
@@ -458,3 +479,5 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize the gallery
     initGallery();
 });
+
+
