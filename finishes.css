@@ -37,6 +37,10 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.098);
     animation: modalOpen 0.4s ease;
 }
+.modal-content:hover{
+    cursor: pointer;
+}
+
 
 .modal-navigation {
     height: 100%;
@@ -57,11 +61,14 @@
     padding: 10px;
 }
 
+
+
+
 .modal-image {
     padding: 0; /* Removed padding to maximize space */
     height: 100%; /* Use viewport height instead of percentage */
     width: 50%; 
-    object-fit: cover; /* Changed from fill to contain to maintain aspect ratio */
+    object-fit:cover; /* Changed from fill to contain to maintain aspect ratio */
     border-radius: 0;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
     transition: transform 0.5s ease;
@@ -69,6 +76,7 @@
     display: block; /* Removes any extra space below the image */
     /* margin: 0 auto; Centers the image */
 }
+
 
 
 
@@ -98,7 +106,7 @@
 .modal-caption p {
     color: #000000;
     line-height: 1.6;
-    font-size: 1.1rem;
+    font-size: 1.8rem;
 }
 
 .close-btn {
@@ -226,16 +234,18 @@
     position: relative;
     overflow: hidden;
     border-radius: 0rem;
-    /* box-shadow: 0 0.5rem 2rem rgba(31, 38, 135, 0.2); */
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.026);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    /* border: 1px solid rgba(255, 255, 255, 0.18); */
+    border: 1px solid rgba(255, 255, 255, 0.18);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     aspect-ratio: 9/10;
     height: 100%;
+
 }
 
 .gallery-item:hover {
+    cursor: pointer;
     transform: translateY(-0.5rem);
     /* box-shadow: 0 1rem 3rem rgba(31, 38, 135, 0.3); */
 }
@@ -244,8 +254,8 @@
 
 /* Gallery Image Styles */
 .gallery-item img {
+    width: 180%;
     height: 100%;
-    width: auto;
     object-fit:contain;
     transition: transform 0.5s ease;
     border-radius: 0;
@@ -257,7 +267,8 @@
 
 /* Gallery Caption Styles */
 .gallery-item h3 {
-    font-size: clamp(0.7rem, 1.2vw, 1.1rem);
+    font-size: clamp(1rem, 1.5vw, 1.4rem);
+
     color: #000;
     text-align: center;
     padding: 0.75rem;
@@ -265,7 +276,7 @@
     margin: 0;
     font-family: 'Cruell', sans-serif;
     font-weight: 300;
-    letter-spacing: 0.5px;
+    letter-spacing: 3px;
     position: absolute;
     bottom: 0;
     left: 0;
