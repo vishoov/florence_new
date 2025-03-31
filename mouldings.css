@@ -1,0 +1,138 @@
+
+.work-section {
+    position: relative;
+    padding: 0rem 4rem 4rem 4rem; /* Combined the padding declarations */
+    height: fit-content;
+    min-height: 200vh; /* Use min-height instead of height */
+    
+    background-color: white;
+    overflow: hidden; 
+
+   
+}
+
+/* Background plus pattern */
+.work-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background-image: 
+        linear-gradient(to right, #e0e0e0 1px, transparent 1px),
+        linear-gradient(to bottom, #e0e0e0 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.work-section h1 {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0;
+    /* padding: 4rem; */
+    text-align: right;
+}
+
+.work-grid {
+    /* max-width: 1200px; */
+    padding: 2rem 10rem; /* Combined the padding declarations */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 20px;
+    margin-top: 120px;
+    /* height: calc(100vh - 200px); */
+}
+
+.work-item {
+    overflow: hidden;
+    max-height: 500px;
+    position: relative;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: white;
+    border: 1px solid #e0e0e0; /* Added border for better visibility */
+    border-radius: 0; /* Removed border radius for a sharper look */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    padding: 0; /* Removed padding for a cleaner look */
+    margin: 0; /* Removed margin for a cleaner look */
+    
+}
+
+.work-item:hover{
+    
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+
+
+
+
+
+.work-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+/* Game controller - top left */
+.controller {
+    grid-column: 1 / 6;
+    grid-row: 1 / 7;
+}
+
+/* Speaker - top right */
+.speaker {
+    grid-column: 8 / 13;
+    grid-row: 1 / 4;
+}
+
+/* Mobile app - bottom left */
+.mobile {
+    grid-column: 1 / 6;
+    grid-row: 8 / 12;
+}
+
+/* VR headset - bottom right */
+.headset {
+    grid-column: 8 / 13;
+    grid-row: 5 / 12;
+}
+
+/* For responsive design */
+@media (max-width: 768px) {
+    .work-section{
+        padding: 0rem 10px 4rem 10px; /* Adjusted padding for smaller screens */
+        min-height: 100vh; /* Use min-height instead of height */
+
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+        margin: 0;
+        padding: 0; /* Removed padding for smaller screens */
+    }
+    
+    .controller, .speaker, .mobile, .headset {
+        grid-column: 1;
+        grid-row: auto;
+        height: 300px;
+    }
+    
+    .work-section h1 {
+        position: relative;
+        top: 0;
+        right: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
