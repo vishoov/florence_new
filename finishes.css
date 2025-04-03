@@ -16,7 +16,7 @@
     background-color: rgba(0, 0, 0, 0.85);
     z-index: 1000;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .modal.show {
@@ -49,15 +49,23 @@
     justify-content: center;
     position: relative;
     padding: 0;
-    
+    /* overflow-y: scroll; */
 }
 
 .modal-image-container {
+    position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    max-height: 90vh; /* Ensures the image doesn't overflow vertically */
+    max-width: 90vw; /* Ensures the image doesn't overflow horizontally */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+
     align-items: center;
     width: 100%;
-    gap: 2rem;
+    gap: 1rem;
     padding: 10px;
 }
 
@@ -65,31 +73,34 @@
 
 
 .modal-image {
-    padding: 0; /* Removed padding to maximize space */
+    position: relative;
+    padding: 10px; /* Removed padding to maximize space */
     height: 100%; /* Use viewport height instead of percentage */
-    width: 50%; 
+    width: 100%; 
+    max-height: 40%;
     object-fit:cover; /* Changed from fill to contain to maintain aspect ratio */
-    border-radius: 0;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
     transition: transform 0.5s ease;
-    max-width: 50%; /* Ensures image doesn't overflow horizontally */
+    /* max-width: 50%; Ensures image doesn't overflow horizontally */
     display: block; /* Removes any extra space below the image */
     /* margin: 0 auto; Centers the image */
+    border-radius: 2rem;
+
 }
 
 
 
 
 .modal-caption {
-    width: 50%;
-    max-height: 70vh;
-    padding: 2rem;
-    position: relative;
+    width: 100%;
+    max-height: 80vh;
+    margin-bottom: 20px;
+    padding: 2rem 6rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Change from center to flex-start */
-    align-items: center;
-    overflow-y: auto; /* Ensure this is not commented out */
+    align-items:flex-start;
     text-align: center;
     scrollbar-width:thin; /* For Firefox */
     
@@ -98,12 +109,14 @@
 
 
 .modal-caption h3 {
+    display: inline-block;
     margin-bottom: 15px;
     font-size: 1.8rem;
     color: #343a40;
 }
 
 .modal-caption p {
+    display: inline-block;
     color: #000000;
     line-height: 1.6;
     font-size: 1.8rem;
@@ -131,12 +144,13 @@
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    font-size: 24px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     z-index: 1001;
+    margin: 4rem;
     transition: background 0.2s ease;
 }
 
@@ -259,6 +273,12 @@
     object-fit:contain;
     transition: transform 0.5s ease;
     border-radius: 0;
+}
+
+
+.gallery-item img:hover {
+    transform: scale(1.3);
+    cursor: pointer;
 }
 /* 
 .gallery-item:hover img {
@@ -635,14 +655,14 @@ background: #fff;
 }
 
     .intro {
-        padding: 20px 0;
+        padding: 4rem 0;
         text-align: center;
     }
 
     .intro .section-title {
         font-size: 4rem;
         color: #000; /* Dark brown */
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         font-family: 'Cruell'; /* Elegant serif font */
     }
 
@@ -651,7 +671,9 @@ background: #fff;
         color: #000;
         max-width: 70vw;
         margin: 0 auto;
-        line-height: 1;
+        line-height: 1.2;
+        letter-spacing: 1px;
+        font-weight: 300;
         font-family: 'Times New Roman', serif; /* Elegant serif font */
     }
 
@@ -696,7 +718,7 @@ background: #fff;
     }
  
     
-    
+/*     
    
     
     #modalTitle {
@@ -711,12 +733,12 @@ background: #fff;
         color: #666;
         margin-bottom: 20px;
         /* overflow-y: scroll; */
-    }
+  
 
     
     
     .modal-caption{
-     overflow-y: scroll;
+     /* overflow-y: scroll; */
      padding: 2rem;
     }
 
@@ -768,19 +790,18 @@ background: #fff;
 
     .modal-content {
         position: relative;
-        width: 95%;
+        width: 70%;
         height: 90%;
-        max-width: 90vw;
+        max-width: 80vw;
         background-color: #f3e8e2; /* Light beige background to match the theme */
         border: 2px solid rgba(60, 36, 21, 0.2); /* Subtle border for elegance */
         /* overflow: scroll; */
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Slightly darker shadow for depth */
         animation: modalOpen 0.4s ease;
-        padding: 20px; /* Add padding for content spacing */
         font-family: 'Playfair Display', serif; /* Elegant serif font */
         color: #3c2415; /* Dark brown text color */
-        padding: 2rem;
-        overflow: hidden; /* Prevents overflow */
+        padding: 0;
+        overflow-y: hidden;
     }
     
     .modal-content::before {
@@ -799,9 +820,31 @@ background: #fff;
         margin-bottom: 15px;
         color: #3c2415; /* Dark brown for headings */
         text-align: center;
+        font-family: 'Cruell'; /* Elegant serif font */
         font-weight: 400;
     }
     
+    .modal-content h3 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #3c2415; /* Dark brown for subheadings */
+        text-align: left;
+        font-weight: 400;
+        font-family: 'Cruell'; /* Elegant serif font */
+    }
+
+    .modal-content ul {
+        /* list-style-type: none; */
+        padding: 0;
+        margin: 0;
+        font-size: 1.2rem;
+        color: #3c2415; /* Dark brown for list items */
+        line-height: 1.6;
+        text-align: left;
+        /* margin-left: 10px; Indent for better readability */
+        
+    }
+
     .modal-content p {
         font-size: 1rem;
         line-height: 1.6;

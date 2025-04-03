@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+    
+
     // Navbar Scroll Hide/Show
     let lastScrollPosition = 0;
     const navbar = document.querySelector('.navbar');
@@ -81,15 +84,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Hero Swiper Configuration
     const swiper = new Swiper('.heroSwiper', {
-        effect: 'fade',
-        loop: true,
+        effect: 'fade', // Enables fade effect
+        fadeEffect: { crossFade: true }, // Ensures smooth fading between slides
+        loop: true, // Enables looping of slides
         autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
+            delay: 7000, // Delay between slides in milliseconds
+            disableOnInteraction: false, // Keeps autoplay running even after user interaction
         },
-        speed: 2000,
+        navigation: {
+            nextEl: '.swiper-button-next', // Selector for next button
+            prevEl: '.swiper-button-prev', // Selector for previous button
+        },
+        speed: 2000, // Transition speed in milliseconds
     });
-
     // Contact Form Popup
     const formTrigger = document.querySelector('.form-trigger');
     const formPopup = document.querySelector('.form-popup');
