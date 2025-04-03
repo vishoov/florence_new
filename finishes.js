@@ -4,6 +4,8 @@ const galleryData = [
         title: "Rock Morphic",
         description: "Rock Morphic is a premium textured granite, crafted for exterior facades, pavements, flooring, and wall claddings in both interior and exterior applications. With its raw, fractured aesthetic and intricate veining, this stone brings a bold, organic appeal to modern architecture while ensuring exceptional durability.",
         imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/01-ROCK MORPHIC/01.jpg",
+        gallery1:"img/finishes/products/FINISHES-20250323T175107Z-001/01-ROCK MORPHIC/02.jpg",
+        gallery2:"img/finishes/products/FINISHES-20250323T175107Z-001/01-ROCK MORPHIC/03.jpg",
         alt: "Alaska Diamond",
         features:[
             "Natural Textured / Leathered Finish – A refined, weathered look with a matte, anti-glare surface",
@@ -26,6 +28,8 @@ const galleryData = [
         title: "Alaska Diamond",
         description: "Alaska Diamond is a premium designer granite, uniquely crafted for luxury interiors and architectural applications. With its distinctive horizontal line textures combined with a natural fragmented stone pattern, this material exudes depth, movement, and modern sophistication. The interplay of soft greys, crystalline accents, and bold veining creates a dynamic yet refined visual appeal",
         imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/02-ALASKA DIAMOND/01.jpg",
+        gallery1:"img/finishes/products/FINISHES-20250323T175107Z-001/02-ALASKA DIAMOND/02.jpg",
+        gallery2:"img/finishes/products/FINISHES-20250323T175107Z-001/02-ALASKA DIAMOND/03.jpg",
         alt: "Alaska Diamond",
         features:[
          "   Linear Textured Finish – A precision-carved, tactile surface that enhances depth and character.",
@@ -47,6 +51,8 @@ const galleryData = [
         title: "Dragon Stone",
         description: "Unique textured finish with a bold and striking appearance.",
         imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/03-DRAGON STONE/01.jpg",
+        gallery1:"img/finishes/products/FINISHES-20250323T175107Z-001/03-DRAGON STONE/02.jpg",
+        gallery2:"img/finishes/products/FINISHES-20250323T175107Z-001/03-DRAGON STONE/03.jpg",
         alt: "Dragon Stone",
         features:[
             "Textured / Leathered Finish – Enhances the natural grain, providing a sensory, matte surface with a subtle sheen.",
@@ -68,6 +74,9 @@ const galleryData = [
         title: "Striped Dragon",
         description: "Striped Granite is a contemporary designer stone crafted for luxury interiors, architectural facades, and high-traffic surfaces. Featuring a precisely linear-textured finish, this granite showcases an interplay of subtle grey tones, natural veining, and a layered tactile depth, making it an ideal material for elegant yet high-performance spaces",
         imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/04-STRIPED DRAGON/01.jpg",
+        gallery1:"img/finishes/products/FINISHES-20250323T175107Z-001/04-STRIPED DRAGON/02.jpg",
+        gallery2:"img/finishes/products/FINISHES-20250323T175107Z-001/04-STRIPED DRAGON/03.jpg",
+
         alt: "Striped Dragon",
         features:[
             "Fine Linear Groove Texture – Precision-crafted for a structured, modern appeal",
@@ -89,6 +98,8 @@ const galleryData = [
         title: "Fluted Dolci",
         description: "Fluted Dolci – A Symphony of Elegance & Texture Fluted Dolci is a premium designer granite, crafted to elevate architectural spaces with its deeply grooved, fluted texture and refined natural veining. The interplay of soft greys and intricate dark veining creates a visually dynamic surface, making it a perfect statement piece for contemporary and classical settings alike",
         imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/05-FLUTED DOLCI/01.jpg",
+        gallery1:"img/finishes/products/FINISHES-20250323T175107Z-001/05-FLUTED DOLCI/02.jpg",
+        gallery2:"img/finishes/products/FINISHES-20250323T175107Z-001/05-FLUTED DOLCI/03.jpg",
         alt: "Fluted Dolci",
         features:[
             "Fluted Surface – Precision-carved grooves add depth, rhythm, and sculptural beauty.",
@@ -106,9 +117,11 @@ const galleryData = [
     },
     {
         id: 5,
-        title: "Oceanic Grey",
-        description: "Oceanic Grey is a striking designer granite inspired by the untamed movement of ocean waves. With its fluid veining, dramatic swirls, and bold contrast of deep charcoal and white accents, this stone creates a powerful and dynamic visual statement. The organic patterns resemble water currents frozen in time, making it an ideal choice for spaces seeking depth, energy, and elegance",
+        title: "Ocean Grey",
+        description: "Ocean Grey is a striking designer granite inspired by the untamed movement of ocean waves. With its fluid veining, dramatic swirls, and bold contrast of deep charcoal and white accents, this stone creates a powerful and dynamic visual statement. The organic patterns resemble water currents frozen in time, making it an ideal choice for spaces seeking depth, energy, and elegance",
         imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/06-OCEAN GREY/01.jpg",
+        gallery1:"img/finishes/products/FINISHES-20250323T175107Z-001/06-OCEAN GREY/02.jpg",
+        gallery2:"img/finishes/products/FINISHES-20250323T175107Z-001/06-OCEAN GREY/03.jpg",
         alt: "Ocean Grey",
         features:[
             "Natural Textured Finish – Enhances the rugged, raw beauty of the stone while maintaining a refined aesthetic",
@@ -128,30 +141,55 @@ const galleryData = [
     },
     {
         id: 6,
-        title: "Black Adam",
-        description: "Black Adam is a bold and sophisticated textured stone, crafted for luxury architectural applications. Featuring a deep charcoal-black hue with finely grooved linear texture, this stone exudes strength, mystery, and timeless appeal. The rich, dark tone enhances depth and drama, while the textured surface interacts with light to create dynamic shadows and highlights",
-        imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/07-BLACK ADAM/01.jpg",
-        alt: "Black Adam",
-        features:[
-            "Linear Textured Finish – Creates a refined yet raw industrial appeal.",
-"Deep Black Aesthetic – A bold statement for contemporary and minimalist designs.",
-"Durable & Weather-Resistant – Suitable for high-traffic and exterior applications",
-"Custom Thickness – Available in 1cm to 2cm, allowing flexibility in design"
-
-        ],
-        applications:[
-           " ⚫ Architectural Facades & Claddings – A modern masterpiece for high-rise buildings and statement walls",
-"🏡 Luxury Interiors – Adds depth and sophistication to feature walls, fireplace surrounds, and furniture",
-"🚶 Pavements & High-Traffic Flooring – A robust yet elegant choice for urban landscapes",
-"🏢 Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
-"🏢 Retail & Hospitality Spaces – Elevates commercial environments with a bold, high-end look."
-        ]
+        title: "White Waterfall",
+        description: "White Royale is a refined natural marble with a soft, textured surface that embodies understated luxury. Its subtle grain and natural matte finish create a sophisticated aesthetic, making it a versatile choice for modern and classic design themes. The muted, neutral tones enhance its adaptability, ensuring seamless integration into any architectural or interior space.",
+        imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/11-WHITE WATERFALL/01.jpg",
+        gallery1:"img/finishes/products/FINISHES-20250323T175107Z-001/11-WHITE WATERFALL/02.jpg",
+        gallery2:"img/finishes/products/FINISHES-20250323T175107Z-001/11-WHITE WATERFALL/03.jpg",
+        alt: "White Waterfall",
+        "features": [
+"Fine Sandblasted Finish – Achieves a soft, velvety texture with enhanced slip resistance",
+"Durable & Weather-Resistant – Ideal for both indoor and outdoor applications",
+"Low Maintenance & Easy to Clean – Ensures lasting beauty with minimal effort",
+"Custom Thickness & Sizing Available – Tailored to fit various design needs",
+"Natural Light Reflection – Creates an airy and spacious ambiance"
+],
+"applications": [
+"Exterior & Interior Wall Cladding – Enhances façades with a timeless, elegant look",
+"Luxury Flooring – Provides a non-slip yet smooth underfoot experience",
+"High-End Countertops & Tabletops – Adds sophistication to premium spaces",
+"Feature Walls & Architectural Accents – Ideal for statement designs",
+"Spa & Wellness Spaces – Elevates serene environments with its organic texture"
+]
     },
+//     {
+//         id: 6,
+//         title: "Black Adam",
+//         description: "Black Adam is a bold and sophisticated textured stone, crafted for luxury architectural applications. Featuring a deep charcoal-black hue with finely grooved linear texture, this stone exudes strength, mystery, and timeless appeal. The rich, dark tone enhances depth and drama, while the textured surface interacts with light to create dynamic shadows and highlights",
+//         imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/07-BLACK ADAM/01.jpg",
+//         alt: "Black Adam",
+//         features:[
+//             "Linear Textured Finish – Creates a refined yet raw industrial appeal.",
+// "Deep Black Aesthetic – A bold statement for contemporary and minimalist designs.",
+// "Durable & Weather-Resistant – Suitable for high-traffic and exterior applications",
+// "Custom Thickness – Available in 1cm to 2cm, allowing flexibility in design"
+
+//         ],
+//         applications:[
+//            " ⚫ Architectural Facades & Claddings – A modern masterpiece for high-rise buildings and statement walls",
+// "🏡 Luxury Interiors – Adds depth and sophistication to feature walls, fireplace surrounds, and furniture",
+// "🚶 Pavements & High-Traffic Flooring – A robust yet elegant choice for urban landscapes",
+// "🏢 Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
+// "🏢 Retail & Hospitality Spaces – Elevates commercial environments with a bold, high-end look."
+//         ]
+//     },
     {
-        id: 7,
+        id: 6,
         title: "Walter White",
         description: "Bright and clean white finish ideal for modern spaces.",
         imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/08-WALTER WHITE/01.jpg",
+        gallery1:"img/finishes/products/FINISHES-20250323T175107Z-001/08-WALTER WHITE/02.jpg",
+        gallery2:"img/finishes/products/FINISHES-20250323T175107Z-001/08-WALTER WHITE/03.jpg",
         alt: "Walter White",
         features:[
             "Natural Textured / Leathered Finish – A refined, weathered look with a matte, anti-glare surface",
@@ -170,30 +208,35 @@ const galleryData = [
     },
     {
         id: 8,
-        title: "Striped Steel",
-        description: "Striped Steel is a premium in-house processed granite, designed for modern architectural spaces. Characterized by deep, precisely grooved linear textures, this granite embodies an industrial yet sophisticated appeal. Its distinct striped pattern adds a unique dimensionality, making it a statement surface for contemporary design",
-        imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/09-STRIPED STEEL/01.jpg",
-        alt: "Striped Steel",
-        "features": [
-"Grooved & Brushed Finish – Enhances texture, creating a refined, high-end look",
-"Slip-Resistant Surface – Ideal for high-traffic areas and wet conditions",
-"Durable & Weather-Resistant – Engineered for longevity in both indoor and outdoor environments",
-"Custom Thickness (1-2 cm) & Sizing – Adaptable for bespoke architectural needs",
-"Natural Variation – Each slab carries unique patterns, adding exclusivity to every installation"
-],
-        "applications": [
-"Wall Cladding – Adds depth and a structured aesthetic to both interior and exterior spaces",
-"Flooring & Walkways – Combines durability with slip-resistant properties for high-traffic areas",
-"Feature Walls & Accent Panels – Creates dynamic, textured surfaces in commercial and residential spaces",
-"Exterior Facades – Withstands harsh weather conditions while maintaining an elegant appeal",
-"Luxury Furniture & Countertops – Ideal for statement pieces that require both functionality and design impact"
-]
+        title: "Pebble Stone",
+        description: "Natural pebble-inspired texture for rustic charm.",
+        imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/15-PEBBLE STONE/01.jpg",
+        gallery1:"img/finishes/products/FINISHES-20250323T175107Z-001/15-PEBBLE STONE/02.jpg",
+        gallery2:"img/finishes/products/FINISHES-20250323T175107Z-001/15-PEBBLE STONE/03.jpg",
+        alt: "Pebble Stone",
+        features:[
+            "Natural Textured / Leathered Finish – A refined, weathered look with a matte, anti-glare surface",
+"High Durability – Scratch, stain, and weather-resistant, perfect for high-traffic areas",
+"Slip-Resistant Surface – Ideal for pavements, outdoor flooring, and facades",
+"Customizable Thickness – Available in 1cm to 2cm as per project requirements"
+
+        ],
+        applications:[
+           " 🏛 Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
+"🚶 Pavements & Flooring – Slip-resistant and built for endurance",
+"🏡 Luxury Interiors – A bold statement stone for modern spaces",
+"🏢 Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
+"Rock Morphic combines the beauty of natural stone with modern durability, creating a timeless statement for any space"
+        ]
     },
+   
     {
         id: 9,
         title: "Bamboo Black",
         description: "Bamboo Black is a meticulously crafted granite, inspired by the sleek, rhythmic pattern of bamboo stalks. With a deep, linear groove design, this surface brings a sophisticated natural aesthetic to modern architectural spaces. Its dark, textured appeal adds depth and contrast, making it a striking choice for contemporary interiors and exteriors",
         imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/10-BAMBOO BLACK/01.jpg",
+        gallery1:"img/finishes/products/FINISHES-20250323T175107Z-001/10-BAMBOO BLACK/02.jpg",
+        gallery2:"img/finishes/products/FINISHES-20250323T175107Z-001/10-BAMBOO BLACK/03.jpg",
         alt: "Bamboo Black",
         "features": [
 "Grooved & Textured Finish – Enhances depth while adding a tactile experience",
@@ -212,51 +255,35 @@ const galleryData = [
     },
     {
         id: 10,
-        title: "White Waterfall",
-        description: "White Royale is a refined natural marble with a soft, textured surface that embodies understated luxury. Its subtle grain and natural matte finish create a sophisticated aesthetic, making it a versatile choice for modern and classic design themes. The muted, neutral tones enhance its adaptability, ensuring seamless integration into any architectural or interior space.",
-        imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/11-WHITE WATERFALL/01.jpg",
-        alt: "White Waterfall",
+        title: "Striped Steel",
+        description: "Striped Steel is a premium in-house processed granite, designed for modern architectural spaces. Characterized by deep, precisely grooved linear textures, this granite embodies an industrial yet sophisticated appeal. Its distinct striped pattern adds a unique dimensionality, making it a statement surface for contemporary design",
+        imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/09-STRIPED STEEL/01.jpg",
+        gallery1:"img/finishes/products/FINISHES-20250323T175107Z-001/09-STRIPED STEEL/02.jpg",
+        gallery2:"img/finishes/products/FINISHES-20250323T175107Z-001/09-STRIPED STEEL/03.jpg",
+        alt: "Striped Steel",
         "features": [
-"Fine Sandblasted Finish – Achieves a soft, velvety texture with enhanced slip resistance",
-"Durable & Weather-Resistant – Ideal for both indoor and outdoor applications",
-"Low Maintenance & Easy to Clean – Ensures lasting beauty with minimal effort",
-"Custom Thickness & Sizing Available – Tailored to fit various design needs",
-"Natural Light Reflection – Creates an airy and spacious ambiance"
+"Grooved & Brushed Finish – Enhances texture, creating a refined, high-end look",
+"Slip-Resistant Surface – Ideal for high-traffic areas and wet conditions",
+"Durable & Weather-Resistant – Engineered for longevity in both indoor and outdoor environments",
+"Custom Thickness (1-2 cm) & Sizing – Adaptable for bespoke architectural needs",
+"Natural Variation – Each slab carries unique patterns, adding exclusivity to every installation"
 ],
-"applications": [
-"Exterior & Interior Wall Cladding – Enhances façades with a timeless, elegant look",
-"Luxury Flooring – Provides a non-slip yet smooth underfoot experience",
-"High-End Countertops & Tabletops – Adds sophistication to premium spaces",
-"Feature Walls & Architectural Accents – Ideal for statement designs",
-"Spa & Wellness Spaces – Elevates serene environments with its organic texture"
+        "applications": [
+"Wall Cladding – Adds depth and a structured aesthetic to both interior and exterior spaces",
+"Flooring & Walkways – Combines durability with slip-resistant properties for high-traffic areas",
+"Feature Walls & Accent Panels – Creates dynamic, textured surfaces in commercial and residential spaces",
+"Exterior Facades – Withstands harsh weather conditions while maintaining an elegant appeal",
+"Luxury Furniture & Countertops – Ideal for statement pieces that require both functionality and design impact"
 ]
     },
-    {
-        id: 10,
-        title: "Rex Beige",
-        description: "Warm beige tones with a classic textured finish.",
-        imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/12-REX BEIGE/01.jpg",
-        alt: "Rex Beige",
-        features:[
-            "Natural Textured / Leathered Finish – A refined, weathered look with a matte, anti-glare surface",
-"High Durability – Scratch, stain, and weather-resistant, perfect for high-traffic areas",
-"Slip-Resistant Surface – Ideal for pavements, outdoor flooring, and facades",
-"Customizable Thickness – Available in 1cm to 2cm as per project requirements"
-
-        ],
-        applications:[
-           " 🏛 Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
-"🚶 Pavements & Flooring – Slip-resistant and built for endurance",
-"🏡 Luxury Interiors – A bold statement stone for modern spaces",
-"🏢 Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
-"Rock Morphic combines the beauty of natural stone with modern durability, creating a timeless statement for any space"
-        ]
-    },
+   
     {
         id: 11,
-        title: "Rex Stripe",
+        title: "Rex Linea",
         description: "Striped design with earthy tones for a natural look.",
         imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/13-REX STRIPE/01.jpg",
+        gallery1:"img/finishes/products/FINISHES-20250323T175107Z-001/13-REX STRIPE/02.jpg",
+        gallery2:"img/finishes/products/FINISHES-20250323T175107Z-001/13-REX STRIPE/03.jpg",
         alt: "Rex Stripe",
         features:[
             "Natural Textured / Leathered Finish – A refined, weathered look with a matte, anti-glare surface",
@@ -274,10 +301,12 @@ const galleryData = [
         ]
     },
     {
-        id: 12,
-        title: "Rex",
+        id: 13,
+        title: "Rex Topography",
         description: "A versatile finish that blends modern and traditional aesthetics.",
         imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/14-REX/01.jpg",
+        gallery1:"img/finishes/products/FINISHES-20250323T175107Z-001/14-REX/02.jpg",
+        gallery2:"img/finishes/products/FINISHES-20250323T175107Z-001/14-REX/03.jpg",
         alt: "Rex",
         features:[
             "Natural Textured / Leathered Finish – A refined, weathered look with a matte, anti-glare surface",
@@ -295,11 +324,13 @@ const galleryData = [
         ]
     },
     {
-        id: 13,
-        title: "Pebble Stone",
-        description: "Natural pebble-inspired texture for rustic charm.",
-        imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/15-PEBBLE STONE/01.jpg",
-        alt: "Pebble Stone",
+        id: 14,
+        title: "Rex Beige",
+        description: "Warm beige tones with a classic textured finish.",
+        imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/12-REX BEIGE/01.jpg",
+        gallery1:"img/finishes/products/FINISHES-20250323T175107Z-001/12-REX BEIGE/02.jpg",
+        gallery2:"img/finishes/products/FINISHES-20250323T175107Z-001/12-REX BEIGE/03.jpg",
+        alt: "Rex Beige",
         features:[
             "Natural Textured / Leathered Finish – A refined, weathered look with a matte, anti-glare surface",
 "High Durability – Scratch, stain, and weather-resistant, perfect for high-traffic areas",
@@ -314,7 +345,7 @@ const galleryData = [
 "🏢 Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
 "Rock Morphic combines the beauty of natural stone with modern durability, creating a timeless statement for any space"
         ]
-    }
+    },
 ];
 // finishes.js - Gallery implementation
 document.addEventListener('DOMContentLoaded', function() {
@@ -325,6 +356,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalTitle = document.getElementById('modalTitle');
     const modalDescription = document.getElementById('modalDescription');
     const modalFeatures = document.getElementById('modalFeatures');
+    const gallery = document.querySelector('.gallery-2');
+ 
     const modalApplications = document.getElementById('modalApplications');
     const closeBtn = document.querySelector('.close-btn');
     const prevBtn = document.querySelector('.prev-btn');
@@ -426,12 +459,17 @@ document.addEventListener('DOMContentLoaded', function() {
         // Apply transition effect
         modalImage.style.opacity = '0';
         modalImage.style.transform = 'translateX(30px)';
+
         
         setTimeout(() => {
             modalImage.src = item.imageSrc;
             modalTitle.textContent = item.title;
             modalDescription.textContent = item.description;
             modalFeatures.innerHTML = item.features.map(feature => `<li>${feature}</li>`).join('');
+            gallery.innerHTML = `
+            <img src="${item.gallery1}" alt="${item.alt}" class="inner-image">
+            <img src="${item.gallery2}" alt="${item.alt}" class="inner-image">
+        `;
             modalApplications.innerHTML = item.applications.map(application => `<li>${application}</li>`).join('');
             // Reveal with animation
             modalImage.style.opacity = '1';

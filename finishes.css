@@ -823,9 +823,34 @@ background: #fff;
         font-family: 'Cruell'; /* Elegant serif font */
         font-weight: 400;
     }
+
+    .gallery-2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 3 products per line */
+
+        gap: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .inner-image{
+        position: relative;
+        overflow: hidden;
+        border-radius: 5%;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        aspect-ratio: 9/8;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        
+    }
+
+
     
     .modal-content h3 {
-        font-size: 2.5rem;
+        font-size: 4.5rem;
         margin-bottom: 10px;
         color: #3c2415; /* Dark brown for subheadings */
         text-align: left;
@@ -846,9 +871,9 @@ background: #fff;
     }
 
     .modal-content p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 1.6;
-        color: #5a4a3a; /* Slightly lighter brown for paragraphs */
+        color: #000000; /* Slightly lighter brown for paragraphs */
         text-align: justify;
         
     }
