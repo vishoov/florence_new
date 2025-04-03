@@ -40,7 +40,7 @@
 
 .work-grid {
     /* max-width: 1200px; */
-    padding: 2rem 10rem; /* Combined the padding declarations */
+    padding: 2rem 6rem; /* Combined the padding declarations */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(100px, auto);
@@ -98,7 +98,7 @@
 /* Mobile app - bottom left */
 .mobile {
     grid-column: 1 / 6;
-    grid-row: 8 / 12;
+    grid-row: 6 / 10;
 }
 
 /* VR headset - bottom right */
