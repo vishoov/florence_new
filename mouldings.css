@@ -3,7 +3,7 @@
     position: relative;
     padding: 0rem 4rem 4rem 4rem; /* Combined the padding declarations */
     height: fit-content;
-    min-height: 200vh; /* Use min-height instead of height */
+    /* min-height: 200vh; Use min-height instead of height */
     
     background-color: white;
     overflow: hidden; 
@@ -98,7 +98,7 @@
 /* Mobile app - bottom left */
 .mobile {
     grid-column: 1 / 6;
-    grid-row: 6 / 10;
+    grid-row: 7 / 10;
 }
 
 /* VR headset - bottom right */

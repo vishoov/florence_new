@@ -36,9 +36,8 @@
     /* overflow: hidden; */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.098);
     animation: modalOpen 0.4s ease;
-}
-.modal-content:hover{
-    cursor: pointer;
+    overflow: hidden;
+    padding: 5rem;
 }
 
 
@@ -53,41 +52,120 @@
 }
 
 .modal-image-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-y: scroll;
-    max-height: 90vh; /* Ensures the image doesn't overflow vertically */
-    max-width: 90vw; /* Ensures the image doesn't overflow horizontally */
-    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+    /* overflow: auto; Allows scrolling if content exceeds container size */
+    max-width: 90vw; /* Restricts width to viewport width */
+    max-height: 90vh; /* Restricts height to viewport height */
 
-    align-items: center;
-    width: 100%;
-    gap: 1rem;
-    padding: 10px;
 }
 
 
 
 
 .modal-image {
+    height: 30%;
+    max-width: 100%; 
+    
+    max-height: 50%; /* Ensures the image doesn't exceed the modal height */
+    object-fit: contain; /* Maintains aspect ratio while fitting within container */ 
+    border-radius: 2rem; /* Removes border radius for a sharper look */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+    animation: slideIn 0.5s ease; /* Animation for image appearance */
+    padding: 2rem;
+    border-radius: 4rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.enquire-btn {
     position: relative;
-    padding: 10px; /* Removed padding to maximize space */
-    height: 100%; /* Use viewport height instead of percentage */
-    width: 100%; 
-    max-height: 40%;
-    object-fit:cover; /* Changed from fill to contain to maintain aspect ratio */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
-    transition: transform 0.5s ease;
-    /* max-width: 50%; Ensures image doesn't overflow horizontally */
-    display: block; /* Removes any extra space below the image */
-    /* margin: 0 auto; Centers the image */
-    border-radius: 2rem;
+    align-self: center;
+    background-color: #000; /* Accent color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 1001;
+    transition: background-color 0.3s ease;
+    display: inline-block;
 
 }
 
+.enquire-btn:hover {
+    background-color: #ED6E4A; /* Accent color on hover */
+}
+
+.enquire-popup {
+    position: fixed; /* Changed to fixed for proper centering */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100002;
+    display: none; /* Hidden by default */
+   
+    width: 80%;
+}
+.enquire-popup.show {
+    display: flex; /* Show popup when 'show' class is added */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10001; /* Below the popup but above other content */
+    display: none; /* Hidden by default */
+}
+.modal-overlay.show {
+    display: block; /* Show overlay when 'show' class is added */
+}
+
+.enquire-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.enquire-popup h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #343a40;
+}
+.enquire-popup p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #000000;
+}
+.enquire-popup button {
+    background-color: #ED6E4A; /* Accent color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.enquire-popup button:hover {
+    background-color: #000; /* Accent color on hover */
+}
 
 
 
@@ -105,6 +183,8 @@
     scrollbar-width:thin; /* For Firefox */
     
 }
+
+
 
 
 
@@ -400,7 +480,7 @@
 }
 
 .section-description {
-    font-size: 0.5rem;
+    font-size: 1.5rem;
     color: #000;
     text-align: center;
     max-width: 80vw;
@@ -667,9 +747,9 @@ background: #fff;
     }
 
     .intro .section-description {
-        font-size: 1.1rem;
-        color: #000;
-        max-width: 70vw;
+        font-size: 1.5rem;
+        color: #6E503D;
+        max-width: 80vw;
         margin: 0 auto;
         line-height: 1.2;
         letter-spacing: 1px;
@@ -793,7 +873,6 @@ background: #fff;
         width: 70%;
         height: 90%;
         max-width: 80vw;
-        background-color: #f3e8e2; /* Light beige background to match the theme */
         border: 2px solid rgba(60, 36, 21, 0.2); /* Subtle border for elegance */
         /* overflow: scroll; */
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Slightly darker shadow for depth */
@@ -801,7 +880,7 @@ background: #fff;
         font-family: 'Playfair Display', serif; /* Elegant serif font */
         color: #3c2415; /* Dark brown text color */
         padding: 0;
-        overflow-y: hidden;
+        overflow-y: visible;
     }
     
     .modal-content::before {
@@ -813,6 +892,7 @@ background: #fff;
         height: 100%;
         background: rgba(60, 36, 21, 0.05); /* Subtle overlay for texture */
         z-index: -1;
+        padding: 4rem;
     }
     
     .modal-content h2 {

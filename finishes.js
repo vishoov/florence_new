@@ -15,10 +15,10 @@ const galleryData = [
 
         ],
         applications:[
-           " 🏛 Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
-"🚶 Pavements & Flooring – Slip-resistant and built for endurance",
-"🏡 Luxury Interiors – A bold statement stone for modern spaces",
-"🏢 Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
+           "  Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
+" Pavements & Flooring – Slip-resistant and built for endurance",
+"Luxury Interiors – A bold statement stone for modern spaces",
+"Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
 "Rock Morphic combines the beauty of natural stone with modern durability, creating a timeless statement for any space"
         ]
 
@@ -40,10 +40,10 @@ const galleryData = [
         ],
         applications:[
            "🏢 Feature Walls & Facades – Elevates architectural spaces with a contemporary edge",
-"🚶 Flooring & Pavements – Provides both aesthetic appeal and slip resistance.",
-"🏡 Luxury Interiors – A bold statement stone for modern spaces",
-"🏡 Luxury Interiors – Ideal for accent walls, reception areas, and statement surfaces.",
-"🛠 Bespoke Design Applications – Perfect for customized furniture, sculptural elements, and artistic installations."
+" Flooring & Pavements – Provides both aesthetic appeal and slip resistance.",
+"Luxury Interiors – A bold statement stone for modern spaces",
+"Luxury Interiors – Ideal for accent walls, reception areas, and statement surfaces.",
+"Bespoke Design Applications – Perfect for customized furniture, sculptural elements, and artistic installations."
         ]
     },
     {
@@ -109,10 +109,10 @@ const galleryData = [
 
         ],
         applications:[
-          "  🏛 Exterior Facades & Claddings – Adds a sculptural, architectural element to modern structures.",
-           " 🏡 Luxury Interiors – Ideal for accent walls, feature panels, and designer furniture.",
-            "🚶 High-Traffic Flooring & Pavements – Provides durability with a sophisticated aesthetic.",
-          "  🏢 Commercial & Hospitality Spaces – A refined choice for upscale hotels, offices, and retail interiors"      
+          " Exterior Facades & Claddings – Adds a sculptural, architectural element to modern structures.",
+           "Luxury Interiors – Ideal for accent walls, feature panels, and designer furniture.",
+            "High-Traffic Flooring & Pavements – Provides durability with a sophisticated aesthetic.",
+          "Commercial & Hospitality Spaces – A refined choice for upscale hotels, offices, and retail interiors"      
         ]
     },
     {
@@ -132,10 +132,10 @@ const galleryData = [
         ],
         applications:[
            " 🌊 Feature Walls & Architectural Facades – Captures the essence of nature’s fluidity in modern design",
-"🏡 Luxury Interiors – Adds depth and character to countertops, accent walls, and flooring",
-"🏡 Luxury Interiors – A bold statement stone for modern spaces",
-"🚶 Outdoor Spaces & Landscaping – A durable, weather-resistant choice for pavements and garden features.",
-"🏢 Commercial & Hospitality Projects – Ideal for boutique hotels, luxury retail, and statement interiors",
+"Luxury Interiors – Adds depth and character to countertops, accent walls, and flooring",
+"Luxury Interiors – A bold statement stone for modern spaces",
+"Outdoor Spaces & Landscaping – A durable, weather-resistant choice for pavements and garden features.",
+"Commercial & Hospitality Projects – Ideal for boutique hotels, luxury retail, and statement interiors",
 "Oceanic Grey brings the rhythm of nature into architecture, offering an artistic yet functional design solution."
         ]
     },
@@ -200,9 +200,9 @@ const galleryData = [
         ],
         applications:[
            " 🏛 Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
-"🚶 Pavements & Flooring – Slip-resistant and built for endurance",
-"🏡 Luxury Interiors – A bold statement stone for modern spaces",
-"🏢 Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
+"Pavements & Flooring – Slip-resistant and built for endurance",
+"Luxury Interiors – A bold statement stone for modern spaces",
+"Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
 "Rock Morphic combines the beauty of natural stone with modern durability, creating a timeless statement for any space"
         ]
     },
@@ -222,10 +222,10 @@ const galleryData = [
 
         ],
         applications:[
-           " 🏛 Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
-"🚶 Pavements & Flooring – Slip-resistant and built for endurance",
-"🏡 Luxury Interiors – A bold statement stone for modern spaces",
-"🏢 Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
+           "Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
+"Pavements & Flooring – Slip-resistant and built for endurance",
+"Luxury Interiors – A bold statement stone for modern spaces",
+"Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
 "Rock Morphic combines the beauty of natural stone with modern durability, creating a timeless statement for any space"
         ]
     },
@@ -293,10 +293,10 @@ const galleryData = [
 
         ],
         applications:[
-           " 🏛 Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
-"🚶 Pavements & Flooring – Slip-resistant and built for endurance",
-"🏡 Luxury Interiors – A bold statement stone for modern spaces",
-"🏢 Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
+           " Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
+"Pavements & Flooring – Slip-resistant and built for endurance",
+"Luxury Interiors – A bold statement stone for modern spaces",
+" Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
 "Rock Morphic combines the beauty of natural stone with modern durability, creating a timeless statement for any space"
         ]
     },
@@ -317,9 +317,9 @@ const galleryData = [
         ],
         applications:[
            " 🏛 Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
-"🚶 Pavements & Flooring – Slip-resistant and built for endurance",
-"🏡 Luxury Interiors – A bold statement stone for modern spaces",
-"🏢 Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
+"Pavements & Flooring – Slip-resistant and built for endurance",
+"Luxury Interiors – A bold statement stone for modern spaces",
+"Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
 "Rock Morphic combines the beauty of natural stone with modern durability, creating a timeless statement for any space"
         ]
     },
@@ -340,15 +340,18 @@ const galleryData = [
         ],
         applications:[
            " 🏛 Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
-"🚶 Pavements & Flooring – Slip-resistant and built for endurance",
-"🏡 Luxury Interiors – A bold statement stone for modern spaces",
-"🏢 Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
+"Pavements & Flooring – Slip-resistant and built for endurance",
+"Luxury Interiors – A bold statement stone for modern spaces",
+"Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
 "Rock Morphic combines the beauty of natural stone with modern durability, creating a timeless statement for any space"
         ]
     },
 ];
 // finishes.js - Gallery implementation
 document.addEventListener('DOMContentLoaded', function() {
+
+
+
     // DOM Elements
     const galleryContainer = document.getElementById('gallery');
     const modal = document.getElementById('imageModal');
@@ -393,6 +396,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <h3>${item.title}</h3>
                     <p>${item.description}</p>
                 </div>
+                <button class="enquire-btn" id="enquire-btn" title="${item.title}">Enquire</button>
             `;
             
             galleryContainer.appendChild(galleryItem);
@@ -516,6 +520,23 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize the gallery
     initGallery();
+
+
+
+    
 });
 
 
+
+// Enquiry button functionality
+const enquiryButtons = document.querySelectorAll('.enquire-btn');
+
+
+enquiryButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const title = document.querySelector('.modal-content h3').textContent;
+        const message = `Hello, I am interested in the '*${title}*' finish. Could you please provide more details?`;
+        const whatsappUrl = `https://api.whatsapp.com/send?phone=8595011410&text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+    });
+});
