@@ -103,7 +103,7 @@ body {
 .exotica-text {
     text-align: center;
     margin: 0 auto;
-    color: #241C1C;
+    color: #000;
 }
 
 .exotica-text h2 {
@@ -118,7 +118,7 @@ body {
     font-size: 1.5rem;
     line-height: 1.5;
     margin-bottom: 1rem;
-    color: #6E503C;
+    color: #000;
 }
 
 .exotica-images {

@@ -98,7 +98,7 @@
 /* Mobile app - bottom left */
 .mobile {
     grid-column: 1 / 6;
-    grid-row: 7 / 10;
+    grid-row: 6 / 10;
 }
 
 /* VR headset - bottom right */

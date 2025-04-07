@@ -162,27 +162,7 @@ const galleryData = [
 "Spa & Wellness Spaces – Elevates serene environments with its organic texture"
 ]
     },
-//     {
-//         id: 6,
-//         title: "Black Adam",
-//         description: "Black Adam is a bold and sophisticated textured stone, crafted for luxury architectural applications. Featuring a deep charcoal-black hue with finely grooved linear texture, this stone exudes strength, mystery, and timeless appeal. The rich, dark tone enhances depth and drama, while the textured surface interacts with light to create dynamic shadows and highlights",
-//         imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/07-BLACK ADAM/01.jpg",
-//         alt: "Black Adam",
-//         features:[
-//             "Linear Textured Finish – Creates a refined yet raw industrial appeal.",
-// "Deep Black Aesthetic – A bold statement for contemporary and minimalist designs.",
-// "Durable & Weather-Resistant – Suitable for high-traffic and exterior applications",
-// "Custom Thickness – Available in 1cm to 2cm, allowing flexibility in design"
-
-//         ],
-//         applications:[
-//            " ⚫ Architectural Facades & Claddings – A modern masterpiece for high-rise buildings and statement walls",
-// "🏡 Luxury Interiors – Adds depth and sophistication to feature walls, fireplace surrounds, and furniture",
-// "🚶 Pavements & High-Traffic Flooring – A robust yet elegant choice for urban landscapes",
-// "🏢 Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
-// "🏢 Retail & Hospitality Spaces – Elevates commercial environments with a bold, high-end look."
-//         ]
-//     },
+   
     {
         id: 6,
         title: "Walter White",
@@ -276,7 +256,27 @@ const galleryData = [
 "Luxury Furniture & Countertops – Ideal for statement pieces that require both functionality and design impact"
 ]
     },
-   
+    {
+        id: 6,
+        title: "Black Adam",
+        description: "Black Adam is a bold and sophisticated textured stone, crafted for luxury architectural applications. Featuring a deep charcoal-black hue with finely grooved linear texture, this stone exudes strength, mystery, and timeless appeal. The rich, dark tone enhances depth and drama, while the textured surface interacts with light to create dynamic shadows and highlights",
+        imageSrc: "img/finishes/products/FINISHES-20250323T175107Z-001/BLACK ADAM/12-Black Adam.jpeg",
+        alt: "Black Adam",
+        features:[
+            "Linear Textured Finish – Creates a refined yet raw industrial appeal.",
+"Deep Black Aesthetic – A bold statement for contemporary and minimalist designs.",
+"Durable & Weather-Resistant – Suitable for high-traffic and exterior applications",
+"Custom Thickness – Available in 1cm to 2cm, allowing flexibility in design"
+
+        ],
+        applications:[
+           " ⚫ Architectural Facades & Claddings – A modern masterpiece for high-rise buildings and statement walls",
+"🏡 Luxury Interiors – Adds depth and sophistication to feature walls, fireplace surrounds, and furniture",
+"🚶 Pavements & High-Traffic Flooring – A robust yet elegant choice for urban landscapes",
+"🏢 Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
+"🏢 Retail & Hospitality Spaces – Elevates commercial environments with a bold, high-end look."
+        ]
+    },
     {
         id: 11,
         title: "Rex Linea",
@@ -346,6 +346,7 @@ const galleryData = [
 "Rock Morphic combines the beauty of natural stone with modern durability, creating a timeless statement for any space"
         ]
     },
+   
 ];
 // finishes.js - Gallery implementation
 document.addEventListener('DOMContentLoaded', function() {

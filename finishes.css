@@ -328,13 +328,13 @@
     position: relative;
     overflow: hidden;
     border-radius: 0rem;
-    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.026);
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.281);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     aspect-ratio: 9/10;
     height: 100%;
+    border: 4px solid rgba(255, 255, 255, 0.18);
 
 }
 
@@ -351,6 +351,7 @@
     width: 180%;
     height: 100%;
     object-fit:contain;
+    overflow: hidden;
     transition: transform 0.5s ease;
     border-radius: 0;
 }
