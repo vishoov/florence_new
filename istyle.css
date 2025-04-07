@@ -2082,7 +2082,7 @@ textarea {
 
 .strategy-description {
     font-size: 1.25rem;
-    max-width: 50%;
+    max-width: 40%;
     line-height: 1.3;
     letter-spacing: 1px;
     font-family: 'Times New Roman', Times, serif;
@@ -2170,13 +2170,16 @@ textarea {
 }
 
 .some-content p{
-    color: #000000ca;
-    font-size: 1.2rem;
-    font-family: "Times New Roman";
-    max-width: 100%;
+    font-size: 1.25rem;
+   
+    line-height: 1.3;
     letter-spacing: 1px;
-    line-height: 1;
+    font-family: 'Times New Roman', Times, serif;
     text-align: left;
+    color: #000000ca;
+    grid-column: 2/3;
+    margin: 0;
+    z-index: 10;
 }
 
 
