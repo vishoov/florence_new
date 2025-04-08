@@ -310,6 +310,13 @@ font-size: 0.9rem;
     right: 10px; /* Positioning */
 }
 
+@media (max-width: 768px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+       transform: translateY(-20vh);
+    }
+}
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
     font-size: 20px; /* Adjust arrow size */
@@ -2333,6 +2340,9 @@ textarea {
 
 }
 
+.content-wrapper{
+    height: 50vh;
+}
 
 
     
