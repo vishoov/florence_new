@@ -1,7 +1,7 @@
 
 .work-section {
     position: relative;
-    padding: 0rem 4rem 4rem 4rem; /* Combined the padding declarations */
+    padding: 0rem 4rem 0rem 4rem; /* Combined the padding declarations */
     height: fit-content;
     /* min-height: 200vh; Use min-height instead of height */
     
@@ -40,12 +40,12 @@
 
 .work-grid {
     /* max-width: 1200px; */
-    padding: 2rem 6rem; /* Combined the padding declarations */
+    padding: 0rem 6rem; /* Combined the padding declarations */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(100px, auto);
-    gap: 20px;
-    margin-top: 120px;
+    gap: 10px;
+    margin-top: 60px;
     /* height: calc(100vh - 200px); */
 }
 

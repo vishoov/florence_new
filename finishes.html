@@ -11,6 +11,8 @@
     <script src="https://unpkg.com/swiper@8.4.7/swiper-bundle.min.js"></script>
 </head>
 <body>
+
+    
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-left">
@@ -197,8 +199,7 @@
         </div>
     </div>
 
-
-
+    
 
     
     <!-- Contact Us Form -->
@@ -298,14 +299,13 @@
     const heroSwiper = new Swiper('.hero-swiper', {
         loop: true,
         speed: 1000,
+
         autoplay: {
             delay: 5000,
             disableOnInteraction: false,
         },
-        effect: 'fade',
-        fadeEffect: {
-            crossFade: true
-        },
+        effect: 'slide',
+        
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',

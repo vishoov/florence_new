@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Hero Swiper Configuration
     const swiper = new Swiper('.heroSwiper', {
-        effect: 'fade', // Enables fade effect
+        effect: 'slide', // Enables fade effect
         fadeEffect: { crossFade: true }, // Ensures smooth fading between slides
         loop: true, // Enables looping of slides
         autoplay: {
@@ -274,3 +274,26 @@ document.addEventListener('DOMContentLoaded', setupParallaxEffects);
 
 
 
+// Get the button
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Show the button when scrolling down
+window.onscroll = function () {
+    toggleScrollButton();
+};
+
+function toggleScrollButton() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+}
+
+// Scroll back to the top when the button is clicked
+scrollToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Smooth scrolling effect
+    });
+});

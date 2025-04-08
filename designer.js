@@ -21,6 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
             const slides = swiperContainer.querySelectorAll('.swiper-slide');
             const slideCount = slides.length;
             let slideIndex = 0;
+            let autoplayinterval;
+
+            const autoplay = {
+                delay:3000,
+
+                pauseOnHover:true
+            }
 
             const nextButton = document.getElementById(nextButtonId); // Get button by ID
             const prevButton = document.getElementById(prevButtonId); // Get button by ID
@@ -32,11 +39,34 @@ document.addEventListener('DOMContentLoaded', function() {
             function swiperNext() {
                 slideIndex = (slideIndex + 1) % slideCount;
                 updateSwiper();
+                resetAutoplay();
             }
 
             function swiperPrev() {
                 slideIndex = (slideIndex - 1 + slideCount) % slideCount;
                 updateSwiper();
+                resetAutoplay();
+            }
+            function startAutoplay(){
+                autoplayinterval = setInterval(() => {
+                    swiperNext();
+                }, autoplay.delay);
+            }
+
+            function stopAutoplay(){
+                clearInterval(autoplayinterval);
+            }
+
+            function resetAutoplay() {
+                stopAutoplay();
+                startAutoplay();
+            }
+
+            startAutoplay();
+
+            if(autoplay.pauseOnHover){
+                swiperContainer.addEventListener('mouseenter', stopAutoplay);
+                swiperContainer.addEventListener('mouseleave', startAutoplay);
             }
 
             nextButton.addEventListener('click', swiperNext);
@@ -177,5 +207,32 @@ document.addEventListener('DOMContentLoaded', function() {
         y: 0,
         duration: 1,
         delay: 0.5
+    });
+});
+
+
+
+
+// Get the button
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Show the button when scrolling down
+window.onscroll = function () {
+    toggleScrollButton();
+};
+
+function toggleScrollButton() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+}
+
+// Scroll back to the top when the button is clicked
+scrollToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Smooth scrolling effect
     });
 });
