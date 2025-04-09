@@ -394,10 +394,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     >
                 </div>
                 <div class="gallery-caption">
-                    <h3>${item.title}</h3>
-                    <p>${item.description}</p>
+                    <h3 style="font-size:1.5rem">${item.title}</h3>
+                 
                 </div>
-                <button class="enquire-btn" id="enquire-btn" title="${item.title}">Enquire</button>
             `;
             
             galleryContainer.appendChild(galleryItem);
@@ -541,3 +540,4 @@ enquiryButtons.forEach(button => {
         window.open(whatsappUrl, '_blank');
     });
 });
+
