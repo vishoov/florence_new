@@ -60,7 +60,7 @@
     justify-content: center;
     position: relative;
     padding: 1rem;
-    height: auto;
+    height: 100vh;
     /* overflow-y: scroll; */
 }
 
@@ -78,10 +78,10 @@
 
 
 .modal-1 .modal-image {
-    height: 100%;
-    max-width: 45%; 
+    height: 50%;
+    /* max-width: 45%;  */
     
-    max-height: 90%; /* Ensures the image doesn't exceed the modal height */
+    /* max-height: 90%; Ensures the image doesn't exceed the modal height */
     object-fit: cover; /* Maintains aspect ratio while fitting within container */ 
     transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
     animation: slideIn 0.5s ease; /* Animation for image appearance */
@@ -1108,5 +1108,84 @@ background: #fff;
 
         .modal-2{
             padding:0;
+        }
+    }
+
+    /* Swiper Styles */
+  
+    .swiper1 {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .modal-swiper .swiper-wrapper .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        background: #fff;
+        overflow: hidden;
+        /* height: 50%; */
+    }
+
+    .swiper-slide::before{
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .swiper-slide img::before{
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit:fill;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #000 !important;
+        ;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        color: #ED6E4A !important; /* Accent color on hover */
+    }
+
+    .swiper-pagination-bullet {
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 1;
+        transition: background 0.3s ease;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #ED6E4A; /* Accent color for active bullet */
+    }
+
+    @media (max-width: 768px) {
+        .swiper-slide {
+            flex-direction: column;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .swiper-slide h2 {
+            font-size: 1.8rem;
+            margin-top: 1rem;
+        }
+
+        .swiper-slide p {
+            font-size: 1rem;
+            margin-top: 0.5rem;
         }
     }

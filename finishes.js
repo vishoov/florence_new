@@ -463,18 +463,49 @@ document.addEventListener('DOMContentLoaded', function() {
         // Apply transition effect
         modalImage.style.opacity = '0';
         modalImage.style.transform = 'translateX(30px)';
-
+        
+        // Clear existing swiper slides and create new ones
+        const swiperWrapper = document.querySelector('.modal-swiper .swiper-wrapper');
+        swiperWrapper.innerHTML = '';
+        
+        // Add main image slide
+        const mainSlide = document.createElement('div');
+        mainSlide.className = 'swiper-slide';
+        mainSlide.innerHTML = `<img src="${item.imageSrc}" alt="${item.alt}" class="modal-image">`;
+        swiperWrapper.appendChild(mainSlide);
+        
+        // Add gallery1 slide if it exists
+        if (item.gallery1) {
+            const gallery1Slide = document.createElement('div');
+            gallery1Slide.className = 'swiper-slide';
+            gallery1Slide.innerHTML = `<img src="${item.gallery1}" alt="${item.alt}">`;
+            swiperWrapper.appendChild(gallery1Slide);
+        }
+        
+        // Add gallery2 slide if it exists
+        if (item.gallery2) {
+            const gallery2Slide = document.createElement('div');
+            gallery2Slide.className = 'swiper-slide';
+            gallery2Slide.innerHTML = `<img src="${item.gallery2}" alt="${item.alt}">`;
+            swiperWrapper.appendChild(gallery2Slide);
+        }
+        
+        // Update Swiper instance to recognize new slides
+        if (modalSwiper) {
+            modalSwiper.update();
+            modalSwiper.slideTo(0, 0); // Reset to first slide
+        }
         
         setTimeout(() => {
-            modalImage.src = item.imageSrc;
             modalTitle.textContent = item.title;
             modalDescription.textContent = item.description;
             modalFeatures.innerHTML = item.features.map(feature => `<li>${feature}</li>`).join('');
             gallery.innerHTML = `
-            <img src="${item.gallery1}" alt="${item.alt}" class="inner-image">
-            <img src="${item.gallery2}" alt="${item.alt}" class="inner-image">
-        `;
+                <img src="${item.gallery1}" alt="${item.alt}" class="inner-image">
+                <img src="${item.gallery2}" alt="${item.alt}" class="inner-image">
+            `;
             modalApplications.innerHTML = item.applications.map(application => `<li>${application}</li>`).join('');
+            
             // Reveal with animation
             modalImage.style.opacity = '1';
             modalImage.style.transform = 'translateX(0)';
@@ -482,6 +513,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         modal.style.display = 'flex';
     }
+    
     
     // Show previous image
     function showPreviousImage() {
@@ -540,4 +572,3 @@ enquiryButtons.forEach(button => {
         window.open(whatsappUrl, '_blank');
     });
 });
-

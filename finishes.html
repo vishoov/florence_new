@@ -175,7 +175,35 @@
                 <div class="modal-navigation">
                     <div class="modal-image-container">
                         <div class="modal-1">
-                        <img class="modal-image" id="modalImage">
+                        <div class="swiper swiper1 modal-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="modal-image" id="modalImage">
+                                </div>
+                                <div class="swiper-slide" >
+                                    <img  alt="Extra Image 1" id="extraImage1"> >
+                                </div>
+                                <div class="swiper-slide">
+                                    <img alt="Extra Image 2" id="extraImage2">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img alt="Extra Image 3" id="extraImage3">
+                                </div>
+                            </div>
+                            <!-- Navigation buttons -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <script>
+                            // Initialize Modal Swiper
+                            const modalSwiper = new Swiper('.modal-swiper', {
+                                loop: true,
+                                navigation: {
+                                    nextEl: '.swiper-button-next',
+                                    prevEl: '.swiper-button-prev',
+                                },
+                            });
+                        </script>
                         <div class="modal-caption">
                             <h3 id="modalTitle"></h3>
                             <p id="modalDescription"></p>
@@ -190,7 +218,7 @@
                         <div class="gallery-2">
 
                         </div>
-                        <h2>Ideal Applications</h2>
+                        <h2><span class="italic">Ideal</span> Applications</h2>
                         <ul id="modalApplications"></ul>
                        
                        <button class="enquire-btn" id="enquireBtn">Enquire Now</button>
