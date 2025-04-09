@@ -1023,7 +1023,7 @@ background: #fff;
 
     .modal-1 .modal-caption li {
         margin-bottom: 10px;
-        padding-left: 20px; /* Indent for list items */
+        padding-left: 5px; /* Indent for list items */
         position: relative;
         text-align: left;
         font-size: 1.2rem;
