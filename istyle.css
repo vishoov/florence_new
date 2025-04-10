@@ -635,7 +635,15 @@ background: #fff;
   }
   
 .brand-section {
-    max-width: 300px;
+    max-width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .brand-section img{
+        max-width: 100%;
+        aspect-ratio: 40/9;
+    }
+    
 }
 
 .info-item a svg{
