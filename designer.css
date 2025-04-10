@@ -115,11 +115,15 @@ body {
 }
 
 .exotica-text p {
-    font-size: 1.5rem;
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 1rem;
     color: #000;
 }
+
+
 
 .exotica-images {
     display: flex;
@@ -329,7 +333,7 @@ body {
     }
 
     .exotica-text p {
-        font-size: 2rem;
+        font-size: 1rem;
         line-height: 1.4;
     }
 
