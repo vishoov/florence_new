@@ -994,6 +994,7 @@ background: #fff;
         aspect-ratio: 9/8;
         width: 100%;
         height: auto;
+        /* max-height: 0%; */
         object-fit: cover;
         
     }
@@ -1131,7 +1132,9 @@ background: #fff;
 
     .swiper-slide::before{
         height: 100%;
-        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        /* overflow: hidden; */
     }
 
     .swiper-slide img::before{
@@ -1148,7 +1151,7 @@ background: #fff;
     .swiper-button-next,
     .swiper-button-prev {
         color: #000 !important;
-        ;
+        
     }
 
     .swiper-button-next:hover,
@@ -1170,12 +1173,12 @@ background: #fff;
         .swiper-slide {
             flex-direction: column;
             text-align: center;
-            padding: 1rem;
+            /* padding: 1rem; */
         }
 
         .swiper-slide img {
             width: 100%;
-            height: auto;
+            height: 80vh;
             object-fit: contain;
         }
 
