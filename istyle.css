@@ -1564,6 +1564,17 @@ background: #fff;
     gap: 2rem;
 }
 
+.contact-form p{
+    font-size: 1.2rem;
+    color: #000;
+    font-family: 'Oswald';
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+
+
 .form-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
