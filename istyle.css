@@ -212,9 +212,7 @@ opacity: 0.9;
 }
 
 @media (max-width: 768px) {
-.navbar{
-    /* padding: 10px; */
-}
+
 
 .nav-container {
 padding: 0.75rem 1rem;
@@ -1352,6 +1350,11 @@ background: #fff;
     .craft-gallery {
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
+
+    }
+
+    .gallery-item{
+        margin: 0 ;
     }
 }
 

@@ -39,7 +39,7 @@ const galleryData = [
 
         ],
         applications:[
-           "🏢 Feature Walls & Facades – Elevates architectural spaces with a contemporary edge",
+           " Feature Walls & Facades – Elevates architectural spaces with a contemporary edge",
 " Flooring & Pavements – Provides both aesthetic appeal and slip resistance.",
 "Luxury Interiors – A bold statement stone for modern spaces",
 "Luxury Interiors – Ideal for accent walls, reception areas, and statement surfaces.",
@@ -62,11 +62,11 @@ const galleryData = [
 
         ],
         applications:[
-           "🏛 Exterior Facades & Wall Claddings – Adds depth and visual intrigue to any structure.",
-"🚶 Pavements & Flooring – Slip-resistant and built for endurance",
-"🏡 Luxury Interiors – Feature walls, statement countertops, and custom furniture.",
-"🚶 High-Traffic Flooring & Pavements – Slip-resistant and built to withstand wear.",
-"🏢 Commercial & Hospitality Spaces – Perfect for upscale hotels, offices, and design-centric spaces."
+           " Exterior Facades & Wall Claddings – Adds depth and visual intrigue to any structure.",
+" Pavements & Flooring – Slip-resistant and built for endurance",
+" Luxury Interiors – Feature walls, statement countertops, and custom furniture.",
+" High-Traffic Flooring & Pavements – Slip-resistant and built to withstand wear.",
+" Commercial & Hospitality Spaces – Perfect for upscale hotels, offices, and design-centric spaces."
         ]
     },
     {
@@ -86,11 +86,11 @@ const galleryData = [
 
         ],
         applications:[
-           " 🏛 Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
-"🏡 Luxury Interior Accents – Ideal for feature walls, fireplace surrounds, and artistic panels",
-"🏡 Luxury Interiors – A bold statement stone for modern spaces",
-"🚶 High-Traffic Flooring & Pavements – Slip-resistant and built for lasting performance",
-"🏢 Commercial & Hospitality Spaces – Elevates modern office buildings, hotels, and retail spaces"
+           " Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
+" Luxury Interior Accents – Ideal for feature walls, fireplace surrounds, and artistic panels",
+" Luxury Interiors – A bold statement stone for modern spaces",
+" High-Traffic Flooring & Pavements – Slip-resistant and built for lasting performance",
+"Commercial & Hospitality Spaces – Elevates modern office buildings, hotels, and retail spaces"
         ]
     },
     {
@@ -131,7 +131,7 @@ const galleryData = [
 
         ],
         applications:[
-           " 🌊 Feature Walls & Architectural Facades – Captures the essence of nature’s fluidity in modern design",
+           "  Feature Walls & Architectural Facades – Captures the essence of nature’s fluidity in modern design",
 "Luxury Interiors – Adds depth and character to countertops, accent walls, and flooring",
 "Luxury Interiors – A bold statement stone for modern spaces",
 "Outdoor Spaces & Landscaping – A durable, weather-resistant choice for pavements and garden features.",
@@ -179,7 +179,7 @@ const galleryData = [
 
         ],
         applications:[
-           " 🏛 Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
+           "  Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
 "Pavements & Flooring – Slip-resistant and built for endurance",
 "Luxury Interiors – A bold statement stone for modern spaces",
 "Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
@@ -271,10 +271,10 @@ const galleryData = [
         ],
         applications:[
            " ⚫ Architectural Facades & Claddings – A modern masterpiece for high-rise buildings and statement walls",
-"🏡 Luxury Interiors – Adds depth and sophistication to feature walls, fireplace surrounds, and furniture",
-"🚶 Pavements & High-Traffic Flooring – A robust yet elegant choice for urban landscapes",
-"🏢 Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
-"🏢 Retail & Hospitality Spaces – Elevates commercial environments with a bold, high-end look."
+"Luxury Interiors – Adds depth and sophistication to feature walls, fireplace surrounds, and furniture",
+"Pavements & High-Traffic Flooring – A robust yet elegant choice for urban landscapes",
+"Commercial & Hospitality Projects – Ideal for high-end offices, hotels, and retail spaces",
+"Retail & Hospitality Spaces – Elevates commercial environments with a bold, high-end look."
         ]
     },
     {
@@ -497,7 +497,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         setTimeout(() => {
-            modalTitle.textContent = item.title;
+            modalTitle.innerHTML = item.title;
             modalDescription.textContent = item.description;
             modalFeatures.innerHTML = item.features.map(feature => `<li>${feature}</li>`).join('');
             gallery.innerHTML = `

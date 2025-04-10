@@ -28,7 +28,7 @@
 
 .modal-content {
     position: relative;
-    width: 95%;
+    width: 90%;
     height: auto;
     max-width: 95vw;
     max-height: 95vh;
@@ -60,7 +60,7 @@
     justify-content: center;
     position: relative;
     padding: 1rem;
-    height: 100vh;
+    height: fit-content;
     /* overflow-y: scroll; */
 }
 
@@ -218,6 +218,7 @@
     font-weight: 400;
 }
 
+
 .modal-1 .modal-caption p {
     display: inline-block;
     color: #000000;
@@ -347,7 +348,7 @@
 
 /* Gallery Item Styles */
 .gallery-item {
-    margin: 1rem;
+    /* margin: 1rem; */
     position: relative;
     overflow: hidden;
     border-radius: 0rem;
@@ -866,16 +867,13 @@ background: #fff;
         margin-bottom: 20px;
     }
     
-    #modalFeatures li,
-    #modalApplications li {
-        margin-bottom: 10px;
-    }
+    
     
     @media screen and (max-width: 768px) {
  
     
         #modalTitle {
-            font-size: 20px;
+            font-size: 3rem;
         }
     
         #modalDescription {
@@ -904,7 +902,7 @@ background: #fff;
         animation: modalOpen 0.4s ease;
         font-family: 'Playfair Display', serif; /* Elegant serif font */
         color: #3c2415; /* Dark brown text color */
-        padding: 4rem 1rem;
+        padding: 4rem 0;
         overflow-y: scroll;
         overflow-x: hidden;
     }
@@ -966,7 +964,7 @@ background: #fff;
 
 
     .modal-content ul li{
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
         padding-left: 20px; /* Indent for list items */
         position: relative;
         text-align: left;
@@ -978,7 +976,8 @@ background: #fff;
     .gallery-2{
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 3 products per line */
-
+        height: 50vh;
+        width: 100%;
         gap: 1rem;
         margin-bottom: 20px;
     }
@@ -993,7 +992,7 @@ background: #fff;
         transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         aspect-ratio: 9/8;
         width: 100%;
-        height: auto;
+        height: 100%;
         /* max-height: 0%; */
         object-fit: cover;
         
@@ -1023,7 +1022,7 @@ background: #fff;
     }
 
     .modal-1 .modal-caption li {
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
         padding-left: 5px; /* Indent for list items */
         position: relative;
         text-align: left;
@@ -1064,7 +1063,7 @@ background: #fff;
             padding: 1rem;
         }
         .modal-caption h3 {
-            font-size: 1.5rem;
+            font-size: 3.5rem;
         }
     }
     
@@ -1145,7 +1144,7 @@ background: #fff;
     .swiper-slide img {
         width: 100%;
         height: 100%;
-        object-fit:fill;
+        object-fit:contain;
     }
 
     .swiper-button-next,
