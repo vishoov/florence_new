@@ -67,6 +67,24 @@ body {
   display: none;
 }
 
+.butts{
+  font-size: 20px;
+  position: inherit;
+  font-weight: 300;
+  width: 50%;
+  border: none;
+  background-color: #000;
+color: #fff;
+  font-family: "Playfair Display", serif;
+}
+
+.butts:hover{
+  cursor: pointer;
+  border: solid 1px var(--orange);
+  color: black;
+  background-color: transparent;
+}
+
 .gallery-product .main-img img.active {
   display: inline-block;
   /* max-width: 445px; */
