@@ -386,16 +386,17 @@ document.addEventListener('DOMContentLoaded', function() {
             
             galleryItem.innerHTML = `
                 <div class="gallery-image-container">
-                    <img 
-                        src="${item.imageSrc}" 
-                        alt="${item.alt}" 
-                        class="gallery-image"
-                        loading="lazy"
-                    >
+                    <a href="./0${index+1}.html" class="gallery-link">
+                        <img 
+                            src="${item.imageSrc}" 
+                            alt="${item.alt}" 
+                            class="gallery-image"
+                            loading="lazy"
+                        >
+                    </a>
                 </div>
                 <div class="gallery-caption">
                     <h3 style="font-size:1.5rem">${item.title}</h3>
-                 
                 </div>
             `;
             
