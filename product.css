@@ -309,7 +309,9 @@ body {
 /* Mobile */
 
 @media (max-width: 755px) {
-  
+  .gallery-product{
+    width: 100%;
+  }
   /* main */
 
   .main-product {
@@ -347,7 +349,7 @@ body {
   .gallery-product .main-img img.active {
     max-width: none;
     height: 60vh;
-    width: 100vw;
+    /* width: 100vw; */
 
     border-radius: 0;
   }
@@ -360,6 +362,11 @@ body {
     font-family: "Cruell", sans-serif;
     margin: 10px 0;
     font-size: 30px;
+  }
+
+  .product-container{
+    margin: 5rem auto 0 auto;
+    width: 100%;
   }
 
   .price-info {
