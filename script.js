@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
         fadeEffect: { crossFade: true }, // Ensures smooth fading between slides
         loop: true, // Enables looping of slides
         autoplay: {
-            delay: 7000, // Delay between slides in milliseconds
+            delay: 3000, // Delay between slides in milliseconds
             disableOnInteraction: false, // Keeps autoplay running even after user interaction
         },
         navigation: {
