@@ -2018,6 +2018,28 @@ textarea {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
+  @media screen and (max-width: 768px) {
+    .contact-form-wrapper {
+      margin: 0;
+      height: auto;
+      padding: 0;  
+    }
+    .contact-info {
+      padding: 0;
+    }
+
+    .text h2{
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .text p{
+        font-size: 1rem;
+        margin: 0;
+    }
+    
+  }
+
   .form-group {
     margin-bottom: 0rem;
   }
