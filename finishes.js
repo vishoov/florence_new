@@ -12,7 +12,6 @@ const galleryData = [
 "High Durability – Scratch, stain, and weather-resistant, perfect for high-traffic areas",
 "Slip-Resistant Surface – Ideal for pavements, outdoor flooring, and facades",
 "Customizable Thickness – Available in 1cm to 2cm as per project requirements"
-
         ],
         applications:[
            "  Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
@@ -386,17 +385,16 @@ document.addEventListener('DOMContentLoaded', function() {
             
             galleryItem.innerHTML = `
                 <div class="gallery-image-container">
-                    <a href="./0${index+1}.html" class="gallery-link">
-                        <img 
-                            src="${item.imageSrc}" 
-                            alt="${item.alt}" 
-                            class="gallery-image"
-                            loading="lazy"
-                        >
-                    </a>
+                    <img 
+                        src="${item.imageSrc}" 
+                        alt="${item.alt}" 
+                        class="gallery-image"
+                        loading="lazy"
+                    >
                 </div>
                 <div class="gallery-caption">
                     <h3 style="font-size:1.5rem">${item.title}</h3>
+                 
                 </div>
             `;
             
