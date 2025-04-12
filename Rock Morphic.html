@@ -17,6 +17,16 @@
     <link rel="stylesheet" href="istyle.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="product.css" />
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init("--0oZCKHxLh1dlFX9"); // Replace YOUR_PUBLIC_KEY with your actual public key from the EmailJS dashboard
+  })();
+</script>
+
+
+
+
   </head>
   <body>
 
@@ -118,12 +128,12 @@
           <div class="add-to-cart-container">
            
           
-            <button class="form-trigger butts" >
+            <button class="butts" >
              <a href="https://wa.me/918595011410?text=Hello%20Florence%20Stone%20Concepts%20I%20am%20interested%20in%20Rock%20Morphic" target="_blank" style="text-decoration: none; color: inherit;">
               <span>ENQUIRE NOW </span>
             </a>  
             </button>
-            <button class="form-trigger butts">
+            <button class="butts">
               <a href="https://wa.me/918595011410?text=Hello%20Florence%20Stone%20Concepts" target="_blank" style="text-decoration: none; color: inherit;">
                  <span>CONNECT ON WHATSAPP </span>
              </a>  
@@ -182,13 +192,14 @@
             <div class="form-container">
                 <button class="close-btn">×</button>
                 <h2>GET IN TOUCH</h2>
-                <form class="contact-form">
+                <form class="contact-form" id="contact-form">
+            
                     <div class="form-row">
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="Email" required>
-                        <input type="text" placeholder="Subject" required>
+                        <input type="text" placeholder="Name" name="name" required>
+                        <input type="email" placeholder="Email" required name="email" >
+                        <input type="text" placeholder="Subject" required name="subject">
                     </div>
-                    <textarea placeholder="Message" required></textarea>
+                    <textarea placeholder="Message" required name="message"></textarea>
                     <button type="submit" class="submit-btn">SUBMIT</button>
                 </form>
             </div>
@@ -265,6 +276,27 @@
         </div>
     </footer>
     <script src="./script.js"></script>
-    <script src="product.js"></script>
+    <script src="./product.js"></script>
+    <script src="./email.js"></script>
+    <script>
+    
+        document.addEventListener('DOMContentLoaded', () => {
+    const formTrigger = document.querySelector('.form-trigger');
+    const formPopup = document.querySelector('.form-popup');
+    const closeBtn = document.querySelector('.close-btn');
+
+    // Open popup
+    formTrigger.addEventListener('click', () => {
+        formPopup.classList.add('active');
+    });
+
+    // Close popup
+    closeBtn.addEventListener('click', () => {
+        formPopup.classList.remove('active');
+    });
+});
+
+   
+    </script>
   </body>
 </html>

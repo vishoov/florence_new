@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./designer.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init("--0oZCKHxLh1dlFX9"); // Replace YOUR_PUBLIC_KEY with your actual public key from the EmailJS dashboard
+  })();
+</script>
+<script src="./email.js" ></script>
 </head>
 <body>
     <nav class="navbar">
@@ -285,7 +293,8 @@
             <div class="form-container">
                 <button class="close-btn">×</button>
                 <h2>GET IN TOUCH</h2>
-                <form class="contact-form">
+                <form class="contact-form" id="contact-form">
+            
                     <div class="form-row">
                         <input type="text" placeholder="Name" required>
                         <input type="email" placeholder="Email" required>

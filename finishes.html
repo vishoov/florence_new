@@ -8,7 +8,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel ='stylesheet' href="./finishes.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8.4.7/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper@8.4.7/swiper-bundle.min.js"></script>
+   
+  
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init("--0oZCKHxLh1dlFX9"); // Replace YOUR_PUBLIC_KEY with your actual public key from the EmailJS dashboard
+  })();
+</script>
+<script src="./email.js" ></script>
 </head>
 <body>
 
@@ -196,13 +204,14 @@
             <div class="form-container">
                 <button class="close-btn">×</button>
                 <h2>GET IN TOUCH</h2>
-                <form class="contact-form">
+                <form class="contact-form" id="contact-form">
+            
                     <div class="form-row">
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="Email" required>
-                        <input type="text" placeholder="Subject" required>
+                        <input type="text" placeholder="Name" name="name" required>
+                        <input type="email" placeholder="Email" name="email" required>
+                        <input type="text" placeholder="Subject" name="subject" required>
                     </div>
-                    <textarea placeholder="Message" required></textarea>
+                    <textarea placeholder="Message" required name="message"></textarea>
                     <button type="submit" class="submit-btn">SUBMIT</button>
                 </form>
             </div>

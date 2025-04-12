@@ -313,7 +313,8 @@ body {
 
 @media (max-width: 768px) {
     .hero {
-        height: 70vh;
+        height: 60vh;
+        margin-bottom:50px;
     }
 
     .banner-title {

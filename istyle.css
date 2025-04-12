@@ -1904,9 +1904,7 @@ textarea {
   }
   
   @media (max-width: 992px) {
-    .video-section {
-      padding: 3rem 2rem;
-    }
+    
     
     .video-title {
       font-size: 3.5rem;
@@ -1914,9 +1912,7 @@ textarea {
   }
   
   @media (max-width: 768px) {
-    .video-section {
-      padding: 2rem 1rem;
-    }
+    
     
     .video-title {
       font-size: 2.5rem;

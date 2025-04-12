@@ -8,6 +8,14 @@
 
     <link rel="stylesheet" href="./istyle.css">
     <link rel="stylesheet" href="./mouldings.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init("--0oZCKHxLh1dlFX9"); // Replace YOUR_PUBLIC_KEY with your actual public key from the EmailJS dashboard
+  })();
+</script>
+<script src="./email.js" ></script>
     <style>
         .finishes-section {
             margin: 4rem 0 0 0 ;
@@ -321,7 +329,8 @@
             <div class="form-container">
                 <button class="close-btn">×</button>
                 <h2>GET IN TOUCH</h2>
-                <form class="contact-form">
+                <form class="contact-form" id="contact-form">
+            
                     <div class="form-row">
                         <input type="text" placeholder="Name" required>
                         <input type="email" placeholder="Email" required>
@@ -401,6 +410,7 @@
             </div>
         </div>
     </footer>
+   
     <script>
         const carousel = document.getElementById('carousel');
         let position = 0;
