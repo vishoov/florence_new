@@ -682,6 +682,10 @@ background: #fff;
     gap: 2rem;
 }
 
+.nav-column > *{
+    font-family: "Times New Roman", Times, serif;
+}
+
 .nav-column h3 {
     font-size: 1rem;
     margin-bottom: 1.5rem;
@@ -699,10 +703,13 @@ background: #fff;
     color: #000;
 }
 
+
+
 .nav-column a {
     color: #000;
     text-decoration: none;
     display: flex;
+    font-family: "Times New Roman", Times, serif;
     align-items: center;
     gap: 0.5rem;
     transition: color 0.3s ease;
@@ -732,7 +739,9 @@ background: #fff;
     margin: 0 auto;
     color: #000;
 }
-
+.footer-bottom >*{
+    font-family: "Times New Roman", Times, serif;
+}
 
 
 .legal-links {
