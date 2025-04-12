@@ -243,16 +243,16 @@ padding-top: 4rem;}
 .product-content h2 {
   font-family: "Cruell", sans-serif;
   font-size: 47px;
-  margin: 20px 0 40px 0;
+  margin: 0 0 20px 0;
 }
 
 .product-content p {
   font-family: "Calibri", sans-serif;
   color: #000000af;
 line-height: 1.3;
-
+  
   font-size: 1.2rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: 300;
 
 }
@@ -331,6 +331,10 @@ line-height: 1.8;
 
 .counter .count {
   font-weight: 700;
+}
+
+.price{
+  padding-top: 20px;
 }
 
 .add-to-cart {
@@ -427,6 +431,7 @@ line-height: 1.8;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+    margin-top: 20px;
   }
 
   .prev-price {
