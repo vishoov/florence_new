@@ -2426,12 +2426,13 @@ textarea {
 }
 
 .swiper-slide{
+
     object-fit: cover;
-    height: 40vh;
+    height: 45vh;
 }
 
 .content-wrapper{
-    height: 40vh;
+    height: 50vh;
 }
 
 
