@@ -371,7 +371,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize the gallery
     function initGallery() {
         renderGalleryItems();
-        setupEventListeners();
+        // setupEventListeners();
     }
     
     // Render gallery items from data
@@ -385,6 +385,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             galleryItem.innerHTML = `
                 <div class="gallery-image-container">
+                <a href="${item.title}.html">
                     <img 
                         src="${item.imageSrc}" 
                         alt="${item.alt}" 
@@ -394,7 +395,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 <div class="gallery-caption">
                     <h3 style="font-size:1.5rem">${item.title}</h3>
-                 
+                 </a>
                 </div>
             `;
             
@@ -403,41 +404,41 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Set up event listeners
-    function setupEventListeners() {
-        // Gallery item click
-        galleryContainer.addEventListener('click', function(e) {
-            const galleryItem = e.target.closest('.gallery-item');
-            if (galleryItem) {
-                currentImageIndex = parseInt(galleryItem.dataset.index);
-                openModal(currentImageIndex);
-            }
-        });
+    // function setupEventListeners() {
+    //     // Gallery item click
+    //     galleryContainer.addEventListener('click', function(e) {
+    //         const galleryItem = e.target.closest('.gallery-item');
+    //         if (galleryItem) {
+    //             currentImageIndex = parseInt(galleryItem.dataset.index);
+    //             openModal(currentImageIndex);
+    //         }
+    //     });
         
-        // Close modal
-        closeBtn.addEventListener('click', closeModal);
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) {
-                closeModal();
-            }
-        });
+    //     // Close modal
+    //     closeBtn.addEventListener('click', closeModal);
+    //     modal.addEventListener('click', function(e) {
+    //         if (e.target === modal) {
+    //             closeModal();
+    //         }
+    //     });
         
-        // Navigation
-        prevBtn.addEventListener('click', showPreviousImage);
-        nextBtn.addEventListener('click', showNextImage);
+    //     // Navigation
+    //     prevBtn.addEventListener('click', showPreviousImage);
+    //     nextBtn.addEventListener('click', showNextImage);
         
-        // Keyboard navigation
-        document.addEventListener('keydown', function(e) {
-            if (!modal.classList.contains('show')) return;
+    //     // Keyboard navigation
+    //     document.addEventListener('keydown', function(e) {
+    //         if (!modal.classList.contains('show')) return;
             
-            if (e.key === 'Escape') {
-                closeModal();
-            } else if (e.key === 'ArrowLeft') {
-                showPreviousImage();
-            } else if (e.key === 'ArrowRight') {
-                showNextImage();
-            }
-        });
-    }
+    //         if (e.key === 'Escape') {
+    //             closeModal();
+    //         } else if (e.key === 'ArrowLeft') {
+    //             showPreviousImage();
+    //         } else if (e.key === 'ArrowRight') {
+    //             showNextImage();
+    //         }
+    //     });
+    // }
     
     // Open modal with specific image
     function openModal(index) {
@@ -455,63 +456,63 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = '';
     }
     
-    // Update modal content with smooth transition
-    function updateModalContent(index) {
-        const item = galleryData[index];
+    // // Update modal content with smooth transition
+    // function updateModalContent(index) {
+    //     const item = galleryData[index];
         
-        // Apply transition effect
-        modalImage.style.opacity = '0';
-        modalImage.style.transform = 'translateX(30px)';
+    //     // Apply transition effect
+    //     modalImage.style.opacity = '0';
+    //     modalImage.style.transform = 'translateX(30px)';
         
-        // Clear existing swiper slides and create new ones
-        const swiperWrapper = document.querySelector('.modal-swiper .swiper-wrapper');
-        swiperWrapper.innerHTML = '';
+    //     // Clear existing swiper slides and create new ones
+    //     const swiperWrapper = document.querySelector('.modal-swiper .swiper-wrapper');
+    //     swiperWrapper.innerHTML = '';
         
-        // Add main image slide
-        const mainSlide = document.createElement('div');
-        mainSlide.className = 'swiper-slide';
-        mainSlide.innerHTML = `<img src="${item.imageSrc}" alt="${item.alt}" class="modal-image">`;
-        swiperWrapper.appendChild(mainSlide);
+    //     // Add main image slide
+    //     const mainSlide = document.createElement('div');
+    //     mainSlide.className = 'swiper-slide';
+    //     mainSlide.innerHTML = `<img src="${item.imageSrc}" alt="${item.alt}" class="modal-image">`;
+    //     swiperWrapper.appendChild(mainSlide);
         
-        // Add gallery1 slide if it exists
-        if (item.gallery1) {
-            const gallery1Slide = document.createElement('div');
-            gallery1Slide.className = 'swiper-slide';
-            gallery1Slide.innerHTML = `<img src="${item.gallery1}" alt="${item.alt}">`;
-            swiperWrapper.appendChild(gallery1Slide);
-        }
+    //     // Add gallery1 slide if it exists
+    //     if (item.gallery1) {
+    //         const gallery1Slide = document.createElement('div');
+    //         gallery1Slide.className = 'swiper-slide';
+    //         gallery1Slide.innerHTML = `<img src="${item.gallery1}" alt="${item.alt}">`;
+    //         swiperWrapper.appendChild(gallery1Slide);
+    //     }
         
-        // Add gallery2 slide if it exists
-        if (item.gallery2) {
-            const gallery2Slide = document.createElement('div');
-            gallery2Slide.className = 'swiper-slide';
-            gallery2Slide.innerHTML = `<img src="${item.gallery2}" alt="${item.alt}">`;
-            swiperWrapper.appendChild(gallery2Slide);
-        }
+    //     // Add gallery2 slide if it exists
+    //     if (item.gallery2) {
+    //         const gallery2Slide = document.createElement('div');
+    //         gallery2Slide.className = 'swiper-slide';
+    //         gallery2Slide.innerHTML = `<img src="${item.gallery2}" alt="${item.alt}">`;
+    //         swiperWrapper.appendChild(gallery2Slide);
+    //     }
         
-        // Update Swiper instance to recognize new slides
-        if (modalSwiper) {
-            modalSwiper.update();
-            modalSwiper.slideTo(0, 0); // Reset to first slide
-        }
+    //     // Update Swiper instance to recognize new slides
+    //     if (modalSwiper) {
+    //         modalSwiper.update();
+    //         modalSwiper.slideTo(0, 0); // Reset to first slide
+    //     }
         
-        setTimeout(() => {
-            modalTitle.innerHTML = item.title;
-            modalDescription.textContent = item.description;
-            modalFeatures.innerHTML = item.features.map(feature => `<li>${feature}</li>`).join('');
-            gallery.innerHTML = `
-                <img src="${item.gallery1}" alt="${item.alt}" class="inner-image">
-                <img src="${item.gallery2}" alt="${item.alt}" class="inner-image">
-            `;
-            modalApplications.innerHTML = item.applications.map(application => `<li>${application}</li>`).join('');
+    //     setTimeout(() => {
+    //         modalTitle.innerHTML = item.title;
+    //         modalDescription.textContent = item.description;
+    //         modalFeatures.innerHTML = item.features.map(feature => `<li>${feature}</li>`).join('');
+    //         gallery.innerHTML = `
+    //             <img src="${item.gallery1}" alt="${item.alt}" class="inner-image">
+    //             <img src="${item.gallery2}" alt="${item.alt}" class="inner-image">
+    //         `;
+    //         modalApplications.innerHTML = item.applications.map(application => `<li>${application}</li>`).join('');
             
-            // Reveal with animation
-            modalImage.style.opacity = '1';
-            modalImage.style.transform = 'translateX(0)';
-        }, 300);
+    //         // Reveal with animation
+    //         modalImage.style.opacity = '1';
+    //         modalImage.style.transform = 'translateX(0)';
+    //     }, 300);
         
-        modal.style.display = 'flex';
-    }
+    //     modal.style.display = 'flex';
+    // }
     
     
     // Show previous image

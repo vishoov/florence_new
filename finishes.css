@@ -965,6 +965,7 @@ background: #fff;
 
     .modal-content ul li{
         /* margin-bottom: 10px; */
+        
         padding-left: 20px; /* Indent for list items */
         position: relative;
         text-align: left;
@@ -1173,11 +1174,13 @@ background: #fff;
         .swiper-slide {
             flex-direction: column;
             text-align: center;
-            padding: 1rem;
-            height: 100%;
+            /* padding: 1rem; */
+            height: 50vh;
             width: 100%;
         }
-
+        .hero-swiper-section{
+            height: 50vh;
+        }
         .gallery-2{
             height: fit-content;
         }
