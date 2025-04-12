@@ -314,7 +314,7 @@ font-size: 0.9rem;
 @media (max-width: 768px) {
     .swiper-button-prev,
     .swiper-button-next {
-       transform: translateY(-27vh);
+       transform: translateY(-22vh);
     }
 }
 
@@ -2477,7 +2477,7 @@ textarea {
 
 @media (max-width: 768px) {
    .strategy-about-section {
-        padding: 4rem 0rem;
+        padding: 2rem 0rem;
         
     }
     .strategy-container {
