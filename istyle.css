@@ -579,7 +579,7 @@ visibility: visible;
     }
     .title {
         margin: 2rem auto;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .services-container {
         padding: 2rem 1rem;
@@ -864,7 +864,7 @@ background: #fff;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 4rem 4rem;
+    padding: 4rem 0 !important; 
     /* margin:0 2rem; */
     /* width: 100%; */
 }
@@ -1382,6 +1382,9 @@ background: #fff;
     .gallery-item {
         aspect-ratio: 1/1;
     }
+
+    
+    
 }
 
 
@@ -1456,7 +1459,7 @@ background: #fff;
 .process-overlay h3 {
     color: #000;
     font-family: 'Cruell';
-    font-size: 25px;
+   
     font-weight: 200;
     margin: 0;
 }
@@ -1499,7 +1502,7 @@ background: #fff;
 }
 
 .contact-container {
-    max-width: 1450px;
+    /* max-width: 1450px; */
     margin: 0 4rem;
     display: flex;
     /* flex-direction: column; */
@@ -2488,7 +2491,7 @@ textarea {
     }
 
     .some-content h1{
-        max-width: 50%;
+        max-width: 60%;
     }
 
     .some-content p{
@@ -2572,6 +2575,7 @@ textarea {
 
 .title{
     font-weight: 200;
+    padding: 0.5rem;
 }
 
 .italic{
