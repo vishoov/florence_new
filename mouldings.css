@@ -115,6 +115,11 @@
 
     }
 
+    .container{
+        padding: 0rem 10px 4rem 10px; /* Adjusted padding for smaller screens */
+
+    }
+
     .work-grid {
         grid-template-columns: 1fr;
         height: auto;

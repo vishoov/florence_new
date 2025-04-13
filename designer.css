@@ -316,7 +316,9 @@ body {
         height: 60vh;
         margin-bottom:50px;
     }
-
+    .exotica-container {
+        margin-bottom: 4rem;
+    }
     .banner-title {
         font-size: 32px;
     }
@@ -356,9 +358,13 @@ body {
     .branding-content {
         width: 100%;
     }
+    .branding-content{
+        order: 0;
+    }
 
     .branding-image {
         margin-bottom: 2rem;
+        order: 1;
     }
 
     .branding-title {
