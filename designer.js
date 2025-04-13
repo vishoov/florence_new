@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
             let autoplayinterval;
 
             const autoplay = {
-                delay:3000,
-
+                delay:4000,
+                speed: 4500,
                 pauseOnHover:true
             }
 

@@ -569,7 +569,14 @@ visibility: visible;
         margin: 0 auto;
         font-size: 3rem;
         width: 100%;
-        text-align: center;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .process-container{
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
     }
 }
 
@@ -776,7 +783,7 @@ background: #fff;
     .footer {
         padding: 2rem;
     }
-
+  
     .nav-section {
         grid-template-columns: 1fr;
     }
@@ -1846,7 +1853,7 @@ textarea {
   
   .video-wrapper {
     position: relative;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16/11;
   }
   
   .video-wrapper video {
@@ -2275,7 +2282,7 @@ textarea {
 
 .some-content p{
     font-size: 1.25rem;
-   
+    max-width: 85%;
     line-height: 1.3;
     letter-spacing: 1px;
     font-family: 'Times New Roman', Times, serif;
