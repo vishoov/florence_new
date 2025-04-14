@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 *,
 *::before,
@@ -251,13 +250,13 @@ x
 }
 
 .product-content p {
-  font-family: "Calibri", sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   color: #000000af;
 line-height: 1.3;
   
   font-size: 1.2rem;
   margin-bottom: 20px;
-  font-weight: 300;
+  /* font-weight: 300; */
 
 }
 .price {
