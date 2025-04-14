@@ -1155,6 +1155,7 @@ background: #fff;
     .swiper-button-next,
     .swiper-button-prev {
         color: #000 !important;
+        scale: 0.5;
         
     }
 
@@ -1191,7 +1192,6 @@ background: #fff;
         .swiper-button-next, 
         .swiper-button-prev {
             transform: translateY(-50%);
-            scale: 0.5;
         }
 
         
