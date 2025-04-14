@@ -781,7 +781,7 @@ background: #fff;
         margin: 0 auto;
         max-width: 70% !important;
         line-height: 1.4;
-        font-size: 1rem !important; 
+        font-size: 1rem; 
         letter-spacing: 1px;
         font-weight: 300;
         font-family: 'Times New Roman', serif; /* Elegant serif font */
