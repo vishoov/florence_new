@@ -778,8 +778,9 @@ background: #fff;
         /* color: #6E503D; */
         /* max-width: 80vw; */
         margin: 0 auto;
-        max-width: 80% !important;
-        line-height: 1.2;
+        max-width: 90% !important;
+        line-height: 1.4;
+        font-size: 1rem !important; 
         letter-spacing: 1px;
         font-weight: 300;
         font-family: 'Times New Roman', serif; /* Elegant serif font */
