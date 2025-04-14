@@ -572,10 +572,7 @@
         font-size: 2.5rem;
     }
 
-    .section-description {
-        font-size: 1rem;
-    }
-
+  
     .finishes-gallery {
         grid-template-columns: 1fr; /* 1 product per line on mobile */
     }
@@ -775,13 +772,11 @@ background: #fff;
 
     
     .intro .section-description {
-        /* font-size: 1.5rem; */
-        /* color: #6E503D; */
-        /* max-width: 80vw; */
+       
         margin: 0 auto;
         max-width: 70% !important;
         line-height: 1.4;
-        font-size: 1rem; 
+        font-size: 1.2rem; 
         letter-spacing: 1px;
         font-weight: 300;
         font-family: 'Times New Roman', serif; /* Elegant serif font */
@@ -803,7 +798,7 @@ background: #fff;
         }
 
         .intro .section-description {
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
     }
 
