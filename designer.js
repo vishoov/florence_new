@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // Hero Swiper (Using the Swiper library's initialization)
-    const heroSwiper = new Swiper('.heroSwiper', {
+    new Swiper('.heroSwiper', {
         slidesPerView: 1,
         spaceBetween: 0,
         loop: true,
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
     animateHamburger(false);
 
     // Banner Title Animation (No changes needed)
-    gsap.fromTo(".banner-title", {
+    gsap.fromTo("#slide1", {
         opacity: 0,
         y: 20
     }, {
@@ -207,6 +207,24 @@ document.addEventListener('DOMContentLoaded', function() {
         y: 0,
         duration: 1,
         delay: 1
+    });
+    gsap.fromTo("#slide2", {
+        opacity: 0,
+        y: 20
+    }, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        delay: 4
+    });
+    gsap.fromTo("#slide3", {
+        opacity: 0,
+        y: 20
+    }, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        delay: 9
     });
 });
 
