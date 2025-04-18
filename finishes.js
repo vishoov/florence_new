@@ -11,7 +11,7 @@ const galleryData = [
             "Natural Textured / Leathered Finish – A refined, weathered look with a matte, anti-glare surface",
 "High Durability – Scratch, stain, and weather-resistant, perfect for high-traffic areas",
 "Slip-Resistant Surface – Ideal for pavements, outdoor flooring, and facades",
-"Customizable Thickness – Available in 1cm to 2cm as per project requirements"
+"Customizable Thickness – Available in 2cm to 3cm as per project requirements"
         ],
         applications:[
            "  Exterior Facades & Wall Claddings – Adds depth and raw sophistication",
@@ -34,7 +34,7 @@ const galleryData = [
          "   Linear Textured Finish – A precision-carved, tactile surface that enhances depth and character.",
 "High Durability – Resistant to wear, weather, and moisture, ensuring longevity in high-traffic areas.",
 "Natural Light Play – The textured lines create a stunning contrast of light and shadow, adding dimensional beauty to any space.",
-"Custom Thickness – Available in 1cm to 2cm to suit diverse applications."
+"Custom Thickness – Available in 2cm to 3cm to suit diverse applications."
 
         ],
         applications:[
@@ -56,7 +56,7 @@ const galleryData = [
         features:[
             "Textured / Leathered Finish – Enhances the natural grain, providing a sensory, matte surface with a subtle sheen.",
 "Extreme Durability – Resistant to scratches, heat, stains, and weathering, ideal for high-traffic and outdoor applications",
-"Custom Thickness – Available in 1cm to 2cm for tailored design flexibility.",
+"Custom Thickness – Available in 2cm to 3cm for tailored design flexibility.",
 "Natural Flowing Aesthetic – The undulating stone formations create an artistic, sculptural effect, perfect for modern architecture"
 
         ],
@@ -81,7 +81,7 @@ const galleryData = [
             "Fine Linear Groove Texture – Precision-crafted for a structured, modern appeal",
 "Enhanced Depth & Shadow Play – The grooved surface creates dynamic visual movement as lighting shifts",
 "Durability & Slip-Resistance – Perfect for exterior claddings, flooring, and high-traffic areas.",
-"Custom Thickness – Available in 1cm to 2cm, tailored to architectural needs."
+"Custom Thickness – Available in 2cm to 3cm, tailored to architectural needs."
 
         ],
         applications:[
@@ -104,7 +104,7 @@ const galleryData = [
             "Fluted Surface – Precision-carved grooves add depth, rhythm, and sculptural beauty.",
 "Natural Marble-Like Veining – The organic movement of dark veins against a neutral backdrop enhances elegance.",
 "Durability & Strength – Highly resistant to wear, stains, and weather, ensuring longevity in both indoor and outdoor applications",
-"Custom Thickness – Available in 1cm to 2cm, tailored for bespoke designs"
+"Custom Thickness – Available in 2cm to 3cm, tailored for bespoke designs"
 
         ],
         applications:[
@@ -126,7 +126,7 @@ const galleryData = [
             "Natural Textured Finish – Enhances the rugged, raw beauty of the stone while maintaining a refined aesthetic",
 "Dynamic Flowing Veining – The swirling wave-like patterns evoke movement and artistry, making every slab unique",
 "Durable & Resilient – Withstands weathering, high traffic, and environmental stress, perfect for both interiors and exteriors",
-"Custom Thickness – Available in 1cm to 2cm, suited for diverse applications"
+"Custom Thickness – Available in 2cm to 3cm, suited for diverse applications"
 
         ],
         applications:[
@@ -174,7 +174,7 @@ const galleryData = [
             "Natural Textured / Leathered Finish – A refined, weathered look with a matte, anti-glare surface",
 "High Durability – Scratch, stain, and weather-resistant, perfect for high-traffic areas",
 "Slip-Resistant Surface – Ideal for pavements, outdoor flooring, and facades",
-"Customizable Thickness – Available in 1cm to 2cm as per project requirements"
+"Customizable Thickness – Available in 2cm to 3cm as per project requirements"
 
         ],
         applications:[
@@ -197,7 +197,7 @@ const galleryData = [
             "Natural Textured / Leathered Finish – A refined, weathered look with a matte, anti-glare surface",
 "High Durability – Scratch, stain, and weather-resistant, perfect for high-traffic areas",
 "Slip-Resistant Surface – Ideal for pavements, outdoor flooring, and facades",
-"Customizable Thickness – Available in 1cm to 2cm as per project requirements"
+"Customizable Thickness – Available in 2cm to 3cm as per project requirements"
 
         ],
         applications:[
@@ -265,7 +265,7 @@ const galleryData = [
             "Linear Textured Finish – Creates a refined yet raw industrial appeal.",
 "Deep Black Aesthetic – A bold statement for contemporary and minimalist designs.",
 "Durable & Weather-Resistant – Suitable for high-traffic and exterior applications",
-"Custom Thickness – Available in 1cm to 2cm, allowing flexibility in design"
+"Custom Thickness – Available in 2cm to 3cm, allowing flexibility in design"
 
         ],
         applications:[
@@ -288,7 +288,7 @@ const galleryData = [
             "Natural Textured / Leathered Finish – A refined, weathered look with a matte, anti-glare surface",
 "High Durability – Scratch, stain, and weather-resistant, perfect for high-traffic areas",
 "Slip-Resistant Surface – Ideal for pavements, outdoor flooring, and facades",
-"Customizable Thickness – Available in 1cm to 2cm as per project requirements"
+"Customizable Thickness – Available in 2cm to 3cm as per project requirements"
 
         ],
         applications:[
@@ -311,7 +311,7 @@ const galleryData = [
             "Natural Textured / Leathered Finish – A refined, weathered look with a matte, anti-glare surface",
 "High Durability – Scratch, stain, and weather-resistant, perfect for high-traffic areas",
 "Slip-Resistant Surface – Ideal for pavements, outdoor flooring, and facades",
-"Customizable Thickness – Available in 1cm to 2cm as per project requirements"
+"Customizable Thickness – Available in 2cm to 3cm as per project requirements"
 
         ],
         applications:[
@@ -334,7 +334,7 @@ const galleryData = [
             "Natural Textured / Leathered Finish – A refined, weathered look with a matte, anti-glare surface",
 "High Durability – Scratch, stain, and weather-resistant, perfect for high-traffic areas",
 "Slip-Resistant Surface – Ideal for pavements, outdoor flooring, and facades",
-"Customizable Thickness – Available in 1cm to 2cm as per project requirements"
+"Customizable Thickness – Available in 2cm to 3cm as per project requirements"
 
         ],
         applications:[
