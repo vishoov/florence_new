@@ -1,15 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     
-
     // Navbar Scroll Hide/Show
     let lastScrollPosition = 0;
     const navbar = document.querySelector('.navbar');
+    const heroSection = document.querySelector('.hero');
     const scrollThreshold = 50;
 
     window.addEventListener('scroll', () => {
         const currentScrollPosition = window.pageYOffset;
         
+        // Hide/Show Navbar
         if (Math.abs(currentScrollPosition - lastScrollPosition) < scrollThreshold) {
             return;
         }
@@ -21,6 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         lastScrollPosition = currentScrollPosition;
+
+        // Hide Hero Section if scrolled more than 150vh
+        if (currentScrollPosition > window.innerHeight * 1.5) {
+            heroSection.style.opacity = 0;
+        } else {
+            heroSection.style.opacity = 1;
+        }
     });
 
     // Mobile Menu Handling
