@@ -1,0 +1,61 @@
+header swiper 
+
+
+
+
+<section class="hero-swiper-section" >
+    <div class="swiper hero-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide-inner" data-text="Polished Marble">
+                    <div class="slide-content">
+                        <!-- <h2>Fine Finishes</h2> -->
+                        <!-- <p>Elegant and timeless surfaces that elevate any space</p> -->
+                    </div>
+                    <div class="slide-bg" style="background-image: url('./img/finishes/01.JPG');"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide-inner" data-text="Honed Granite">
+                    <div class="slide-content">
+                        <!-- <h2>Honed Granite</h2>
+                        <p>Durable and sophisticated with a matte finish</p> -->
+                    </div>
+                    <div class="slide-bg" style="background-image: url('./img/finishes/02.JPG');"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide-inner" data-text="Brushed Limestone">
+                    <div class="slide-content">
+                        <!-- <h2>Brushed Limestone</h2>
+                        <p>Natural texture with a warm, inviting appearance</p> -->
+                    </div>
+                    <div class="slide-bg" style="background-image: url('./img/finishes/03.jpg');"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide-inner" data-text="Brushed Limestone">
+                    <div class="slide-content">
+                        <!-- <h2>Brushed Limestone</h2>
+                        <p>Natural texture with a warm, inviting appearance</p> -->
+                    </div>
+                    <div class="slide-bg" style="background-image: url('./img/finishes/04.JPG');"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide-inner" data-text="Brushed Limestone">
+                    <div class="slide-content">
+                        <!-- <h2>Brushed Limestone</h2>
+                        <p>Natural texture with a warm, inviting appearance</p> -->
+                    </div>
+                    <div class="slide-bg" style="background-image: url('./img/finishes/05.JPG');"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next" style="color: white !important;"></div>
+        <div class="swiper-button-prev" style="color: white !important;"></div>
+        <!-- Pagination -->
+        <!-- <div class="swiper-pagination"></div>  -->
+    </div>
+</section>

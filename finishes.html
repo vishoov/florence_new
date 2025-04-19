@@ -64,64 +64,36 @@
 
 
 
-
-    <!-- Hero Section with Swiper Slideshow -->
-<section class="hero-swiper-section" >
-    <div class="swiper hero-swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="slide-inner" data-text="Polished Marble">
-                    <div class="slide-content">
-                        <!-- <h2>Fine Finishes</h2> -->
-                        <!-- <p>Elegant and timeless surfaces that elevate any space</p> -->
-                    </div>
-                    <div class="slide-bg" style="background-image: url('./img/finishes/01.JPG');"></div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="slide-inner" data-text="Honed Granite">
-                    <div class="slide-content">
-                        <!-- <h2>Honed Granite</h2>
-                        <p>Durable and sophisticated with a matte finish</p> -->
-                    </div>
-                    <div class="slide-bg" style="background-image: url('./img/finishes/02.JPG');"></div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="slide-inner" data-text="Brushed Limestone">
-                    <div class="slide-content">
-                        <!-- <h2>Brushed Limestone</h2>
-                        <p>Natural texture with a warm, inviting appearance</p> -->
-                    </div>
-                    <div class="slide-bg" style="background-image: url('./img/finishes/03.jpg');"></div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="slide-inner" data-text="Brushed Limestone">
-                    <div class="slide-content">
-                        <!-- <h2>Brushed Limestone</h2>
-                        <p>Natural texture with a warm, inviting appearance</p> -->
-                    </div>
-                    <div class="slide-bg" style="background-image: url('./img/finishes/04.JPG');"></div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="slide-inner" data-text="Brushed Limestone">
-                    <div class="slide-content">
-                        <!-- <h2>Brushed Limestone</h2>
-                        <p>Natural texture with a warm, inviting appearance</p> -->
-                    </div>
-                    <div class="slide-bg" style="background-image: url('./img/finishes/05.JPG');"></div>
-                </div>
-            </div>
+    <section class="video-section">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="./img/finishes.webm" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="mute-button-container">
+            <button class="mute-button" aria-label="Mute/Unmute Video">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path class="sound-wave" d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                    <path class="sound-wave" d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                </svg>
+            </button>
         </div>
-        <!-- Navigation buttons -->
-        <div class="swiper-button-next" style="color: white !important;"></div>
-        <div class="swiper-button-prev" style="color: white !important;"></div>
-        <!-- Pagination -->
-        <!-- <div class="swiper-pagination"></div>  -->
-    </div>
-</section>
+
+        <script>
+            const video = document.querySelector('.background-video');
+            const muteButton = document.querySelector('.mute-button');
+            const soundWaves = document.querySelectorAll('.sound-wave');
+
+            muteButton.addEventListener('click', () => {
+                video.muted = !video.muted;
+                if (video.muted) {
+                    soundWaves.forEach(wave => wave.style.display = 'none'); // Hide sound waves
+                } else {
+                    soundWaves.forEach(wave => wave.style.display = 'block'); // Show sound waves
+                }
+            });
+        </script>
+    </section>
 
     <section class="intro" >
         <div class="intro-container">

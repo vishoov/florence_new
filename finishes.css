@@ -1207,3 +1207,76 @@ background: #fff;
             margin-top: 0.5rem;
         }
     }
+    .mute-button-container {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        z-index: 2;
+    }
+
+    .mute-button {
+        background-color: rgba(0, 0, 0, 0.064); /* Semi-transparent black background */
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .mute-button:hover {
+        background-color: rgba(237, 110, 74, 0.9); /* Accent color on hover */
+        transform: scale(1.1); /* Slightly enlarge on hover */
+    }
+
+    .mute-button svg {
+        width: 24px;
+        height: 24px;
+        stroke: white;
+    }
+
+    .sound-wave {
+        transition: opacity 0.3s ease;
+    }
+
+
+
+    /* Video Section Styles */
+    .video-section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #ffffff; /* Black background for contrast */
+    }
+
+    .video-section video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+
+
+@media (max-width: 768px) {
+
+    .video-section {
+        margin-top: 5rem;
+        height: 30vh; /* Adjust height for smaller screens */
+    }
+
+    .video-section video {
+        width: 110%;
+        height: auto;
+
+        object-fit: cover;
+    }
+}
