@@ -1272,6 +1272,7 @@ background: #fff;
     .video-section {
         margin-top: 5rem;
         height: 30vh; /* Adjust height for smaller screens */
+        
     }
 
     .video-section video {
@@ -1281,3 +1282,18 @@ background: #fff;
         object-fit: cover;
     }
 }
+
+@media (max-width: 480px) {
+    .video-section {
+        height: 40vh; /* Further adjust height for mobile */
+    }
+
+    .video-section video {
+        width: 120%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+
+    
