@@ -170,7 +170,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (formTrigger && formPopup && closeBtn) {
         formTrigger.addEventListener('click', () => {
-            formPopup.classList.add('active');
+            // formPopup.classList.add('active');
+            window.location.href = './contact.html';
         });
 
         closeBtn.addEventListener('click', () => {

@@ -2609,3 +2609,10 @@ textarea {
         font-size: 5rem;
     }
 }
+
+
+.nav-column ul li:nth-child(1):hover{
+    color: #E5D3C7;
+    transition: 0.3s ease;
+
+}

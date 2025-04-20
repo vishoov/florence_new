@@ -112,12 +112,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if(formTrigger && formPopup && closeBtn) {
         formTrigger.addEventListener('click', () => {
-            formPopup.classList.add('active');
+                window.location.href = './contact.html';
         });
 
-        closeBtn.addEventListener('click', () => {
-            formPopup.classList.remove('active');
-        });
+        // closeBtn.addEventListener('click', () => {
+        //     formPopup.classList.remove('active');
+        // });
     }
 
     // Page Load Animations
@@ -315,13 +315,13 @@ const closeBtn = document.querySelector('.close-btn');
 
 // Open popup
 formTrigger.addEventListener('click', () => {
-    formPopup.classList.add('active');
+    window.location.href = './contact.html';
 });
 
-// Close popup
-closeBtn.addEventListener('click', () => {
-    formPopup.classList.remove('active');
-});
+// // Close popup
+// closeBtn.addEventListener('click', () => {
+//     formPopup.classList.remove('active');
+// });
 });
 
 

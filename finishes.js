@@ -441,20 +441,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // }
     
     // Open modal with specific image
-    function openModal(index) {
-        updateModalContent(index);
-        modal.classList.add('show');
-        document.body.style.overflow = 'hidden';
-    }
+    // function openModal(index) {
+    //     updateModalContent(index);
+    //     modal.classList.add('show');
+    //     document.body.style.overflow = 'hidden';
+    // }
     
-    // Close modal
-    function closeModal() {
-        modal.classList.remove('show');
-        setTimeout(() => {
-            modal.style.display = 'none';
-        }, 300);
-        document.body.style.overflow = '';
-    }
+    // // Close modal
+    // function closeModal() {
+    //     modal.classList.remove('show');
+    //     setTimeout(() => {
+    //         modal.style.display = 'none';
+    //     }, 300);
+    //     document.body.style.overflow = '';
+    // }
     
     // // Update modal content with smooth transition
     // function updateModalContent(index) {
