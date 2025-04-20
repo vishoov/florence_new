@@ -221,7 +221,7 @@ const galleryData = [
 "Grooved & Textured Finish – Enhances depth while adding a tactile experience",
 "High Durability & Weather Resistance – Ideal for both indoor and outdoor applications",
 "Anti-Slip Properties – Perfect for high-traffic areas, ensuring safety",
-"Custom Thickness (1-2 cm) & Sizing Available – Tailored for diverse design applications",
+"Custom Thickness (2cm to 3cm) & Sizing Available – Tailored for diverse design applications",
 "Natural Dark Tones – Provides a bold yet timeless look, complementing various color palettes"
 ],
 "applications": [
@@ -244,7 +244,7 @@ const galleryData = [
 "Grooved & Brushed Finish – Enhances texture, creating a refined, high-end look",
 "Slip-Resistant Surface – Ideal for high-traffic areas and wet conditions",
 "Durable & Weather-Resistant – Engineered for longevity in both indoor and outdoor environments",
-"Custom Thickness (1-2 cm) & Sizing – Adaptable for bespoke architectural needs",
+"Custom Thickness (2cm to 3cm) & Sizing – Adaptable for bespoke architectural needs",
 "Natural Variation – Each slab carries unique patterns, adding exclusivity to every installation"
 ],
         "applications": [
